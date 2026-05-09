@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Lab 4:  Systems of differential equations</title>
+  <introduction>
+    <p>\begin{tabular}{ll}
+\begin{tabular}{l}</p>
+    <p><term>Due:  April 3</term></p>
+    <p>\end{tabular}</p>
+    <p>\begin{tabular}{l}
+%
+Names: \hrulefill  
+\hphantom{Names:} \hrulefill 
+\hphantom{Names:} \hrulefill</p>
+    <p>\end{tabular}
+\end{tabular}</p>
+    <p><term>Instructions:</term> The exercises here should be completed in groups
+of 2 or 3 students with one write-up submitted from each group.
+You may write directly on this handout.  When asked for an
+explanation, please use complete sentences.  Be sure to include
+everyone's name on the write-up.</p>
+    <p>Up to this point, we've have looked at differential 
+equations that describe a single function.  It sometimes happens,
+however, that we find two quantities whose rates of change depend on
+one another.  In this case, we have a system of differential equations.</p>
+    <p>In today's lab, we'll begin by looking
+at a system of differential equations that can be used to describe
+the interaction of two different species, one of whom preys on the
+other.  For instance, we will consider a population of wolves <m>W(t)</m>
+that prey upon a population of deer <m>D(t)</m>.  Let's build two
+differential equations that describe how the populations change.</p>
+    <p>First of all, we will suppose that if there were no wolves, the deer
+would increase at a rate proportional to their population:
+<md>
+\frac{dD}{dt} = 0.08D \quad\mbox{or}\quad\frac{dD/dt}{D} = 0.08
+</md>
+to be precise where time <m>t</m> is measured in days.  Notice this means that the per capita growth rate is constant.</p>
+    <p>If there are now some wolves
+around, we would expect that the per capita growth rate would decrease.  For instance, we might find that 
+<md>
+\frac{dD/dt}{D} = (0.08 - 0.001W)\quad\mbox{or}\quad
+\frac{dD}{dt} = (0.08 - 0.001W)D.
+</md></p>
+    <p>In the same way, we will suppose that if there were no deer, the
+wolves would die off, since they have no food, at a rate proportional
+to their population:
+<md>
+\frac{dW}{dt} = -0.02W.
+</md>
+However, if there are some deer around, we expect the
+wolves' per capita growth rate to increase.  For instance, 
+<md>
+\frac{dW/dt}{W} = (-0.02 + 0.00002D)\quad\mbox{or}\quad
+\frac{dW}{dt} = (-0.02 + 0.00002D)W.
+</md></p>
+    <p>The pair of equations
+<md>
+<mrow>\frac{dD}{dt} \amp = \amp (0.08 - 0.001W) D</mrow>
+<mrow>\frac{dW}{dt} \amp = \amp (-0.02 + 0.00002D)W</mrow>
+</md>
+is called the Lotka-Volterra model for predator-prey interaction.
+Though a simple model, the basic effects predicted by the model have
+been observed in nature.</p>
+  </introduction>
+
+  <exercise>
+    <task workspace="1.25in">
+      <statement>
+        <p>Suppose at some time, there are 1500 deer and 60 wolves.
+  Is the deer population increasing or decreasing?  Is the wolf
+  population increasing or decreasing?</p>
+      </statement>
+    </task>
+    <task workspace="1.25in">
+      <statement>
+        <p>For what values of <m>W</m> does the deer population increase?
+  For what values of <m>D</m> does the wolf population increase?  Does this
+  agree with your intuition about the situation?  Why or why not?</p>
+      </statement>
+    </task>
+    <task workspace="1.25in">
+      <statement>
+        <p>Are there values for <m>D</m> and <m>W</m> so that neither quantity
+  changes?</p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>Suppose initially there are <m>1000</m> deer and <m>40</m> wolves;
+  that is, <m>D(0) = 1000</m> and <m>W(0) = 40</m>.  Use Excel to implement 
+  Euler's method with a step size of <m>h=0.1</m> to find out how the
+  populations behave over the 
+  course of one year.</p>
+        <p>Your spreadsheet will probably begin something like this:</p>
+        <p>\begin{tabular}{|c|c|c|c|c|c|}
+      \hline
+      <m>h</m> &amp; <m>t_k</m> &amp; <m>D_k</m> &amp; <m>W_k</m> &amp; <m>\Delta D</m> &amp; <m>\Delta W</m> 
+      \hline
+      \hline</p>
+        <p>0.1 &amp; 0.0 &amp; 1000.0 &amp; 40.0 &amp;4.00 &amp;0.00 
+      0.1 &amp; 0.1 &amp; 1004.0 &amp; 40.0 &amp;4.02 &amp;0.00 
+      0.1 &amp; 0.2 &amp; 1008.0 &amp; 40.0 &amp;4.03 &amp;0.00 
+      0.1 &amp; 0.3 &amp; 1012.0 &amp; 40.0 &amp;4.05 &amp;0.00 
+      %1 &amp; 0 &amp; 1000.00 &amp; 40.00 &amp; 40.00 &amp; 0.00
+      %1 &amp; 1 &amp; 1040.00 &amp; 40.00 &amp; 41.60 &amp; 0.03
+      %1 &amp; 2 &amp; 1081.60 &amp; 40.03 &amp; 43.23 &amp; 0.07
+      \hline
+    \end{tabular}</p>
+        <p>Sketch a graph of the populations <m>D(t)</m> and <m>W(t)</m> over one
+  year below and discuss any interesting
+  features that you see.  In particular, you should discuss the
+  general behavior of the two graphs along with any relationships you
+  notice between the two graphs.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>We'll now examine another system of differential equations
+  but now we will imagine we have two species <m>x</m> and <m>y</m> that compete
+  for food.  If there is one species without the other, we will assume
+  a logistic model for population growth:  say,
+  <md>
+  \frac{dx}{dt}=x(1-x)
+  </md>
+  where <m>x</m> is measured in millions.  However, if there is some of the
+  species <m>y</m> around, it will lower the growth rate of <m>x</m> to, say,
+  <md>
+  \frac{dx}{dt}=x(1-x-y).
+  </md>
+  Species <m>y</m> behaves in the same way:
+  <md>
+  \frac{dy}{dt}=y(0.75-y-0.5x)
+  </md>
+  so we have the system of equations
+  <md>
+<mrow>\frac{dx}{dt}\amp=\ampx(1-x-y)</mrow>
+<mrow>\frac{dy}{dt}\amp=\ampy(0.75-y-0.5x)</mrow>
+</md></p>
+        <p>Set up a spreadsheet to study this system of equations with the
+    intial values <m>x(0) = 1.5</m> and <m>y(0)=0.25</m> using a step size of
+    <m>h=0.1</m>.  Make a plot of <m>x(t)</m> and <m>y(t)</m>.  What happens after a
+    very long time?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Study what happens with a few different values of the initial
+    values.  What do you notice happens here?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If the constants are adjusted just a little bit, there is a very
+    different kind of behavior.  Consider the system of equations
+  <md>
+<mrow>\frac{dx}{dt}\amp=\ampx(1-x-y)</mrow>
+<mrow>\frac{dy}{dt}\amp=\ampy(0.5-0.25y-0.75x)</mrow>
+</md></p>
+        <p>Study this system with <m>x(0) = 1.5</m> and <m>y(0)=0.25</m>.  Again, make
+    a plot of <m>x(t)</m> and <m>y(t)</m>.  What happens after a very long time?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Now consider the initial values <m>x(0) = 0.5</m> and <m>y(0)=1</m>.  What
+    happens after a very long time?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>How do these two examples of systems of competing species differ
+    from one another?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

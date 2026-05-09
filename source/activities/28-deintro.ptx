@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Introduction to differential equations</title>
+
+  <exercise>
+    <task workspace="0.4in">
+      <statement>
+        <p>Suppose that <m>T(t)</m> represents the temperature, in degrees Fahrenheit,
+  of a cup of coffee set out in a room as a function of time <m>t</m>,
+  measured in minutes.  The derivative <m>dT/dt</m> measures the rate at
+  which the temperature is changing.  Newton's Law of Cooling tells us
+  that
+  <md>
+  \frac{dT}{dt} = -\frac 1{15}T + 5.
+  </md></p>
+        <p>Suppose that <m>T = 105</m> at <m>t=0</m>.  What does the differential
+  equation tell us is <m>dT/dt</m> at <m>t=0</m>?  What are the units on <m>dT/dt</m>?</p>
+      </statement>
+    </task>
+    <task workspace="0.4in">
+      <statement>
+        <p>Is <m>T</m> increasing or decreasing?  That is, is the cup of
+  coffee warming up or cooling down?</p>
+      </statement>
+    </task>
+    <task workspace="0.4in">
+      <statement>
+        <p>Approximately what is the temperature when <m>t=1</m>?</p>
+      </statement>
+    </task>
+    <task workspace="0.4in">
+      <statement>
+        <p>Make a plot of <m>\frac{dT}{dt}</m> versus <m>T</m>.</p>
+        <p><image source="figures/28-newton.eps"/></p>
+        <p>Looking at the
+  graph, for what values of <m>T</m> does <m>T</m> increase and for what values
+  does it decrease?</p>
+      </statement>
+    </task>
+    <task workspace="0.4in">
+      <statement>
+        <p>What do you think will happen if <m>T(0)=75</m>?</p>
+      </statement>
+    </task>
+    <task workspace="0.5in">
+      <statement>
+        <p>What do you think the temperature of the room is?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Which do you think should happen to the temperature <m>T</m> as
+  <m>t\to\infty</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Which of the following functions are solutions to this
+  differential equation:</p>
+        <p>\begin{itemize}
+  \item <m>T(t) = t^{15} - 5</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>\item <m>T(t) = 75 + 30e^{-t/15}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>\item <m>T(t) = 75</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>\item <m>T(t) = 75 - 30e^{-t/15}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>\end{itemize}</p>
+        <p>For each of the functions above that you found were solutions,
+  describe a scenario to which your solution could apply.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="0.6in">
+      <statement>
+        <p>Here are a few differential equations and potential solutions.
+  For each, determine whether the potential solutions are in fact
+  solutions.</p>
+        <p>\begin{itemize}
+  \item[a)]<m>\ds y'' = -9y</m></p>
+        <p><m>\bullet\, y = 9\sin(t)</m></p>
+      </statement>
+    </task>
+    <task workspace="0.6in">
+      <statement>
+        <p><m>\bullet\, y = \sin(3t)</m></p>
+      </statement>
+    </task>
+    <task workspace="0.6in">
+      <statement>
+        <p><m>\bullet\,y = 4\cos(3t)</m></p>
+      </statement>
+    </task>
+    <task workspace="0.6in">
+      <statement>
+        <p>\item[b)] <m>\ds v' = 9.8 - 2v</m></p>
+        <p><m>\bullet\,v = 7.8</m></p>
+      </statement>
+    </task>
+    <task workspace="0.6in">
+      <statement>
+        <p><m>\bullet\,v = 4.9 + 3e^{-2t}</m></p>
+      </statement>
+    </task>
+    <task workspace="0.6in">
+      <statement>
+        <p><m>\bullet\,v = 4.9 -10e^{-2t}</m></p>
+      </statement>
+    </task>
+    <task workspace="0.6in">
+      <statement>
+        <p>\item[c)] <m>\ds y' = t - y</m></p>
+        <p><m>\bullet\,y = t-1</m></p>
+      </statement>
+    </task>
+    <task workspace="0.6in">
+      <statement>
+        <p><m>\bullet\,y = t+1</m></p>
+      </statement>
+    </task>
+    <task workspace="0.6in">
+      <statement>
+        <p><m>\bullet\,y = t-1+4e^{-t}</m></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>\end{itemize}</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

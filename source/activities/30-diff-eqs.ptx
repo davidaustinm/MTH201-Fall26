@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Differential Equations</title>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose that <m>P(t)</m> describes the population of a particular
+  species, where <m>P</m> is represented in millions.  Suppose also that
+  the change in the population is determined by the differential
+  equation
+  <md>
+  \frac{dP}{dt}=f(P)
+  </md>
+  where <m>f(P)</m> is the function graphed below.</p>
+        <p><image source="figures/30-threshold.png"/></p>
+        <p>For what values of the population <m>P</m> does the population increase?
+  For what values of the population <m>P</m> does the population decrease?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Identify any equilibrium populations.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Sketch a slope field for the differential equation <m>\frac{dP}{dt} =
+  f(P)</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Determine whether the equilibrium populations you have found are
+  either stable or unstable.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>P(0)&lt;1</m>, what happens to this species eventually?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>P(0)&gt;1</m>, what happens eventually?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose that <m>P(t)</m> describes the population of a particular
+  species of fish in a lake where <m>P</m> is measured in thousands and <m>t</m>
+  is measured in months.  Suppose that the change in the population is
+  given by the differential equation
+  <md>
+  \frac{dP}{dt} = P(6-P).
+  </md></p>
+        <p>Sketch a graph of the function <m>f(P) = P(6-P)</m> and use it to
+  determine any equilibrium solutions.</p>
+        <p>Determine whether these equilibria are stable or unstable.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What happens to the population of fish eventually?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose that the lake is opened to fishing and that one thousand
+  fish per month are removed from the lake (remember that <m>P</m> is
+  measured in <em>thousands</em> of fish).  Modify the differential
+  equation to take this into account.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Determine the new equilibrium solutions and their stability.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What happens to the fish after a long time?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Computing work</title>
+
+  <exercise>
+    <task workspace="0.5in">
+      <statement>
+        <p>Imagine that a cable, 50 meters long and having
+  mass 150 kilograms, is hanging from the top of a building. We will
+  compute the amount of work needed to lift the entire cable to the
+  top of the building.</p>
+        <p>Assuming that the cable is uniform, how much mass is in every meter
+  of the cable?  That is, what is the density of the cable in
+  kilograms per meter?</p>
+      </statement>
+    </task>
+    <task workspace="0.5in">
+      <statement>
+        <p>Let's set up a coordinate system: <m>y</m> will measure the
+  vertical distance upwards from the bottom of the cable.</p>
+        <p><image source="figures/cable15.eps"/></p>
+        <p>Imagine that we take a super thin slice of width <m>dy</m> at location
+  <m>y</m>.  Sketch the slice above and use the density to determine the mass
+  <m>dm</m> of this slice.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Imagine that the segment is very thin.  How far does this segment
+  need to be lifted when <m>y = 10</m>?  <m>y = 20</m>?  <m>y = 30</m>?  for a
+  general value of <m>y</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>How much work <m>dW</m> is performed in lifting just this segment to the top
+  of the building?</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Now that you know the amount of work required to lift each segment
+  to the top of the building, determine the total work required to
+  raise the entire cable to the top of the building.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="0.7in">
+      <statement>
+        <p>Here is a similar problem.  Consider a cone whose height and
+  base radius are each 2 meters.  You may imagine creating this cone
+  by taking 
+  the line <m>y=x</m> between <m>0\leq x\leq 2</m> and spinning it about the
+  <m>y</m>-axis.  Now imagine that this cone is filled
+  with water and we want to know how much work is required to pump the
+  water up to the top of the cone.</p>
+        <p>Imagine we take a thin horizontal cylindrical slice of the cone at position
+  <m>y</m> and of height <m>dy</m>.  What is the volume <m>dV</m> of this slice?</p>
+      </statement>
+    </task>
+    <task workspace="0.7in">
+      <statement>
+        <p>The density of water is <m>1000</m> kg/m<m>^3</m>.  What is
+  the mass <m>dm</m> of this slice?</p>
+      </statement>
+    </task>
+    <task workspace="0.7in">
+      <statement>
+        <p>How far does this slice need to be lifted to raise it to the top of
+  the cone?</p>
+      </statement>
+    </task>
+    <task workspace="0.7in">
+      <statement>
+        <p>How much work <m>dW</m> is required to raise this slice to the top of the
+  cone?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>How much work is required to pump all the water out of the cone?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1.75in">
+      <statement>
+        <p>Suppose now that we have a spherical water tank of radius 3
+  meters.  You may imagine forming this tank by spinning the right
+  half of a circle <m>x^2+y^2=3^2=9</m> about the <m>y</m>-axis.  Suppose that
+  the tank is filled with water to a depth of one meter and that the
+  density of the water is <m>1000-y</m> kilograms per cubic meter.</p>
+        <p><image source="figures/21-sphere.eps"/></p>
+        <p>Find the volume of water in the tank.</p>
+      </statement>
+    </task>
+    <task workspace="1.75in">
+      <statement>
+        <p>Find the center of mass of water in the tank.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the amount of work required to pump all of the water to the top
+  of the tank.</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Some concepts from Math 201</title>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose you drive in your car at 70mph for 3 hours.  How
+  far will you travel?  If you know your speed and the amount of time
+  you travel at that speed, what is the general rule for determining
+  the distance traveled?</p>
+      </statement>
+    </task>
+    <task workspace="1.25in">
+      <statement>
+        <p>Suppose you take a trip in your car and measure your speed for 30 seconds:</p>
+        <p>\begin{tabular}{|l||c|c|c|c|c|c|c|}
+      \hline
+      Time (seconds) &amp; 0 &amp; 5 &amp; 10 &amp; 15 &amp; 20 &amp; 25 &amp; 30 
+      \hline
+      Speed (feet/second) &amp; 10 &amp; 25 &amp; 35 &amp; 45 &amp; 50 &amp; 60 &amp; 70 
+      \hline
+    \end{tabular}</p>
+        <p>Estimate how far you travel during the first five seconds.  There
+  are a couple of ways you could do this so write one sentence that
+  explains what you did and share it with your group mates.</p>
+      </statement>
+    </task>
+    <task workspace="1.25in">
+      <statement>
+        <p>Estimate how far you have traveled over the entire 30-second
+  interval.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Estimate your average speed over the 30-second interval.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1.25in">
+      <statement>
+        <p>Suppose that <m>f</m> is a function satisfying <m>f(1)=2</m>, <m>f'(1)=1/2</m> and
+  <m>f''(1)&lt; 0</m>.  Sketch a possible graph for <m>f</m> on the left below.</p>
+        <p><image source="figures/01-empty.eps"/>
+    <image source="figures/01-empty.eps"/></p>
+        <p>Suppose that <m>g</m> is a function with <m>g'(2)=-2</m> and <m>g''(2)&gt;0</m>.
+  Sketch a possible graph for <m>g</m> on the right above.</p>
+        <p>Suppose that a function <m>h</m> satisfies <m>h(3)=4</m> and <m>h'(3)=2</m>.
+  Using this information, estimate <m>h(3.2)</m>.  What would knowledge of 
+  <m>h''(3)</m> tell you about your estimate?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>%   Shown below are the graphs of some function.  Provide a sketch
+%   of the derivatives of these functions on the axes given below.  You
+%   don't need to give a perfect graph.  Instead, you just want to
+%   indicate the general behavior of the derivative.</p>
+        <p>%   \begin{tabular}{ccc}
+%     <image source="figures/01-201-line.eps"/>
+%     &amp;
+%       
+%     &amp; 
+%       <image source="figures/01-201-exp.eps"/> 
+%     
+%     <image source="figures/01-201-empty.eps"/>
+%     &amp;
+%       
+%     &amp;
+%       <image source="figures/01-201-empty.eps"/> 
+%   \end{tabular}</p>
+        <p>%   \begin{tabular}{ccc}
+%     <image source="figures/01-201-quartice.eps"/>
+%     &amp;
+%       
+%     &amp; 
+%       <image source="figures/01-201-cubic.eps"/> 
+%     
+%     <image source="figures/01-201-empty.eps"/>
+%     &amp;
+%       
+%     &amp;
+%       <image source="figures/01-201-empty.eps"/></p>
+        <p>%   \end{tabular}</p>
+        <p>%</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Shown below are the graphs of two functions.  On
+%   the empty plots below, sketch the graph of a function whose
+%   derivative is the function shown above.</p>
+      <p>%   \begin{tabular}{ccc}
+%     <image source="figures/01-201-line.eps"/>
+%     &amp;
+%       
+%     &amp; 
+%       <image source="figures/01-201-cos-a.eps"/>  
+%     
+%     <image source="figures/01-201-empty.eps"/>
+%     &amp;
+%       
+%     &amp;
+%       <image source="figures/01-201-empty.eps"/> 
+%   \end{tabular}</p>
+      <p>%</p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <task workspace="0.25in">
+      <statement>
+        <p>Shown below is the graph of a function <m>f(x)</m>.</p>
+        <p><image source="figures/plreview.eps"/></p>
+        <p>Evaluate the definite integrals:</p>
+        <p><m>\bullet\,\int_0^1 f(x)~dx</m></p>
+      </statement>
+    </task>
+    <task workspace="0.25in">
+      <statement>
+        <p><m>\bullet\,\int_1^3 f(x)~dx</m></p>
+      </statement>
+    </task>
+    <task workspace="0.25in">
+      <statement>
+        <p><m>\bullet\,\int_0^3 f(x)~dx</m></p>
+      </statement>
+    </task>
+    <task workspace="0.25in">
+      <statement>
+        <p><m>\bullet\,\int_0^4 f(x)~dx</m></p>
+      </statement>
+    </task>
+    <task workspace="0.25in">
+      <statement>
+        <p><m>\bullet\,\int_0^5 f(x)~dx</m></p>
+      </statement>
+    </task>
+    <task workspace="0.25in">
+      <statement>
+        <p><m>\bullet\,\int_2^5 f(x)~dx</m></p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Evaluate the definite integrals using the Fundamental Theorem of
+  Calculus:</p>
+        <p><m>\bullet\,\int_{-1}^3 (3x^2+x)~dx</m></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p><m>\bullet\,\int_0^\pi \sin x~dx</m></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p><m>\bullet\,\int_0^2 e^x~dx</m></p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

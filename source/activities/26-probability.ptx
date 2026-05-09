@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Probability</title>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Let's begin with the function <md>p(x) =
+  \frac{1}{\sqrt{2\pi}}e^{-x^2/2},</md>
+  which defines a ``normal distribution.''
+  Plot this function and verify that it has the
+  shape of a bell curve centered about the point <m>x=0</m>.</p>
+        <p>One inconvenience in dealing with this function is that it does not
+  have an antiderivative in terms of functions that are familiar to
+  us.  Therefore, any definite integrals that we would like to
+  evaluate involving this function require the use of a numerical
+  method.  That means that you'll need to use Desmos to evaluate any
+  definite integrals of this function.</p>
+        <p>Since this is a probability density function, what should be the value of 
+  <md>\int_{-\infty}^\infty p(x)~dx?</md>  Verify that this is the case.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the probability that a data point will lie between <m>0</m> and
+  <m>1</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose that we measure the heights of men in the United States and
+  find the normal distribution
+  <md>
+  p(x)=\frac1{3\sqrt{2\pi}}e^{-(x-70)^2/18}</md>
+  where <m>x</m> is measured in inches.</p>
+        <p>Plot this function (what is a reasonable range of <m>x</m>
+  values?) and discuss the significance of the graph.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the average height.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Then find the fraction of men whose height is between 70 and 72
+  inches.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What fraction of men are taller than 74 inches?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the median height?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>\overline{x}</m> is the mean of the density function, the standard
+  deviation <m>\sigma</m>, which measures the spread in the data, is given
+  by
+  <md>\sigma^2 = \int_{-\infty}^\infty (x-\overline{x})^2p(x)~dx.
+  </md>
+  Notice that this is defining <m>\sigma^2</m> so you'll need to take the
+  square root of the integral.  Find the standard deviation of this
+  distribution.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>The general form of the normal distribution is
+  <md>
+  p(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\bar{x})^2}{2\sigma^2}}.
+  </md>
+  Average annual snowfall in Grand Rapids is 72.4 inches with a standard
+  deviation of 16 inches.  There was a lot of snow last year with 109
+  inches recorded.  What is the chance that there is more than 109
+  inches of snow?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>So far this year, we've had about 40 inches of snow.  What is the
+  chance that there is 40 or fewer inches of snow in a year?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the chance that the snowfall is more than the average?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the chance that the snowfall is more than one standard
+  deviation above the average?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

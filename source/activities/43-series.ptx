@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Series as functions</title>
+  <introduction>
+    <p>We can use the fact that the geometric series gives us
+<md>
+\frac1{1-x} = 1 + x + x^2 + x^3 + \ldots + x^n + \ldots
+</md>
+when <m>-1&lt;x&lt;1</m> to find series representations of other functions.</p>
+  </introduction>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Let's begin by rewriting the geometric series in terms of the
+  variable <m>u</m>, rather than <m>x</m>;  that is, set <m>x=u</m> to write the
+  series for <m>\displaystyle \frac1{1-u}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Now let <m>u = -x</m> to obtain a series for <m>\displaystyle
+  \frac1{1+x}</m>.  Write the first four nonzero terms and try to write
+  the general term.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Now that we have a series for <m>\displaystyle \frac1{1+x}</m>, let's rewrite
+  this in terms of the variable <m>u</m>, as we did before.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Explain why <m>\displaystyle \ln(1+x) = \int_0^x \frac{1}{1+u}~du</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>By integrating the series you found for <m>\displaystyle\frac1{1+u}</m>, find a
+  series representation of <m>\ln(1+x)</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Let <m>x=1/2</m> to obtain a series for <m>\ln(3/2)</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Approximate the value of <m>\ln(3/2)</m> using the first five terms in
+  your series.  How does your approximation compare to the actual
+  value?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1.5in">
+      <statement>
+        <p>Let's start again with the series for <m>\displaystyle
+  \frac1{1-u}</m>.  Write this series below and substitute <m>u=-x^2</m> to
+  produce a series for <m>\displaystyle \frac1{1+x^2}</m>.  Write the first
+  four nonzero terms and try to write the general term.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Remember that <m>\arctan x = \displaystyle\int_0^x \frac1{1+u^2}~du</m> and
+  use this to create a series for <m>\arctan x</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Remember that <m>\displaystyle \frac\pi4 = \arctan 1</m>
+  and use this to write a series for <m>\pi/4</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What approximation to <m>\pi/4</m> do you find with the first five terms?
+  How does this compare to the actual value?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Using <m>x = 1/2</m>, write a series that gives <m>\arctan(1/2)</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What approximation to <m>\arctan(1/2)</m> do you find with the first five
+  terms?  How does this compare to the actual value?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

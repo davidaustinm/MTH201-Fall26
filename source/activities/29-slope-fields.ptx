@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Slope Fields</title>
+
+  <exercise>
+    <task workspace="1.25in">
+      <statement>
+        <p>Let's consider the autonomous differential equation 
+<md>
+\frac{dy}{dt} = -\frac 12( y - 4).
+</md></p>
+        <p>\begin{itemize}
+\item Make a plot of <m>\frac{dy}{dt}</m> versus <m>y</m>.  Looking at the
+  graph, for what values of <m>y</m> does <m>y</m> increase and for what values
+  does it decrease?</p>
+        <p><image source="figures/29-slope-fields-1.eps"/></p>
+        <p>\item Now sketch the slope field for this differential equation.</p>
+        <p><image source="figures/29-slope-fields-2.eps"/></p>
+        <p>\item  Sketch the solutions that satisfy <m>y(0) = 0</m>, <m>y(0) = 2</m>, <m>y(0) = 4</m> 
+  and <m>y(0) = 6.</m></p>
+        <p>\item  Verify that <m>y(t) = 4 + 2e^{-t/2}</m> is a solution to the  
+  differential equation with the initial value <m>y(0) = 6.</m>  Compare
+  its graph to the one you sketched above.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>\item  What is special about the solution where <m>y(0) = 4</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>\end{itemize}</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Consider the differential equation <md>\frac{dy}{dt}=t-y.</md></p>
+        <p>Plot the slope field of this differential equation below.</p>
+        <p><image source="figures/29-empty.eps"/></p>
+        <p>Then sketch the solutions corresponding to <m>y(0)=0</m>, <m>y(0)=1</m>, 
+  <m>y(0)=2</m>, <m>y(0)=-1</m> and <m>y(0)=-2</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>What do you think the solution is when <m>y(0)=-1</m>?  Verify that your
+  guess is correct.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Now let's consider the autonomous differential equation 
+<md>
+\frac{dy}{dt} = -\frac 12 y(y-4).
+</md></p>
+        <p>\begin{itemize}
+\item Make a plot of <m>\frac{dy}{dt}</m> versus <m>y</m>.  Looking at the
+  graph, for what values of <m>y</m> does <m>y</m> increase and for what values
+  does it decrease?</p>
+        <p><image source="figures/29-slope-fields-3.eps"/></p>
+        <p>\item Identify any constant solutions of this differential equation.
+    We call these <em>equilibrium</em> solutions.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>\item Now sketch the slope field for this differential equation.</p>
+        <p><image source="figures/29-slope-fields-4.eps"/></p>
+        <p>\item  Sketch the solutions with initial values <m>y(0)=-1, 0, 1, \ldots, 5</m>.</p>
+        <p>\item  An equilibrium solution <m>\overline{y}</m> is called <em>stable</em>
+  if nearby 
+  solutions converge to <m>\overline{y}</m>.  This means that if the inital
+  condition varies slightly from <m>\overline{y}</m>, then
+  <m>\lim_{t\to\infty}y(t) = \overline{y}</m>.</p>
+        <p>Conversely, an equilibrium solution <m>\overline{y}</m> 
+  is called <em>unstable</em> if nearby solutions are pushed away from
+  <m>\overline{y}</m>.</p>
+        <p>Using your work above, classify the equilibrium solutions you found
+  as either stable or unstable.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>\item Suppose that <m>y(t)</m> describes the population of a species of
+  living organisms and that the initial value <m>y(0)&gt;0</m>.  What can you
+  say about the eventual fate of this population?</p>
+        <p>\end{itemize}</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

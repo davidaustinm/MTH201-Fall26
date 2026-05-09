@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Taylor series</title>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>Suppose you have this information about a function:
+  <md>
+  \begin{aligned}
+    f(0) \amp {}={} 2, \hspace*{24pt} \amp f'(0) \amp {}={} -3, \\
+    f''(0) \amp {}={} -1, \amp  f'''(0) \amp {}={} 0, \\
+    f^{(4)}(0) \amp {}={} -3.
+  \end{aligned}
+  </md>
+  Form a Taylor polynomial for the function <m>f(x)</m> and use it to
+  estimate <m>f(0.5)</m>.</p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <task workspace="4in">
+      <statement>
+        <p>Find the first five terms of the Taylor series for the function 
+  <m>f(x)=\sqrt{1+x}=(1+x)^{1/2}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Use the first five terms to approximate <m>\sqrt{1.1}</m> (what value of
+  <m>x</m> should you use?)  and compare
+  your approximation to the exact value of <m>\sqrt{1.1}</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="3.5in">
+      <statement>
+        <p>Find the first five terms of the Taylor series for <m>f(x) =
+  1/\sqrt{1+x} = (1+x)^{-1/2}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>How can you use this to find the Taylor series for
+  <m>1/\sqrt{1-u^2}</m>?</p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>You may remember that <md>\arcsin(x) =\int_0^x
+  \frac1{\sqrt{1-u^2}}~du.</md>
+  Use the first five terms of your Taylor series to estimate
+  <m>\arcsin(0.1)</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1.5in">
+    <statement>
+      <p>Suppose that <m>f(x) = 3+4x-7x^2</m>.  Find the Taylor series 
+  for <m>f(x)</m>.  What do you notice here?</p>
+    </statement>
+  </exercise>
+
+</worksheet>

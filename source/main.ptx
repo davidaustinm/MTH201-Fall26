@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This is the main course file for ... . It is used to generate all the public facing course materials so those can be hosted online.  -->
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- Include common macros etc: -->
+  <xi:include href="./docinfo.ptx" />
+  <!-- By creating a PreTeXt "book" for the course, we can split components into "chapters" -->
+  <book>
+    <title>Course Name (change me)</title>
+
+    <subtitle>MATH xxx Semester 20xx</subtitle>
+
+    <!-- Optional: include frontmatter with author info and date -->
+    <xi:include href="./frontmatter.ptx" />
+
+    <chapter xml:id="course-documents">
+      <title>Course Documents</title>
+
+      <!-- Course syllabus -->
+      <xi:include href="./syllabus/syllabus.ptx" />
+      <!-- Other documents could go here, like a schedule, project description, etc. -->
+    </chapter>
+
+    <chapter xml:id="course-notes">
+      <title>Course Notes</title>
+
+      <introduction>
+        <p>
+          The following notes are intended to remind you what we covered each week.
+          They are not a substitute for attending class and not a substitute for reading the textbook.
+        </p>
+      </introduction>
+
+      <xi:include href="./notes/week01.ptx"/>
+      <xi:include href="./notes/week02.ptx"/>
+      <!-- etc. -->
+
+    </chapter>
+
+
+    <chapter xml:id="activities">
+      <title>In-Class Activities</title>
+
+      <introduction>
+        <p>
+          These are copies of the in-class activities distributed during the semester.
+        </p>
+      </introduction>
+
+      <!-- Remove the example and replace with your own activities -->
+      <xi:include href="./activities/01-intro-activity.ptx"/>
+      <xi:include href="./activities/01-review.ptx"/>
+      <xi:include href="./activities/02-ftc.ptx"/>
+      <xi:include href="./activities/03-ftc.ptx"/>
+      <xi:include href="./activities/04-review.ptx"/>
+      <xi:include href="./activities/05-notes.ptx"/>
+      <xi:include href="./activities/05-substitution.ptx"/>
+      <xi:include href="./activities/06-substitution.ptx"/>
+      <xi:include href="./activities/07-substitution.ptx"/>
+      <xi:include href="./activities/08-lab-1.ptx"/>
+      <xi:include href="./activities/09-parts.ptx"/>
+      <xi:include href="./activities/10-int-general.ptx"/>
+      <xi:include href="./activities/11-practice.ptx"/>
+      <xi:include href="./activities/12-area.ptx"/>
+      <xi:include href="./activities/13-arc-length.ptx"/>
+      <xi:include href="./activities/14-area.ptx"/>
+      <xi:include href="./activities/15-volume.ptx"/>
+      <xi:include href="./activities/16-lab-2.ptx"/>
+      <xi:include href="./activities/17-numerical.ptx"/>
+      <xi:include href="./activities/18-volume.ptx"/>
+      <xi:include href="./activities/19-mass.ptx"/>
+      <xi:include href="./activities/20-centers.ptx"/>
+      <xi:include href="./activities/21-physics.ptx"/>
+      <xi:include href="./activities/22-review.ptx"/>
+      <xi:include href="./activities/23-finance.ptx"/>
+      <xi:include href="./activities/24-probability.ptx"/>
+      <xi:include href="./activities/25-probability.ptx"/>
+      <xi:include href="./activities/26-probability.ptx"/>
+      <xi:include href="./activities/27-review.ptx"/>
+      <xi:include href="./activities/28-deintro.ptx"/>
+      <xi:include href="./activities/29-slope-fields.ptx"/>
+      <xi:include href="./activities/30-diff-eqs.ptx"/>
+      <xi:include href="./activities/31-euler.ptx"/>
+      <xi:include href="./activities/32-review.ptx"/>
+      <xi:include href="./activities/33-lab-3.ptx"/>
+      <xi:include href="./activities/34-separable.ptx"/>
+      <xi:include href="./activities/35-separable.ptx"/>
+      <xi:include href="./activities/36-modeling.ptx"/>
+      <xi:include href="./activities/37-modeling.ptx"/>
+      <xi:include href="./activities/38-modeling.ptx"/>
+      <xi:include href="./activities/39-population.ptx"/>
+      <xi:include href="./activities/40-logistic.ptx"/>
+      <xi:include href="./activities/41-lab-4.ptx"/>
+      <xi:include href="./activities/42-geometric.ptx"/>
+      <xi:include href="./activities/43-series.ptx"/>
+      <xi:include href="./activities/44-taylor.ptx"/>
+      <xi:include href="./activities/45-taylor.ptx"/>
+      <xi:include href="./activities/46-taylor.ptx"/>
+      <xi:include href="./activities/47-taylor.ptx"/>
+      <xi:include href="./activities/48-lab-5.ptx"/>
+      <xi:include href="./activities/49-series-apps.ptx"/>
+      <xi:include href="./activities/50-review.ptx"/>
+      <xi:include href="./activities/51-review.ptx"/>
+      <xi:include href="./activities/52-review.ptx"/>
+      <xi:include href="./activities/53-review.ptx"/>
+      <xi:include href="./activities/54-review.ptx"/>
+
+      <!-- Add more xi:include files here to include them in the main course -->
+    </chapter>
+
+    <chapter xml:id="handouts">
+      <title>Handouts</title>
+      <!-- Include handouts -->
+      <!--<xi:include href="./handouts/handout-filename.ptx"/>-->
+    </chapter>
+
+    <chapter xml:id="homework">
+      <title>Homework</title>
+
+      <!-- Include homework files -->
+      <!--<xi:include href="./homework/homework01.ptx"/>-->
+
+    </chapter>
+
+    <!-- Include additional chapters for other categories -->
+
+    </book>
+  </pretext>

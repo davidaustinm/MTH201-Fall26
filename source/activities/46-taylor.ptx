@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Taylor series</title>
+
+  <exercise>
+    <task workspace="3.5in">
+      <statement>
+        <p>Find the first five terms of the Taylor series for <m>f(x) =
+  1/\sqrt{1+x} = (1+x)^{-1/2}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>How can you use this to find the Taylor series for
+  <m>1/\sqrt{1-u^2}</m>?</p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>You may remember that <md>\arcsin(x) =\int_0^x
+  \frac1{\sqrt{1-u^2}}~du.</md>
+  Use the first five terms of your Taylor series to estimate
+  <m>\arcsin(0.1)</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="2in">
+      <statement>
+        <p>Starting with the geometric series <m>\displaystyle \frac1{1-x} =
+  1 + x + x^2 + x^3 + \ldots</m>, write the Taylor series for
+  <m>\displaystyle \frac1{1+u^2}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="3in">
+      <statement>
+        <p>Use this to write the Taylor series of the function <m>\arctan(x) =
+  \int_0^x \frac{1}{1+u^2}~du</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Use the first five nonzero terms to estimate <m>\arctan(0.5)</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

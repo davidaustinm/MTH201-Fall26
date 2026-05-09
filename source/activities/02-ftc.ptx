@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Constructing antiderivatives (Section 5.1)</title>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Using what you know from your first semester of calculus,
+  consider the function below and sketch its derivative to the right.</p>
+      <p><image source="figures/01-201-quartice.eps"/></p>
+      <p><image source="figures/01-201-empty.eps"/></p>
+      <p>And again for this function</p>
+      <p><image source="figures/01-201-cubic.eps"/></p>
+      <p><image source="figures/01-201-empty.eps"/></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Now let's try to go the other way.  Consider the function shown
+  below and sketch an <em>antiderivative</em>---that is, a function whose
+  derivative is shown---to the right. Perhaps you could begin by
+  thinking about where an antiderivative is increasing and where it is
+  decreasing.</p>
+      <p><image source="figures/06-line.eps"/></p>
+      <p><image source="figures/01-201-empty.eps"/></p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Now we're going to see how to do a better job of the last task.
+  Shown below on the left is the graph of a function <m>f(x)</m> that is the
+  derivative of an unknown function <m>F(x)</m>.  We say that <m>F(x)</m> is an <em>antiderivative</em> of <m>f(x)</m> because <m>F'(x) = f(x)</m>.  We would like to
+  deduce information about <m>F(x)</m>.</p>
+        <p><image source="figures/02-ftc-graph.eps"/>
+    <image source="figures/02-ftc-graph-empty.eps"/></p>
+        <p>Remember that you are looking at the graph of <m>F'(x) = f(x)</m>.
+  On what interval(s) is <m>F</m> increasing and on what intervals is it
+  decreasing?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Sketch the graph of <m>f'(x)</m> on the empty axes on the right
+  above.  Notice that this is the same as <m>F''(x)</m>:  since <m>F'(x) =
+  f(x)</m>, then <m>F''(x) = f'(x)</m>.
+  On what interval(s) is the graph of <m>F</m> concave up?
+  concave down? neither?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>At what points does <m>F</m> have a relative minimum? maximum?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Evaluate the integral <m>\int_0^1 f(x)~dx</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>The Fundamental Theorem of Calculus tells us that
+  <md>\int_0^1 f(x)~dx = \int_0^1 F'(x)~dx = F(1) - F(0).</md>
+  Suppose we are told that <m>F(0) = -1</m>.  What is <m>F(1)</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>In the same way, find the values of <m>F(x)</m> in the table below.</p>
+        <p>\begin{tabular}{|c||c|c|c|c|c|c|c|c|}
+      \hline
+      <m>x</m> \vphantom{\Huge M}&amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 
+      \hline
+      <m>F(x)</m> \vphantom{\Huge M}
+                            &amp; 
+                                &amp; 
+                                    &amp; 
+                                        &amp; 
+                                            &amp; 
+                                                &amp; 
+                                                    &amp; 
+                                                        &amp;  
+      \hline
+    \end{tabular}</p>
+        <p>Using all the information you have found so far, sketch the
+  graph of <m>F(x)</m> below.</p>
+        <p><image source="figures/02-ftc-graph-empty.eps"/></p>
+        <p>Suppose there is another antiderivative <m>G</m> where <m>G'(x) = f(x)</m>
+  and <m>G(0) = 0</m>.  Complete the table of values of <m>G</m>.</p>
+        <p>\begin{tabular}{|c||c|c|c|c|c|c|c|c|}
+      \hline
+      <m>x</m> \vphantom{\Huge M}&amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 
+      \hline
+      <m>G(x)</m> \vphantom{\Huge M}
+                            &amp; 
+                                &amp; 
+                                    &amp; 
+                                        &amp; 
+                                            &amp; 
+                                                &amp; 
+                                                    &amp; 
+                                                        &amp;  
+      \hline
+    \end{tabular}</p>
+        <p>How are the graphs of <m>f</m> and <m>g</m> related to one another?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>In the same way, consider the graph of the function <m>f'(x)</m>
+  shown below.</p>
+        <p><image source="figures/02-another-ftc.png"/></p>
+        <p>If <m>f(0) = 4</m>, what is the value <m>f(6)</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Find the value of <m>f</m> at each of its critical points.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the global maximum and what is the global minimum of <m>f</m> on
+  the interval <m>[0,6]</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

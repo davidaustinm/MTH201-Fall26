@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Volume</title>
+
+  <exercise workspace="1.5in">
+    <statement>
+      <p>Suppose that the region bounded by the graph <m>y=4-x^2</m> and the
+  <m>x</m>-axis is rotated about the <m>x</m>-axis.  Determine the
+  cross-sectional area of a typical slice and then compute the volume
+  of the resulting solid.</p>
+      <p><image source="figures/volume-region-2.eps"/></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>One way to obtain a sphere is to spin a circle about one of its
+  diameters.  Find the volume of a sphere of radius 2 by taking the
+  top half of the circle of radius of 2 centered at the origin and
+  spinning it about the <m>x</m>-axis.  You may remember that the upper
+  semicircle of radius 2 is the graph <m>y = \sqrt{4-x^2}</m>.</p>
+      <p><em>Over</em></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>Now we are going to look at the region between the graphs
+  <m>y=4-x^2</m> and <m>y=x+2</m>, as shown below, and find the volume of the
+  solid that results when this region is spun about the <m>x</m>-axis.</p>
+      <p>Sketch a typical cross-section, determine its area, and then find
+  the volume of the resulting solid.</p>
+      <p><image source="figures/volume-region.eps"/></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Consider the graph of the function <m>y=x^2</m> and the region
+  bounded by this graph, the line <m>y=4</m> and the <m>y</m>-axis.  Find the
+  volume of the solid that results from spinning this region about the
+  <m>y</m>-axis.</p>
+    </statement>
+  </exercise>
+
+</worksheet>

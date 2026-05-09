@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Final Review</title>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Newton's Law of Cooling states that an temperature of an object 
+  changes at a rate proportional to the difference in its temperature
+  and room temperature.  Suppose that <m>T(t)</m> is the temperature of
+  some object sitting in a 70<m>^\circ</m> room.  Newton's Law says that
+  <md>
+  \frac{dT}{dt} = -k(T-70).
+  </md></p>
+      <p>Suppose that the temperature is initially 120<m>^\circ</m>.  Ten minutes
+  later, it is 100<m>^\circ</m>.  When will the temperature reach
+  80<m>^\circ</m>?</p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <task workspace="2in">
+      <statement>
+        <p>Suppose that the amount of a drug in a patient's bloodstream
+  decreases at a rate proportional to the amount in the patient's
+  bloodstream.  Suppose that you know that the half-life of a particular
+  drug is 10 hours.</p>
+        <p>If 20 milligrams of this drug are continuously given to the
+  patient every hour, how much is in the bloodstream after a very long
+  time?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Assuming the drug is not present in the bloodstream initially, how
+  long does it take before there are 50 mg in the bloodstream?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose that you take out a $125,000 mortgage at an annual
+  interest rate of 4% and that you pay it off at the rate of <m>r</m>
+  dollars per year, 
+  which we will assume you are doing continuously.</p>
+        <p>Set up a differential equation to describe the amount <m>M(t)</m> that
+  you owe after <m>t</m> years.</p>
+      </statement>
+    </task>
+    <task workspace="2.5in">
+      <statement>
+        <p>If you want to pay off the mortgage in 30 years, at what rate <m>r</m>
+  should you pay?</p>
+      </statement>
+    </task>
+    <task workspace="2.5in">
+      <statement>
+        <p>If you want to pay off the mortgage in 20 years, at what rate <m>r</m>
+  should you pay?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the total amount that you pay under each of these scenarios?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

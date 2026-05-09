@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Antiderivatives using substitution (Section 5.3)</title>
+
+  <exercise>
+    <task workspace="1.25in">
+      <statement>
+        <p>Evaluate the following definite integrals using an appropriate
+  substitution:</p>
+        <p><m>\ds \int_0^2 xe^{x^2}~dx</m></p>
+      </statement>
+    </task>
+    <task workspace="1.1in">
+      <statement>
+        <p><m>\ds \int_0^{\pi/2} \sin^3 t\cos t~dt
+  </m></p>
+      </statement>
+    </task>
+    <task workspace="1.1in">
+      <statement>
+        <p><m>\ds \int_e^{e^2}\frac{1}{t\ln t}~dt </m></p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Find antiderivatives of these functions:</p>
+        <p><m>\ds \int\frac1{1+t^2}~dt</m></p>
+      </statement>
+    </task>
+    <task workspace="1.1in">
+      <statement>
+        <p><m>\ds \int\frac{t^2}{1+t^6}~dt</m></p>
+      </statement>
+    </task>
+    <task workspace="1.1in">
+      <statement>
+        <p><m>\ds \int \frac{\sin\sqrt x}{\sqrt x}~dx</m></p>
+      </statement>
+    </task>
+    <task workspace="1.1in">
+      <statement>
+        <p><m>\ds\int \frac{t+1}{1+t^2}~dt </m></p>
+      </statement>
+    </task>
+    <task workspace="1.25in">
+      <statement>
+        <p><m>\ds \int\frac{e^{-1/t}}{t^2}~dt</m></p>
+      </statement>
+    </task>
+    <task workspace="1.25in">
+      <statement>
+        <p><m>\ds\int\frac{\ln t}{t}~dt</m></p>
+      </statement>
+    </task>
+    <task workspace="1.25in">
+      <statement>
+        <p><m>\ds\int\frac{1}{\sqrt{x}(1+\sqrt{x})^2}~dx</m></p>
+      </statement>
+    </task>
+    <task workspace="1.25in">
+      <statement>
+        <p><m>\ds\int \frac{e^t-e^{-t}}{e^t+e^{-t}}~dt</m></p>
+      </statement>
+    </task>
+    <task workspace="1.25in">
+      <statement>
+        <p><m>\ds\int\frac 1{x^2+2x+1}~dx</m></p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>The velocity of a object moving along the <m>x</m>-axis is given by
+  <m>v(t) = t + e^{-t/2}</m>.  How far does it travel during the time
+  interval from <m>t=0</m> to <m>t=4</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>x(0) = 3</m>, find its position when <m>t=6</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the object's acceleration?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>At what times is it speeding up and at what times is it slowing down?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

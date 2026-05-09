@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Lab 2:  Numerical Approximations</title>
+
+  <exercise workspace="1.5in">
+    <statement>
+      <p>\begin{tabular}{ll}
+\begin{tabular}{c}</p>
+      <p><term>Due:  February 12</term></p>
+      <p>\end{tabular}</p>
+      <p>\begin{tabular}{l}
+%
+Names: \hrulefill  
+\hphantom{Names:} \hrulefill 
+\hphantom{Names:} \hrulefill</p>
+      <p>\end{tabular}
+\end{tabular}</p>
+      <p><term>Instructions:</term> The exercises here should be completed in groups
+of 2 or 3 students with one write-up submitted from each group.
+You may write directly on this handout.  When asked for an
+explanation, please use complete sentences.  Be sure to include
+everyone's name on the write-up.</p>
+      <p>%  We have seen that the definite integral is defined through a
+% summing process.  We will usually evaluate definite
+% integrals using the Fundamental Theorem: this is a wondeful fact which
+% says we can replace the tedious summing process by
+% antidifferentiation.  However, it turns out that there are many
+% interesting functions whose antiderivatives cannot be expressed in
+% terms of functions we already know.  For this reason, the Fundamental
+% Theorem is not much help in these cases.</p>
+      <p>In this lab, we'll explore some techniques for approximating definite
+integrals.  In many instances, this is as useful, and even easier,
+than applying the Fundamental Theorem.</p>
+      <p>\begin{itemize}
+\item[1.]   Evaluate the definite integral
+  <md>
+  \int_0^1 \frac 4{1+x^2}~dx
+  </md>
+  <em>exactly</em>;  that is, do not give a decimal approximation to the
+  integral.  (You will need to remember one fact from trigonometry;
+  ask if you don't remember.)</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>\item[2.]  In this lab, we will explore three ways of approximating
+  definite integrals.  This is typically done when the integrand
+  cannot practically be antidifferentiated.  However, we will study
+  the integral above;  since we know the exact answer, we
+  can determine how accurate our approximations are.</p>
+      <p>First, we'll use <em>right</em> endpoints to approximate the definite
+  integral.  This means that the height of the rectangles we use to
+  approximate the definite integral are computed using the right
+  endpoints of the smaller intervals as shown below
+  (<m>\Delta x</m> here is 0.25 so that the rectangles appear clearly):</p>
+      <p><image source="figures/right3.eps"/></p>
+      <p>Set up a Google sheet, as you did in the last lab,
+  to use right endpoints to approximate the integral using
+  <m>n = 10</m> rectangles.  The first part of your worksheet might look
+  like this:</p>
+      <p>\begin{tabular}{|r|r|r|r|}
+      \hline
+      <m>\Delta x</m> &amp; <m>x_i</m> &amp; <m>f(x_i)</m> &amp; <m>\sum f(x_i) \Delta x</m> 
+      \hline
+      0.1 &amp;    0.0&amp;     4.0000 &amp;     
+      0.1 &amp;    0.1&amp;     3.9603 &amp;      0.396039 
+      0.1 &amp;    0.2&amp;     3.8461 &amp;      0.780654 
+      0.1 &amp;    0.3&amp;     3.6697 &amp;      1.147627 
+      0.1 &amp;    0.4&amp;     3.4482 &amp;      1.492455 
+      0.1 &amp;    0.5&amp;     3.2000 &amp;      1.812455 
+      0.1 &amp;    0.6&amp;     2.9411 &amp;      2.106572 
+      0.1 &amp;    0.7&amp;     2.6845 &amp;      2.375029 
+      0.1 &amp;    0.8&amp;     2.4390 &amp;      2.618931 
+      \hline
+    \end{tabular}</p>
+      <p>Using <em>right</em> endpoints, find the approximations to the definite
+  integral when <m>n=10</m> (<m>\Delta x =0.1</m>), <m>n=20</m> (<m>\Delta x=0.05</m>) and
+  <m>n=40</m> (<m>\Delta x=0.025</m>).  For each of these cases, record the
+  approximation and the error.  (Note:  if you
+  set up your worksheet well, you should only have to change one entry
+  to study the different cases.)</p>
+      <p>\begin{tabular}{|c|c|c|}
+      \hline
+      <m>\Delta x</m> &amp; Approximation &amp; Error 
+      \hline
+      0.1 &amp;  &amp;   
+      0.05 &amp; &amp;  
+      0.025 &amp; &amp; 
+      \hline
+    \end{tabular}</p>
+      <p>\item[3.]  We will now study a new method, called the Midpoint Rule,
+  in which we use the midpoints of the small intervals rather than the
+  right endpoints.  That is, the height of the rectangles we use to
+  approximate the definite integral are computed by looking at the
+  middle of an interval as shown below:</p>
+      <p><image source="figures/mid3.eps"/></p>
+      <p>If we let <m>n=10</m>, here is how your spreadsheet
+  should begin.</p>
+      <p>\begin{tabular}{|c|c|c|c|}
+  \hline
+  <m>\Delta x</m>&amp;<m>x_i</m>&amp;<m>f(x_i)</m>&amp; <m>\sum f(x_i)\Delta x</m>
+  \hline
+  0.1000&amp;0.0500&amp;3.9900&amp;0.399002
+  0.1000&amp;0.1500&amp;3.9120&amp;0.790201
+  0.1000&amp;0.2500&amp;3.7647&amp;1.166671
+  0.1000&amp;0.3500&amp;3.5635&amp;1.523019
+  0.1000&amp;0.4500&amp;3.3264&amp;1.855659
+  0.1000&amp;0.5500&amp;3.0710&amp;2.162761
+  0.1000&amp;0.6500&amp;2.8120&amp;2.443956
+  0.1000&amp;0.7500&amp;2.5600&amp;2.699956
+  \hline
+\end{tabular}</p>
+      <p>Use the Midpoint Rule with <m>n=10</m>, <m>20</m> and <m>40</m> to approximate the
+integral.  For each value of <m>n</m>, record your approximation and the
+error.</p>
+      <p>\begin{tabular}{|c|c|c|}
+      \hline
+      <m>\Delta x</m> &amp; Approximation &amp; Error 
+      \hline
+      0.1 &amp;  &amp;   
+      0.05 &amp; &amp;  
+      0.025 &amp; &amp; 
+      \hline
+    \end{tabular}</p>
+      <p>\item[4.]  Finally, we will consider the <em>Trapezoidal Rule.</em>  
+  Now instead of just using rectangles, we will use trapezoids to
+  approximate the integral as shown below:</p>
+      <p><image source="figures/trap3.eps"/></p>
+      <p>% Before we go any further, find the area of the trapezoid
+  % below.  Perhaps the best way to do this is realize that it has the
+  % same area as the rectangle shown.  What is the height of this
+  % rectangle and hence what is its area?</p>
+      <p>You may have seen this before, but it's helpful to remember that the
+  area of the trapezoid shown below is 
+  <md>
+  \frac h2(y_0+y_1).
+  </md></p>
+      <p><image source="figures/trap3a.eps"/> 
+%    
+%    \epsfbox[100 400 200 550]{trap3b.eps}</p>
+      <p>Now build an Google sheet to compute an approximation to the
+  definite integral using <m>n = 10</m> trapezoids or <m>\Delta x = 0.1</m>.
+  The fourth column should contain the sum of the areas of the
+  trapezoids;  for instance, the second row should contain the area of
+  the first trapezoid, the third row should contain the area of the
+  first two trapezoids, etc.  Your worksheet should begin something
+  like this:</p>
+      <p>\begin{tabular}{|c|c|c|c|}
+      \hline
+      <m>\Delta x</m> &amp; <m>x_i</m> &amp; <m>f(x_i)</m> &amp; Area of trapezoids 
+      \hline
+      0.1 &amp;    0.0&amp;     4.000000 &amp;     
+      0.1 &amp;    0.1&amp;     3.960396 &amp;     0.398019 
+      0.1 &amp;    0.2&amp;     3.846153 &amp;     0.788347 
+      \hline
+    \end{tabular}</p>
+      <p>Now find the approximations and errors when <m>n=10</m>, <m>n=20</m> and
+  <m>n=40</m>.  Record your observations below.</p>
+      <p>\begin{tabular}{|c|c|c|}
+      \hline
+      <m>\Delta x</m> &amp; Approximation &amp; Error 
+      \hline
+      0.1 &amp;  &amp;   
+      0.05 &amp; &amp;  
+      0.025 &amp; &amp; 
+      \hline
+    \end{tabular}</p>
+      <p>\item[4.]  Now summarize your results by building a table of the
+  errors in the three methods.</p>
+      <p>\begin{tabular}{|c|c|c|c|}
+      \hline
+      <m>\Delta x</m> &amp; Error in right endpoints &amp; Error in Midpoint Rule &amp; 
+      Error in Trapezoidal rule 
+      \hline
+      0.1 &amp; &amp; &amp; 
+      0.05 &amp; &amp; &amp; 
+      0.025 &amp; &amp; &amp; 
+      \hline
+    \end{tabular}</p>
+      <p>Describe anything that you notice.  In particular, consider what
+  happens when you half <m>\Delta x</m>.  By approximately what factor does
+  the error decrease when you use right endpoints?  when you use midpoints?
+  when you use trapezoids?   Which method or methods are better for
+  approximating definite integrals?  Explain your findings by
+  considering how the approximations are constructed geometrically.</p>
+      <p>\end{itemize}</p>
+    </statement>
+  </exercise>
+
+</worksheet>

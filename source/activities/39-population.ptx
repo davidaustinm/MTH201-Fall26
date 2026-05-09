@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Population Growth</title>
+
+  <exercise>
+    <task workspace="1.5in">
+      <statement>
+        <p>Let's begin with a simple model for how the Earth's population will
+  evolve.  For a first guess, we will suppose that
+  \begin{quote}
+    <em>the rate of change of the population is proportional to the
+      population</em>.  
+  \end{quote}</p>
+        <p>In mathematical notation, this assumption may be written
+  <md>\frac{dP}{dt}=kP.</md>
+  What is the solution to this differential equation with <m>P(0)=P_0</m>?
+  (We've done this several times.)</p>
+      </statement>
+    </task>
+    <task workspace="0.5in">
+      <statement>
+        <p>The quantity <md>k=\frac{\frac{dP}{dt}}{P}</md> is often called the per
+  capita growth rate.  It measures how much of the rate of change of
+  <m>P</m> is due to a single person.</p>
+        <p>Here is some data.  Use it to estimate the per capita growth
+  rate.  (The population is given in billions.)</p>
+        <p>\begin{tabular}{|c|c|}
+      \hline
+      Year &amp; Population <m>P(t)</m> 
+      \hline
+      1970 &amp; 3.70 
+      1980 &amp; 4.44 
+      1990 &amp; 5.27 
+      \hline
+    \end{tabular}</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Suppose we say that <m>t=0</m> corresponds to the year 1980.
+  What function satisfies the assumption we've made?</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>What does this predict for the population in the year 2080?
+  2180?  2580?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Does this seem like a reasonable model for population growth?
+  Explain why or why not.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Our original model where <m>dP/dt = kP</m> is clearly not useful for
+  making long-term predictions.  Realistically, we don't expect the
+  per capita growth rate <m>k</m> to be constant.  It would probably make
+  more sense to imagine that the per capita growth rate decreases when
+  the population becomes very large.  In our new model, we will assume
+  that the per capita growth rate is a linearly decreasing function
+  <md>
+  \frac{\frac{dP}{dt}}P = k(N-P).
+  </md></p>
+        <p>Here is some more data for the world's population.
+  Complete the table by estimating the derivative
+  <m>dP/dt</m> as the average rate of change of the population over 10 year
+  intervals.  Then find the per capita growth rate.</p>
+        <p>\begin{tabular}{|c|c|c|c|}
+      \hline
+      Year &amp; Population <m>P(t)</m> &amp; <m>dP/dt</m> &amp; <m>\frac 1PdP/dt</m> 
+      \hline
+      1960 &amp; 3.02\vphantom{\Huge M} &amp; --- &amp; --- 
+      1970 &amp; 3.70\vphantom{\Huge M}  &amp;  &amp;  
+      1980 &amp; 4.44\vphantom{\Huge M}  &amp; &amp; 
+      1990 &amp; 5.27\vphantom{\Huge M}  &amp; &amp; 
+      2000 &amp; 6.06\vphantom{\Huge M}  &amp; --- &amp; --- 
+      \hline
+    \end{tabular}</p>
+        <p>For your three data points, plot the per capita growth rate versus
+  the population below:</p>
+        <p>%    \epsfbox[100 400 300 550]{popgraph.eps}
+    <image source="figures/popgraph.eps"/></p>
+        <p>Now sketch in a straight line that seems to best fit your data and
+  use this to determine the constants <m>k</m> and <m>N</m> in the logistic
+  equation.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the differential equation for <m>dP/dt</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Sketch the rate of change <m>dP/dt</m> as a function of <m>P</m>.
+  (Don't worry about the scale on the axes.  We're just interested in
+  the shape.)</p>
+        <p>For what values of the population is <m>dP/dt =0</m>?
+  What does this mean?</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Based upon your graph, for what values of the population
+  will the population increase?  For what values will it decrease?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What does this predict about the Earth's population?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

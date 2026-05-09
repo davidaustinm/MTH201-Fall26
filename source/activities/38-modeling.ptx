@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Modeling with Differential Equations</title>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>A drug is absorbed from your bloodstream at a rate proportional to
+  the amount in your bloodstream.  That is, if <m>Q</m> is the quantity of
+  the drug in your bloodstream, the rate of change of <m>Q</m> is
+  proportional to <m>Q</m>.  Write this as a differential equation using
+  <m>k</m> as the constant of proportionality.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Solve the differential equation with an initial value <m>Q(0)=Q_0</m>.
+  If the half-life of the drug is 8 hours, find the value of <m>k</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Now suppose that the drug is administered to you intravenously at
+  the rate of 2 milligrams per hour.  Set up a differential equation
+  that describes the amount <m>Q(t)</m> of the drug in your bloodstream.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find any equilibrium solutions and determine whether they are stable
+  or unstable.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Solve the differential equation assuming <m>Q(0)=0</m>, meaning that
+  the drug is not present in your bloodstream.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>How long does it take for <m>Q</m> to get to 90% of the equilibrium?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose you're a doctor and would like your patient to have a stable
+  amount of 50 mg in their bloodstream.  At what rate should you
+  administer the drug intravenously?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1.5in">
+      <statement>
+        <p>The half-life of a particular cough suppressant is 3.8 hours.
+  Assuming that the rate at which the medicine is absorbed from
+  your bloodstream is proportional to the amount in your bloodstream
+  and that you take a 10 mg dose, find the amount in your bloodstream
+  <m>t</m> hours later.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>How long until there is only 1 mg in your bloodstream?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

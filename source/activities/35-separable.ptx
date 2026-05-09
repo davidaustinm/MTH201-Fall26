@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Separable Differential Equations</title>
+
+  <exercise>
+    <task workspace="2in">
+      <statement>
+        <p>Over time, a sample of a radioactive material will decay at a
+  rate proportional to its mass.  If we call <m>M(t)</m> the mass of the
+  radioactive substance, we can express this fact by
+  <md>
+  \frac{dM}{dt}=-kM.
+  </md></p>
+        <p>Find the general solution of the differential equation.  (Your
+  solutions will depend on the constant of proportionality <m>k</m>.)</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Now find the solution where the initial mass <m>M(0)=M_0</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>The half-life of a radioactive substance is the amount of time
+  required for half the mass to decay.  Carbon-14 has a half-life of
+  5730 years.  What is the value of <m>k</m> for Carbon-14?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If the mass of a Carbon-14 sample is initially 20 grams, how long
+  does it take until there are only 5 grams left?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose you have an investment account that earns interest at
+  the rate of  7% compounded continuously.  Call <m>M(t)</m> the amount of
+  money in the account.  This means that <m>M</m> changes at the rate of
+  7% of <m>M</m>.  Write this fact as a differential equation that
+  describes how the amount of money changes</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Now suppose that you withdraw money at the rate of $10,000 dollars a
+year from the account.  How does this change your differential
+equation?</p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>Find the general solution to this differential equation.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Find the solution that corresponds to an initial value of $100,000 in
+the account.  How long does it take  
+until all the money has been withdrawn?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the smallest amount of money you would need to live off the
+interest indefinitely?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>When a drug is present in
+  a patient's blood stream, it is typically absorbed by the body (and
+  hence taken out of the bloodstream) at a
+  rate proportional to the amount in the blood stream.</p>
+        <p>Let <m>Q(t)</m> be the amount of a drug in a patient's bloodstream.
+  Write a differential equation that expresses the fact that the rate
+  at which the drug leaves the bloodstream is proportional to the
+  amount in the bloodstream.  Use <m>k</m> as a constant of
+  proportionality.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the solution to the differential equation with an initial
+  amount <m>Q(0) = Q_0</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If the half-life of a particular drug is 10 hours, find the constant
+  <m>k</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Now suppose that a drug is being given intraveneously at the rate of
+  2 milligrams per hour.  Write a differential equation that describes
+  the rate of change of <m>Q</m>.  (Just we have seen before, the rate of
+  change is the rate at which the drug enters the bloodstream minus
+  the rate at which it leaves.)</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Assuming that the drug is not initially present in the patient,
+  solve the differential equation for <m>Q</m> and explain what happens
+  after a long time.</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

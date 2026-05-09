@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Review</title>
+
+  <exercise>
+    <task workspace="0.9in">
+      <statement>
+        <p>Shown below on the left is the graph of a function <m>g(t)</m>.</p>
+        <p><image source="figures/50-ftc.eps"/></p>
+        <p><image source="figures/50-ftc-empty.eps"/></p>
+        <p>We will define a new function by
+  <md>
+  A(x) = \int_1^x g(t)~dt.
+  </md></p>
+        <p>What is the value of <m>A'(3)</m>?  Explain your response.</p>
+      </statement>
+    </task>
+    <task workspace="0.9in">
+      <statement>
+        <p>What is the value of <m>A(2)?</m>  Explain your response.</p>
+      </statement>
+    </task>
+    <task workspace="0.9in">
+      <statement>
+        <p>On what intervals is <m>A</m> increasing and one which is it decreasing?</p>
+      </statement>
+    </task>
+    <task workspace="0.9in">
+      <statement>
+        <p>Determine any relative maxima and minima of <m>A(x)</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the exact values of <m>A(x)</m> to complete the table below.</p>
+        <p>\begin{tabular}{|c||c|c|c|c|c|c|c|c|}
+      \hline
+      <m>x</m> \vphantom{\Huge M}&amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 
+      \hline
+      <m>A(x)</m> \vphantom{\Huge M}
+                            &amp; 
+                                &amp; 
+                                    &amp; 
+                                        &amp; 
+                                            &amp; 
+                                                &amp; 
+                                                    &amp; 
+                                                        &amp;  
+      \hline
+    \end{tabular}</p>
+        <p>Sketch a graph of <m>A(x)</m> on the right above.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>The <em>Fresnel integral function</em> is defined by
+  <md>
+  S(x) = \int_0^x \sin(t^2)~dt
+  </md>
+  and is used in the study of optics.</p>
+        <p>What is <m>S(0)</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Use some computational device (maybe your calculator or Desmos) to 
+  estimate <m>S(1)</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is <m>S'(1)</m>?  Is <m>S(x)</m> increasing or decreasing at <m>x=1</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>By looking at a graph of <m>S'(x)</m>, find the first relative maximum to
+  the right of <m>x=0</m>.  What is the 
+  value of <m>S</m> at this relative maximum?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the first relative minimum to the right of <m>x=0</m>.  What is the
+  value of <m>S</m> at this relative maximum?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the second relative maximum to the right of <m>x=0</m> and the value
+  of <m>S</m> at this relative maximum.</p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>Sketch the graph of <m>S(x)</m> below.</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

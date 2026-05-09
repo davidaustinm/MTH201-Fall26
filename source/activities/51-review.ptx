@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Review</title>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Find the following antiderivatives:</p>
+        <p><m>\displaystyle\int\frac{1}{(3x+4)^3}~dx</m></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p><m>\displaystyle\int x\ln x~dx</m></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p><m>\displaystyle\int \cos^7(2t)\sin(2t)~dt</m></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p><m>\displaystyle\int \frac{3}{t^2+1}~dt</m></p>
+        <p>%</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>%<m>\displaystyle\int \arctan(t)~dt</m></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p><m>\displaystyle\int \frac{\ln x}{x}~dx</m></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p><m>\displaystyle\int x^2 e^{2x}~dx</m></p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1.5in">
+    <statement>
+      <p>Consider the shaded region below bounded by the curves
+<m>y = x - 1</m> and <m>x=y^2 - 1</m>.  Set up an integral that gives the shaded
+area and then evaluate it.</p>
+      <p><image source="figures/51-area.eps"/></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.5in">
+    <statement>
+      <p>The shaded region below is bounded by the graphs <m>y=x</m> and
+  <m>y=\sqrt{x}</m>.  Find the volume of the solid that results from
+  spinning this region about the <m>x</m>-axis.</p>
+      <p><image source="figures/51-volume.eps"/></p>
+      <p>Set up an integral to find the volume obtained by spinning about the
+line <m>x=-2</m>.</p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose you define the function
+<md>C(x) = \int_0^x \cos(t^2)~dt.</md></p>
+        <p>What is the value of <m>C(0)</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the value of <m>C'(1)</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the value of <m>C''(1)</m>?  Is the graph of <m>C</m> concave up or down
+at <m>x=1</m>?</p>
+      </statement>
+    </task>
+    <task workspace="0.9in">
+      <statement>
+        <p>Find a point where <m>C</m> has a relative maximum.  Find another where <m>C</m>
+has a relative minimum.</p>
+      </statement>
+    </task>
+    <task workspace="0.9in">
+      <statement>
+        <p>Where does <m>C</m> have its absolute maximum and where does it have its
+absolute minimum?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Use the Midpoint Rule to approximate <m>C(2)</m> using <m>n=4</m> rectangles.</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

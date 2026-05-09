@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Second Fundamental Theorem of Calculus (Section 5.2)</title>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Shown below on the left is the graph of a function <m>g(t)</m>.</p>
+        <p><image source="figures/03-ftc-graph.eps"/></p>
+        <p><image source="figures/03-ftc-graph-empty.eps"/></p>
+        <p>We will define a new function by
+  <md>
+  A(x) = \int_1^x g(t)~dt.
+  </md></p>
+        <p>Let's begin by evaluating <m>A(2) = \int_1^2g(t)~dt</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the exact values of <m>A(x)</m> to complete the table below.</p>
+        <p>\begin{tabular}{|c||c|c|c|c|c|c|c|c|}
+      \hline
+      <m>x</m> \vphantom{\Huge M}&amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 
+      \hline
+      <m>A(x)</m> \vphantom{\Huge M}
+                            &amp; 
+                                &amp; 
+                                    &amp; 
+                                        &amp; 
+                                            &amp; 
+                                                &amp; 
+                                                    &amp; 
+                                                        &amp;  
+      \hline
+    \end{tabular}</p>
+        <p>Sketch a graph of <m>A(x)</m> on the right above.</p>
+        <p>On what intervals is <m>A</m> increasing and how does this relate to the
+  behavior of <m>g</m>?  Also, on what intervals is 
+  <m>A</m> decreasing?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Where does <m>A</m> have a relative minimum or maximum?  How is this
+  related to the value of <m>g</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Remembering that <m>A</m> is an antiderivative of <m>g</m>, what is the value
+  of the derivative <m>A'(1)</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>%</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="0.75in">
+      <statement>
+        <p>Suppose that <m>g</m> is the function whose graph is shown on the
+%   left below and that we define
+%   <md>
+%   A(x)= \int_1^x g(t)~dt.
+%   </md></p>
+        <p>%   
+%     <image source="figures/04-ftc-example-1.eps"/>
+%     
+%     <image source="figures/04-ftc-example-2.eps"/>
+%</p>
+        <p>%   What is the value <m>A(2)</m>?  Explain your thinking.</p>
+        <p>%</p>
+      </statement>
+    </task>
+    <task workspace="0.75in">
+      <statement>
+        <p>%   What is the value <m>A'(2)</m>?  Explain your thinking.</p>
+        <p>%</p>
+      </statement>
+    </task>
+    <task workspace="0.75in">
+      <statement>
+        <p>%   Is <m>A</m> increasing or decreasing at <m>x=2</m>?  Explain your thinking.</p>
+        <p>%</p>
+      </statement>
+    </task>
+    <task workspace="0.75in">
+      <statement>
+        <p>%   On what interval(s) is <m>A</m> increasing?  decreasing?</p>
+        <p>%</p>
+      </statement>
+    </task>
+    <task workspace="0.75in">
+      <statement>
+        <p>%   
+%   On what interval(s) is <m>A</m> concave down?  concave up?</p>
+        <p>%</p>
+      </statement>
+    </task>
+    <task workspace="0.75in">
+      <statement>
+        <p>%   Where does <m>A</m> have a relative minimum?  relative maximum?</p>
+        <p>%</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>%   What is the maximum value of <m>A</m> on the interval <m>[-1,4]</m> and where
+%   does it occur?  What is
+%   the minimum value and where does it occur?</p>
+        <p>%</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>%   Sketch an accurate graph of <m>A</m> on the right above.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>The <em>Fresnel integral function</em> is defined by
+  <md>
+  S(x) = \int_0^x \sin(t^2)~dt
+  </md>
+  and is used in the study of optics.</p>
+        <p>What is <m>S(0)</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Use some computational device (maybe your calculator or Desmos) to 
+  estimate <m>S(1)</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is <m>S'(1)</m>?  Is <m>S(x)</m> increasing or decreasing at <m>x=1</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the first relative maximum to the right of <m>x=0</m>.  What is the
+  value of <m>S</m> at this relative maximum?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the first relative minimum to the right of <m>x=0</m>.  What is the
+  value of <m>S</m> at this relative maximum?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the second relative maximum to the right of <m>x=0</m> and the value
+  of <m>S</m> at this relative maximum.</p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>Sketch the graph of <m>S(x)</m> below.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>The function
+  <md>
+  E(x) = \int_0^x e^{-t^2}~dt
+  </md>
+  appears frequently in probability and statistics and is closely
+  related to an important function called the <em>error function</em>.</p>
+        <p>What is the derivative <m>E'(1)</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Use some computational device to
+  estimate the value <m>E(1)</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Explain why <m>E</m> is an always increasing function.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Sketch the graph of <m>E(x)</m> below.</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

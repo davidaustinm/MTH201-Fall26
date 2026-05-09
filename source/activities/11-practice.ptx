@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Antidifferentiation practice</title>
+
+  <exercise workspace="1.35in">
+    <statement>
+      <p>Find antiderivatives of the following:</p>
+      <p><m>\ds\int \frac{1}{(2x-3)^3}~dx</m></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.35in">
+    <statement>
+      <p><m>\ds\int \frac{\cos(x)}{\sin(x)-3}~dx</m></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.35in">
+    <statement>
+      <p><m>\ds\int x\sin(2x)~dx</m></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.35in">
+    <statement>
+      <p><m>\ds\int \frac{1}{1+4x^2}~dx</m></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.25in">
+    <statement>
+      <p><m>\ds\int \frac{x}{x^2-1}~dx</m></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.45in">
+    <statement>
+      <p><m>\ds\int x\sqrt{x^2+a^2}~dx</m> where <m>a</m> is some unknown constant</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.45in">
+    <statement>
+      <p><m>\ds\int \frac{1}{r^2-4}~dr</m></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.45in">
+    <statement>
+      <p><m>\ds\int \frac{1}{\sqrt{x}(1+x)}~dx</m></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.45in">
+    <statement>
+      <p><m>\ds\int (1-t)^9~dt</m></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.45in">
+    <statement>
+      <p><m>\ds\int t^3\ln(t)~dt</m></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.35in">
+    <statement>
+      <p><m>\ds\int z^2e^{-z}~dz</m></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.35in">
+    <statement>
+      <p><m>\ds\int 3xe^{-x^2}~dx</m></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p><m>\ds\int (2t+3)e^t~dt</m></p>
+    </statement>
+  </exercise>
+
+</worksheet>

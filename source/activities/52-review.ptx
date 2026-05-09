@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Final Review</title>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose you have a beam that is 50 centimeters long and whose
+  density <m>x</m> centimeters from the 
+  left end is <m>\rho(x) = \sin(\pi x/100)</m> grams per centimeter.</p>
+        <p>Draw a long thin beam along with a representative slice whose width
+  is <m>dx</m>.  What is the mass of this slice?</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Find the total mass of the beam.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Find the center of mass of the beam.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Where should you cut the beam so that the two pieces have equal
+  mass?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1.5in">
+      <statement>
+        <p>Suppose you have a cylindrical water tank, which is 5 meters tall
+  and has a radius of 2 meters, which is filled to a depth of 3
+  meters.  Sketch this situation and draw a representative slice whose
+  height is <m>dy</m>.  What is the volume of this slice?  What is the mass
+  of this slice (the density of water is 1000 kg/m<m>^3</m>)?</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>How much work is required to raise this slice of water to the top of
+  the tank?</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>How much work is required to pump the water out to the top
+  of the tank?</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Suppose now that the density of the water <m>y</m> meters above the
+  bottom of the tank is <m>1000 - 10y</m> kg per cubic meter.
+  Find the total mass of the water.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Find the center of mass of the water in the tank.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the amount of work required to pump it all to the top of the tank.</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

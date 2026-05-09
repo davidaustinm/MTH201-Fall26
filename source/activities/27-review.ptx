@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Review of some applications</title>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose you find that the density of a beam is <m>\rho(x) = 4x +
+  3</m> grams per centimeter and that the beam occupies the region <m>0\leq
+  x \leq 5</m> where <m>x</m> is measured in centimeters.</p>
+        <p>What does <m>\rho(x)~dx</m> measure?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the total mass.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the center of mass.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="2in">
+      <statement>
+        <p>Suppose that you have a water tank in the shape of a cone (the
+  tip is pointing downwards);  the radius of the cone is 3 meters and
+  the height is 10 meters.  Water is filled to a level of 4 meters.</p>
+        <p>Find the volume of water in the tank.</p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>Find the work required to pump all the water to the top of the tank.
+  (The density of water is 1000 kilograms per cubic meter.)</p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>Suppose that the pump you are using 
+  delivers 100,000 Joules of work and then breaks down.  What is
+  the height of water in the tank when it breaks down?</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>What is the volume of water pumped out before the pump breaks?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose you make a career out of repairing water pumps, which
+  allows you to put money continuously into an investment account at
+  the rate of $5000 per year.  The account earns interest
+  continuously at the rate of 6% per year.</p>
+        <p>How much money do you put into the account during a very
+  short time interval of <m>dt</m> years?  If this money is put in the
+  account <m>t</m> years after you start working, how much is it worth 10
+  years after you start working?</p>
+      </statement>
+    </task>
+    <task workspace="1.25in">
+      <statement>
+        <p>How much money is in the account 10 years after you start working?</p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>How long do you have to work before there is $200,000 in the
+  account?</p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>After five years of working, you find a new account that earns
+  7% interest.  At this time, you transfer everything from the old
+  account into the new one, and you begin putting the $5000 per year
+  into the new account.  How much money do you have 20 years after you
+  start working?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose you conduct a scientific study in which you measure the
+  amount of time it takes a pot of water to boil.  Your data is
+  summarized by the probability density function 
+  <md>p(t) = \frac{C}{1+t^2},
+  </md>
+  where <m>t</m> is measured in minutes.  The range of possible outcomes is
+  <m>0\leq t &lt; \infty</m>.</p>
+        <p>What is the value of <m>C</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What percentage of the pots have boiled after 1.5 minutes?</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>What is the cumulative distribution function <m>C(s)</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>What is the median time it takes for a pot to boil?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What percentage of pots have boiled before the median time?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the mean (or average) time it takes for a pot to boil?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

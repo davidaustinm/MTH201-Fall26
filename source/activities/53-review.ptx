@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Final Review</title>
+
+  <exercise>
+    <task workspace="1.25in">
+      <statement>
+        <p>The probability density function <m>p(t)=\frac13e^{-t/3}</m>
+  describes the amount of time, in minutes, you wait to talk to a
+  representative when you call your bank.</p>
+        <p>Find the cumulative distribution function.  What does
+  this function tell us?</p>
+      </statement>
+    </task>
+    <task workspace="1.25in">
+      <statement>
+        <p>Find the median waiting time.</p>
+      </statement>
+    </task>
+    <task workspace="1.25in">
+      <statement>
+        <p>Find the average waiting time.</p>
+      </statement>
+    </task>
+    <task workspace="1.25in">
+      <statement>
+        <p>What percentage of people wait less time than the average?</p>
+      </statement>
+    </task>
+    <task workspace="1.25in">
+      <statement>
+        <p>What percentage of people wait less time than the median?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Students are given a three-hour test and you record the length
+  of time it takes students to complete the test.  The cumulative
+  distribution is given by <m>C(t) = t^3/27.</m></p>
+        <p>What is the median time it takes for students to complete the test?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If you finish in 2 hours, what percentage of students have finished
+  before you?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the probability density function <m>p(t)</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>The first quartile is the time at which 25% of students have
+  finished the exam, and the third quartile is when 75% have.  Find
+  these times.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the average time it takes for students to finish the exam.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1.75in">
+      <statement>
+        <p>Consider the differential equation
+  <md>
+  \frac{dy}{dt} = 4y - y^3.
+  </md></p>
+        <p>Sketch a slope field for this equation and identify any equilbrium
+  solutions.  For each equilbrium, determine whether it is stable or
+  unstable.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>If <m>y(0) = 1</m>, use Euler's method with a step size of 0.1 to
+  estimate the value <m>y(0.4)</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="2in">
+      <statement>
+        <p>Find the solution to the following initial value problems.</p>
+        <p><m>\bullet\,\, \frac{dy}{dt} = 6-y, \hspace*{24pt} y(0) = 3</m></p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p><m>\bullet\,\, \frac{dy}{dt} = \frac1y, \hspace*{24pt} y(0) = 2</m></p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

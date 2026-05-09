@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Finance</title>
+  <introduction>
+    <p>Remember that if you invest <m>P</m> dollars at an annual interest rate <m>r</m>
+compounded continuously, then after <m>T</m> years, you will have
+<md>
+Pe^{rT}\hbox{ dollars.}
+</md></p>
+  </introduction>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose that you invest $1000 at 7%.  How much will you have
+  after 10 years?</p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <task workspace="0.7in">
+      <statement>
+        <p>After you successfully finish Math 202, you get a job computing
+  volumes all day, and you are able to save $10,000 a year (this is
+  called an <em>income stream</em>).</p>
+        <p>Suppose that you will retire in 30 years, continually saving
+  $10,000 a year and investing it in an account at an annual interest
+  rate of 7%.  We would like to determine how much money you will
+  have at the end of 30 years.</p>
+        <p>Shown below is a representation of the 30-year interval during which
+  you will be working.  Time <m>t</m> represents the amount of time since you
+  start working.</p>
+        <p><image source="figures/timeline.eps"/></p>
+        <p>In the timeline above, a time interval of length <m>dt</m> is shown.  How
+  much money do you save during this time interval of length <m>dt</m>?</p>
+      </statement>
+    </task>
+    <task workspace="0.7in">
+      <statement>
+        <p>If you deposit this money <m>t</m> years after you start working, how
+  long is in the account before your retirement?</p>
+      </statement>
+    </task>
+    <task workspace="0.7in">
+      <statement>
+        <p>How much is it worth when you retire?</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>What is the total amount of money that you have when you retire?  This
+  is called the <em>future value</em> of the income stream.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>On the day you begin working, you learn that you've won the lottery.
+  Your first thought is to quit work and invest the winnings at 7%.
+  How much would you need to have won so that, after 30 years, you have
+  the same amount you would have had if you worked and saved?  This is
+  called the <em>present value</em> of the income stream.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>Let's imagine a different scenario: the longer you work, the
+  more money you make and hence the more money you save.  For instance,
+  suppose that you save at a rate of <m>P(t) = 10,000+1000t</m> dollars per
+  year.  How much will you have when you retire after 30 years?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>If you would like to retire after 25 years with one million
+  dollars, at what constant rate should you save money?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.5in">
+    <statement>
+      <p>Suppose that you save $5000 per year and
+  you want to retire with one million dollars.  How long do you need
+  to work?</p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <task workspace="0.7in">
+      <statement>
+        <p>Suppose that in your work for an oil company, you discover an
+  oil field.  Initially, it is easy to take oil from the field, but it
+  becomes more difficult over time.  Therefore, the rate at which you
+  can extract oil is
+  <md>
+  r(t) = 10 - 0.5t
+  </md>
+  millions of barrels per year.</p>
+        <p>How long does it take to remove all the oil?</p>
+      </statement>
+    </task>
+    <task workspace="0.7in">
+      <statement>
+        <p>How much oil is there in the field?</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>Assuming that the price of oil stays constant at $50 per barrel and
+  an annual investment interest rate of 8%, what is the future value
+  of the oil field?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose you want to sell the oil field.  Why would you want to know
+  the present value of the field?  What is the present value?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Modeling with Differential Equations</title>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose you have a tank that holds a 100 liters of pure water.  At
+some point, you turn on a faucet that causes salt water to flow into
+the tank.  Three liters flow in every minute and there are 20 grams
+of salt in every liter.  At the same time, you begin to drain water
+out of the tank at the rate of 3 liters per minute.</p>
+        <p>Using this information, I we can find a differential equation for
+<m>S(t)</m>, the number of grams of salt in the tank as a function of time.
+%<em>Think in terms of rates!</em></p>
+        <p><em>Important:</em>  To set up the equation, think in terms of rates!</p>
+        <p>How many grams of salt enters the tank every minute?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Let's now try to figure out how much salt flows out of the
+tank.  Remember that <m>S</m> measures the amount of salt in the tank.</p>
+        <p>If there are <m>S</m> grams of salt in the tank, what is the
+concentration of salt?  That is, how many grams are in each liter?
+(Assume that the water is well mixed.)</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If three liters of solution are drained out every minute, at what
+  rate is salt leaving the tank?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Now the rate of change of the amount of salt in the tank is
+  the difference of the rate at which salt enters and rate at which
+  salt leaves.  This fact may be expressed as a differential equation.
+  Write this differential equation below.</p>
+      </statement>
+    </task>
+    <task workspace="2.5in">
+      <statement>
+        <p>Sketch a graph of <m>dS/dt</m> as a function of <m>S</m> and use it to give a
+  rough sketch of the slope field.  On the slope field, sketch the the
+  solution that corresponds to the initial value <m>S(0) = 0</m>.</p>
+      </statement>
+    </task>
+    <task workspace="3in">
+      <statement>
+        <p>Find <m>S(t)</m> if there is initially no salt in the tank.
+  That is, find the solution of the differential equation for which
+  <m>S(0)=0</m>.</p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>Sketch your solution below.  What happens to the amount of
+  salt in the tank after a very long time?  Does this agree with what
+  you found using the slope field?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>When a baby is small, she grows rapidly.  However, as she
+  grows, the rate of growth slows down.  A simple model is that the
+  rate of change in the baby's weight is <em>inversely</em> proportional
+  to the baby's weight.  If we let <m>w(t)</m> be the baby's weight as a
+  function of <m>t</m>, write a   simple differential equation that
+  expresses this assumption.</p>
+      </statement>
+    </task>
+    <task workspace="2.5in">
+      <statement>
+        <p>Assume that at birth, the baby weighs 8 pounds and one month later,
+  she weighs 20 pounds.  That is, <m>w(0)=8</m> and <m>w(1)=20</m>.  Solve the
+  differential equation you found above and sketch the solution.</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

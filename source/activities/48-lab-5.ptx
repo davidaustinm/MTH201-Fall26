@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Lab 5:  Taylor Series</title>
+  <introduction>
+    <p>\begin{tabular}{ll}
+\begin{tabular}{l}</p>
+    <p><term>Due:  April 15</term></p>
+    <p>\end{tabular}</p>
+    <p>\begin{tabular}{l}
+%
+Names: \hrulefill  
+\hphantom{Names:} \hrulefill 
+\hphantom{Names:} \hrulefill</p>
+    <p>\end{tabular}
+\end{tabular}</p>
+    <p><term>Instructions:</term> The exercises here should be completed in groups
+of 2 or 3 students with one write-up submitted from each group.
+You may write directly on this handout.  When asked for an
+explanation, please use complete sentences.  Be sure to include
+everyone's name on the write-up.</p>
+  </introduction>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Remember that we have seen the series
+  <md>
+  \arctan(x) = x - \frac13 x^3 + \frac 15 x^5 + \ldots +
+  (-1)^n\frac1{2n+1} x^{2n+1} + \ldots.
+  </md></p>
+        <p>Write the series to find <m>\arctan(0.8)</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Now set up this up in a Google sheet like this:</p>
+        <p>\begin{tabular}{c|c|c|c}
+      <m>n</m> &amp; <m>x</m> &amp; <m>n^{th}</m> term &amp; Sum of <m>n</m> terms 
+      \hline
+      0&amp;	0.8&amp;	0.8 &amp;	0.8  
+      1&amp;	0.8&amp;	-0.170667 &amp;	0.629333 
+      2&amp;	0.8&amp;	0.065536 &amp;	0.694869 
+      3&amp;	0.8&amp;	-0.029959 &amp;	0.664910 
+      4&amp;	0.8&amp;	0.014913 &amp;	0.679823 
+    \end{tabular}</p>
+        <p>Estimate <m>\arctan(0.8)</m> with an error less than <m>10^{-6}</m> using the
+  alternating series test to determine how many terms you need to do
+  this.  What is your estimate and how many terms do you need to
+  guarantee this accuracy?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Modify your spreadsheet to estimate <m>\arctan(0.9)</m> with an error
+  less than <m>10^{-6}</m> using the 
+  alternating series test to determine how many terms you need to do
+  this.  What is your estimate and how many terms do you need to
+  guarantee this accuracy?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="3in">
+      <statement>
+        <p>The function
+  <md>
+  C(x) = \int_0^x \cos(t^2)~dt
+  </md>
+  is called the Fresnel integral function and is used in optics.
+  Maybe you've visited a lighthouse in Michigan and seen a ``Fresnel''
+  lens.  This is not an integral that we can evaluate by
+  antidifferentiating.</p>
+        <p>Start with the Taylor series for the cosine function and use it to
+  write a Taylor series for <m>C(x)</m>.  Be sure to write the general
+  <m>n^{th}</m> term.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Now set up a Google sheet to estimate <m>C(1)</m> with an error less than
+  <m>10^{-6}</m>.  Use the alternating series test to guarantee this
+  accuracy.  How many terms do you need?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="3in">
+      <statement>
+        <p>The function
+  <md>
+  E(x) = \int_0^x e^{-t^2}~dt
+  </md>
+  is important in statistics as it relates to the ``normal
+  distribution'' or bell curve.  Once again, we can't evaluate this
+  integral by antidifferentiating.</p>
+        <p>Start with the Taylor series for the cosine function and use it to
+  write a Taylor series for <m>e^x</m>.  Be sure to write the general
+  <m>n^{th}</m> term.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Now set up a Google sheet to estimate <m>E(1)</m> with an error less than
+  <m>10^{-6}</m>.  Use the alternating series test to guarantee this
+  accuracy.  What is your estimate and how many terms do you need?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Modify your Google sheet to estimate <m>E(2)</m> with an error less than
+  <m>10^{-6}</m>.  Use the alternating series test to guarantee this
+  accuracy.  What is your estimate and how many terms do you need?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

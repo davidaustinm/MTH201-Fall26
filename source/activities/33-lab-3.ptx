@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Lab 3:  Euler's Method</title>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>\begin{tabular}{ll}
+\begin{tabular}{c}</p>
+      <p><term>Due:  March 20</term></p>
+      <p>\end{tabular}</p>
+      <p>\begin{tabular}{l}
+%
+Names: \hrulefill  
+\hphantom{Names:} \hrulefill 
+\hphantom{Names:} \hrulefill</p>
+      <p>\end{tabular}
+\end{tabular}</p>
+      <p><term>Instructions:</term> The exercises here should be completed in groups
+of 2 or 3 students with one write-up submitted from each group.
+You may write directly on this handout.  When asked for an
+explanation, please use complete sentences.  Be sure to include
+everyone's name on the write-up.</p>
+      <p>We have used Euler's method to help us approximate
+solutions to differential equations.  Today we will use spreadsheets to
+implement Euler's method (``Oiler's method'').</p>
+      <p>Remember:  the derivative <m>dy/dt</m> gives the instantaneous rate of
+change.  When we move forward in time, the change in <m>y</m> is
+approximately</p>
+      <p><m>\Delta y \approx dy/dt</m> <m>\times</m> Change in time</p>
+      <p>\begin{itemize}
+\item[1.]
+We'll begin by considering the differential equation
+<md>
+\frac{dy}{dt} =  2y</md>
+with the initial value <m>y(0) = 3</m>.
+%and a step size of <m>h = 0.5</m>.
+We would like to approximate the solution over the interval <m>0\leq
+t\leq 1</m>.</p>
+      <p>Verify that <m>y(t) = 3e^{2t}</m> is a solution to this differential
+equation with the appropriate initial value.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Since we now have an explicit formula for the solution, we don't
+really need to build a numerical approximation to the solution.
+However, this is a good problem to start with since we can test the
+accuracy of our approximation.</p>
+      <p>We will walk from <m>t=0</m> to <m>t=1</m> taking steps of size <m>h=0.1</m>;  that
+is, we will approximate the solution at <m>t=0.1, 0.2, 0.3, \ldots, 1</m>.
+We can do the first steps as follows.</p>
+      <p>Since <m>y(0) = 3</m> and <m>dy/dt = 2y</m>, what is <m>dy/dt</m> at this time?  By
+approximately  
+how much does <m>y</m> change when we move from <m>t=0</m> to <m>t=0.1</m>?
+Approximately what is <m>y(0.1)</m>?</p>
+      <p>Now we have an approximation for <m>y(0.1)</m>.  What is <m>dy/dt</m> at this
+time?  By approximately how much does <m>y</m> change when we move from
+<m>t=0.1</m> to <m>t=0.2</m>?  Approximately what is <m>y(0.2)</m>?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="0.5in">
+    <statement>
+      <p>Now we will build a Google sheet that continues this approximation
+process as shown below. 
+Remember that the differential equation gives the slope of the tangent
+lines.</p>
+      <p>\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+<m>h</m> &amp; <m>t</m> &amp; <m>y</m> &amp;  <m>dy/dt</m>   &amp;  <m>\Delta y</m> &amp; Exact solution 
+\hline
+  0.1000&amp;0.0000&amp;3.0000&amp;6.0000&amp;0.6000&amp;3.0000
+  0.1000&amp;0.1000&amp;&amp;&amp;&amp;
+  0.1000&amp;0.2000&amp;&amp;&amp;&amp;
+  0.1000&amp;0.3000&amp;&amp;&amp;&amp;
+\hline
+\end{tabular}</p>
+      <p>Now that you have the change in <m>y</m>, how do you find the next value,
+<m>y(0.1)</m>?</p>
+      <p>\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+<m>h</m> &amp; <m>t</m> &amp; <m>y</m> &amp;  Slope   &amp; <m>\Delta y</m> &amp; Exact solution 
+\hline
+  0.1000&amp;0.0000&amp;3.0000&amp;6.0000&amp;0.6000&amp;3.0000
+  0.1000&amp;0.1000&amp;3.6000&amp;&amp;&amp;
+  0.1000&amp;0.2000&amp;&amp;&amp;&amp;
+  0.1000&amp;0.3000&amp;&amp;&amp;&amp;
+\hline
+\end{tabular}</p>
+      <p>Now continue this process:</p>
+      <p>\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+<m>h</m> &amp; <m>t</m> &amp; <m>y</m> &amp;  Slope   &amp; <m>\Delta y</m> &amp; Exact solution 
+\hline
+  0.1000&amp;0.0000&amp;3.0000&amp;6.0000&amp;0.6000&amp;3.0000
+  0.1000&amp;0.1000&amp;3.6000&amp;7.2000&amp;0.7200&amp;3.6642
+  0.1000&amp;0.2000&amp;4.3200&amp;8.6400&amp;0.8640&amp;4.4755
+  0.1000&amp;0.3000&amp;5.1840&amp;10.3680&amp;1.0368&amp;5.4664
+\hline
+\end{tabular}</p>
+      <p>What 
+does Euler's Method give for the approximate value of <m>y(1)</m>?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="0.5in">
+    <statement>
+      <p>Now repeat using a step size of <m>h = 0.01</m>.  If your worksheet is set
+up efficiently, you should only have to change one entry.  
+What does Euler's
+Method give for the approximate value of <m>y(1)</m>?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="0.5in">
+    <statement>
+      <p>Finally, repeat again using a step size of <m>h = 0.001</m>.  What
+is your approximation for the value of <m>y(1)</m>?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.5in">
+    <statement>
+      <p>Fill in the table below (``Error'' is just the difference in the
+exact value and your approximation):</p>
+      <p>\begin{tabular}{|c|c|c|}
+\hline
+Step size &amp; Approximate Value of <m>y(1)</m> &amp; 
+ Error 
+\hline
+\bm 0.1 &amp; &amp; 
+\bm 0.01 &amp; &amp; 
+\bm 0.001 &amp; &amp; 
+\hline
+\end{tabular}</p>
+      <p>Describe quantitatively how the error changes as the step size changes.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.75in">
+    <statement>
+      <p>\item[2.]  Now we'll consider the differential equation
+<md>
+\frac{dy}{dt} = \frac{1}{10}(6y - y^2)
+</md></p>
+      <p>Plot below a graph of <m>\frac{dy}{dt}</m> versus <m>y</m> and sketch a slope field.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="0.5in">
+    <statement>
+      <p>If we look at the solution with the initial value <m>y(0) = 1</m>, what do
+you expect to happen over a very long time?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="0.5in">
+    <statement>
+      <p>If we look at the solution with the initial value <m>y(0) = 8</m>, what do
+you expect to happen over a very long time?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.5in">
+    <statement>
+      <p>Now build a Google sheet implementing Euler's method to find the
+solution to this differential equation with <m>y(0) = 1</m> using a step
+size of <m>h = 0.1</m> over the range <m>0 \leq t \leq 12</m>.  Plot the
+approximate solution as a function of time and include a sketch below.
+Does this verify your expection from above?  Explain.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.5in">
+    <statement>
+      <p>By looking at the graph of your approximate solution, what is the
+value of <m>y</m> when the slope is the greatest?  Offer an explanation of
+this by looking at your graph of <m>\frac{dy}{dt}</m> versus <m>y</m>.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.0in">
+    <statement>
+      <p>Now look at the solution with <m>y(0) = 8</m>.  If you have your worksheet
+set up efficiently, you should only have to change one entry.  Include
+a sketch of your solution below.  Does the long-term behavior verify
+your expectation?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>\end{itemize}</p>
+    </statement>
+  </exercise>
+
+</worksheet>

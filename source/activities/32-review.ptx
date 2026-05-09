@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Differential Equations Review</title>
+
+  <exercise>
+    <task workspace="0.75in">
+      <statement>
+        <p>The differential equation
+  <md>y'' = -16y</md>
+  describes the height of an object suspended by a spring.  Which of
+  the following functions are solutions of this equation?</p>
+        <p><m>\bullet\, y=-16\sin(t)</m></p>
+      </statement>
+    </task>
+    <task workspace="0.75in">
+      <statement>
+        <p><m>\bullet\, y=-16\sin(4t)</m></p>
+      </statement>
+    </task>
+    <task workspace="0.75in">
+      <statement>
+        <p><m>\bullet\, y=-16\cos(4t)</m></p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="0.75in">
+      <statement>
+        <p>The velocity of a falling object is described by the
+  differential equation
+  <md>
+  v' = 9.8 - 2v.
+  </md>
+  Which of the following functions are solutions of this equation?</p>
+        <p><m>\bullet\, v = 9.8t - t^2</m></p>
+      </statement>
+    </task>
+    <task workspace="0.75in">
+      <statement>
+        <p><m>\bullet\, v = 4.9 + 3e^{-2t}</m></p>
+      </statement>
+    </task>
+    <task workspace="0.75in">
+      <statement>
+        <p><m>\bullet\, v = 4.9</m></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>For what velocities does the velocity increase?  For what velocities
+  does the velocity decrease?</p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>Sketch a slope field for this differential equation.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Identify any equilibrium solutions and determine whether they are
+  stable or unstable.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What does this equilibrium solution mean in terms of the falling
+  object?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose that <m>v</m> is measured in meters per second and <m>t</m> is measured in
+  seconds.  Let's develop a numerical approximation of the solution
+  that has an 
+  initial value of <m>v(0) = 0</m>.  What is the rate of change <m>dv/dt</m> at
+  this time?  What are the units on this rate of change?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If we take time steps of <m>\Delta t = 0.5</m> seconds, by approximately
+  how much does the velocity change from <m>t=0</m> to <m>t=0.1</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the estimate velocity when <m>t=0.1</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Repeat this process to continue estimating the velocity (remember
+  that this is called Euler's method and pronounced ``Oiler's
+  method'')</p>
+        <p>\begin{tabular}{c|c|c|c}
+      <m>t</m> &amp;<m>v</m> &amp; <m>dv/dt</m> &amp; <m>\Delta v</m> 
+      \hline
+      0 &amp; 0 &amp; \bm\bm &amp; \bm\bm 
+      \bm0.1 &amp;&amp;&amp;
+      \bm0.2 &amp;\bm\bm\bm&amp;\bm\bm&amp;\bm\bm
+      \bm0.3 &amp;\bm\bm&amp;\bm\bm&amp;\bm\bm
+      \bm0.4 &amp;\bm\bm&amp;\bm\bm&amp;\bm\bm
+    \end{tabular}</p>
+        <p>Verify that <m>v(t)=4.9-4.9e^{-2t}</m> is the solution to the initial
+  value problem given by this differential equation and the initial
+  condition <m>v(0)=0</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Compare your estimate of <m>v(0.4)</m> to the exact value of <m>v(0.4)</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Convert the following statements into differential equations.</p>
+        <p>\begin{itemize}
+  \item ``The rate of change of the balance of the account equals 6% of
+    the balance.''  Write this as a differential equation for the
+    balance <m>B(t)</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>\item ``The population of a town is decreasing at the rate of 2%
+    per year.''  Write this as a differential equation for the
+    population <m>P(t)</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>\item ``You have a mortgage that grows by 5% every year at the same
+    time that you are decreasing it by paying $10,000 per year.''
+    Write this as a differential equation for <m>M(t)</m>, the balance of
+    the mortgage.
+  \end{itemize}</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

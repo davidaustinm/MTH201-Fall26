@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Numerical Techniques</title>
+
+  <exercise>
+    <task workspace="2in">
+      <statement>
+        <p>A car traveling along a straight road is braking and its
+  velocity is measured at several different points in time, as given
+  in the following table.  Assume that <m>v</m> is continuous, always
+  decreasing, and always decreasing at a decreasing rate, as is
+  suggested by the data.</p>
+        <p>\begin{tabular}{|l|c|c|c|c|c|c|c|}
+      \hline
+      seconds, <m>t</m> &amp; 0 &amp; 0.3 &amp; 0.6 &amp; 0.9 &amp; 1.2 &amp; 1.5 &amp; 1.8 
+      \hline
+      Velocity in ft/sec, <m>v(t)</m> &amp; 100 &amp; 99 &amp; 96 &amp; 90 &amp; 80 &amp; 50 &amp; 0 
+      \hline
+    \end{tabular}</p>
+        <p>Plot the given data below with time on the horizontal axis and the
+  velocity on the vertical axis.</p>
+        <p><image source="figures/numerical-dataplot.eps"/></p>
+        <p>Estimate the total distance traveled on <m>[0,1.8]</m> by computing
+  <m>R_3</m>, <m>T_3</m>, <m>M_3</m>, and <m>S_6</m>.</p>
+        <p><em>Over</em></p>
+        <p>Given what you know about this situation, consider each method
+  and determine whether it is an overestimate or an underestimate or
+  whether you have enough information to determine that.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>What is your best estimate of the average velocity of the car on
+  <m>[0,1.8]</m>?  Why?  What are the units on this quantity?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>The rate at which water flows over a dam is given is measured in
+  cubic feet per second (CFS).  As the floodgates are opened, the flow
+  rate <m>r(t)</m> is given by</p>
+        <p>\begin{tabular}{|c||c|c|c|c|c|c|c|}
+      \hline
+      seconds, <m>t</m> &amp; 0 &amp; 10 &amp; 20 &amp; 30 &amp; 40 &amp; 50 &amp; 60 
+      \hline
+      flow in CFS, <m>r(t)</m> &amp; 2000 &amp; 2100 &amp; 2400 &amp; 3000 &amp; 3900 &amp; 5100 &amp;
+                                                                      6500</p>
+        <p>\hline
+    \end{tabular}</p>
+        <p>Estimate the amount of water released using a midpoint
+  approximation.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Estimate the amount of water released using Simpson's rule.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Estimate the average flow rate.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>Shown below is the layout of a fairway on a golf course where all
+  the measurements are in feet.</p>
+      <p><image source="figures/17-golf.eps"/></p>
+      <p>A pound of fertilizer covers 200 square feet of grass.  Estimate how
+  much fertilizer is required for this fairway.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose you cut a fallen tree, whose length is 10 meters, at
+  1-meter intervals and measure its cross-sectional area <m>A(x)</m> at
+  positions <m>x</m> meters from one end.  Using the following data, apply
+  Simpson's method to estimate the volume of the tree.</p>
+      <p>\begin{tabular} {|c||c|c|c|c|c|c|c|c|c|c|c|}
+      \hline
+      <m>x</m> &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp;4 &amp;5&amp;6&amp;7&amp;8&amp;9&amp;10
+      \hline
+      <m>A</m> &amp; 0.68 &amp; 0.65 &amp; 0.64 &amp; 061 &amp; 0.58 &amp; 0.59 &amp; 0.53 &amp; 0.55 &amp;
+      0.52 &amp; 0.50 &amp; 0.48  
+      \hline
+      \end{tabular}</p>
+    </statement>
+  </exercise>
+
+</worksheet>

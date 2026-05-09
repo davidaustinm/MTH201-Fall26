@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Taylor series</title>
+
+  <exercise>
+    <task workspace="5in">
+      <statement>
+        <p>Just as we found the Taylor series for <m>\sin(x)</m>, find the
+  Taylor series for <m>\cos(x)</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Graph the Taylor polynomial <m>T_2(x)</m> and <m>\cos(x)</m>.  On
+  approximately what interval are they within <m>0.1</m> units of one
+  another?  To answer this, perhaps you could graph <m>\cos(x) -
+  T_2(x)</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Now graph the Taylor polynomial <m>T_4(x)</m> and <m>\cos(x)</m>.  On
+  approximately what interval are they within <m>0.1</m> units of one
+  another.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>How about <m>T_{10}(x)</m>?  On approximately what interval is
+  <m>T_{10}(x)</m> within <m>0.1</m> units of <m>\cos(x)</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1.5in">
+      <statement>
+        <p>Let's now use what we just found to write the Taylor series for
+  <m>\cos(x^2)</m>.  One way to do this is to rewrite the Taylor series for
+  the cosine function in terms of <m>u</m>, that is, write <m>\cos(u)</m>, and
+  then set <m>u=x^2</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>The integral <m>\int_0^1 \cos(x^2)~dx</m> is one that can't be evaluated
+  by antidifferentiating.  We can, however, integrate the Taylor
+  series for <m>\cos(x^2)</m>.  Go ahead and do that to find a series
+  representation of <m>\int_0^1 \cos(x^2)~dx</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Approximate the integral by adding together the first five nonzero
+  terms.  How does this approximation compare to the approximation you
+  get from Desmos?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1.5in">
+      <statement>
+        <p>Write the Taylor series for <m>e^x</m> and evaluate it at <m>x=-1</m> to
+  get a series representation of <m>e^{-1}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What does your calculator/Desmos give you for an approximate value
+  of <m>e^{-1}</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Let's form a series of approximations by adding together
+  successively more terms in the series for this value.</p>
+        <p>\begin{tabular}{l|l}
+      <m>n</m> &amp; Approximation with <m>n</m> terms 
+      \hline
+      <m>1</m> \vm &amp; 
+      <m>2</m> \vm &amp; 
+      <m>3</m> \vm &amp; 
+      <m>4</m> \vm &amp; 
+      <m>5</m> \vm &amp; 
+      <m>6</m> \vm &amp; 
+    \end{tabular}</p>
+        <p>What do you notice about the the behavior of the series approximations
+  compared to the value of <m>e^{-1}</m> that Desmos gives you?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Euler's Method</title>
+
+  <exercise>
+    <task workspace="0.5in">
+      <statement>
+        <p>Remember the first differential equation we looked at:
+<md>
+\frac{dT}{dt} = -\frac1{15}T + 5.
+</md></p>
+        <p>Sketch a slope field below as well as some several solution curves.</p>
+        <p><image source="figures/31-slope-temp.eps"/></p>
+        <p>Suppose we begin with an initial temperature at <m>t=0</m> of <m>T=105</m>.</p>
+        <p>\begin{quote}
+  What is <m>dT/dt</m> at this time?  Include the units on your response.</p>
+      </statement>
+    </task>
+    <task workspace="0.5in">
+      <statement>
+        <p>By approximately how much does the temperature change over the next
+  0.5 minutes?  We will call this <m>\Delta T</m>, the change in
+  temperature.</p>
+      </statement>
+    </task>
+    <task workspace="0.5in">
+      <statement>
+        <p>What is the approximate temperature at <m>t=0.5</m>?</p>
+      </statement>
+    </task>
+    <task workspace="0.5in">
+      <statement>
+        <p>Summarize what you've found by filling in the blank entries in the
+  following table:</p>
+        <p>\begin{tabular}{|c|c|c|c|}
+      \hline
+      <m>t</m> &amp; <m>T</m> &amp; <m>dT/dt</m> &amp; <m>\Delta T</m> 
+      \hline
+      \bm \wm 0.0\wm &amp; \wm 105.0 \wm &amp;  &amp;  
+      \bm 0.5 &amp; &amp; \wm --- \wm &amp; \wm --- \wm 
+      \hline
+    \end{tabular}</p>
+        <p>\end{quote}</p>
+        <p>We can now repeat this process:</p>
+        <p>\begin{quote}
+  What is <m>dT/dt</m> at time <m>t=0.5</m>?</p>
+      </statement>
+    </task>
+    <task workspace="0.5in">
+      <statement>
+        <p>By approximately how much does the temperature change over the next
+  0.5 minutes?  
+  temperature.</p>
+      </statement>
+    </task>
+    <task workspace="0.5in">
+      <statement>
+        <p>What is the approximate temperature at <m>t=1</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Summarize what you've found by filling in the blank entries in the
+  following table:</p>
+        <p>\begin{tabular}{|c|c|c|c|}
+      \hline
+      <m>t</m> &amp; <m>T</m> &amp; <m>dT/dt</m> &amp; <m>\Delta T</m> 
+      \hline
+      \bm 0.0 &amp; \wm 105.0 \wm &amp; \wm -2 \wm &amp; \wm -1 \wm 
+      \bm \wm 0.5 \wm &amp; 104.0 &amp;  &amp;  
+      \bm 1.0 &amp;  &amp; ---  &amp; ---    
+      \hline
+    \end{tabular}</p>
+        <p>\end{quote}</p>
+        <p>Continue in this way until you estimate the temperature at time <m>t=2.0</m>.</p>
+        <p>\begin{tabular}{|c|c|c|c|}
+      \hline
+      <m>t</m> &amp; <m>T</m> &amp; <m>dT/dt</m> &amp; <m>\Delta T</m> 
+      \hline
+      \bm 0.0 &amp; \wm 105.0 \wm &amp; \wm \wm \wm &amp; \wm \wm \wm 
+      \bm \wm 0.5 \wm &amp;  &amp;   &amp;  
+      \bm 1.0 &amp;  &amp;  &amp;    
+      \bm 1.5 &amp;  &amp;  &amp;    
+      \bm 2.0 &amp;  &amp;  &amp;    
+      \hline
+    \end{tabular}</p>
+        <p>Verify that the function <m>T(t) = 75 + 30e^{-t/15}</m> is the solution to
+this differential equation with the initial value <m>T(0) = 105</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the actual value of <m>T(2)</m>?  How does it compare to your
+approximate value?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>This technique of finding an approximate solution to an initial
+  value problem is called <em>Euler's method</em>.  (Euler is pronounced
+  like ``Oiler.'')</p>
+      <p>Now let's look at the differential equation
+  <md>
+  \frac{dy}{dt} = \frac 12(4y-y^2).
+  </md>
+  Sketch a slope field below as well as the solution with the initial
+  value <m>y(0) = 1</m>.</p>
+      <p><image source="figures/31-slope-log.eps"/></p>
+      <p>Now use Euler's method taking steps of <m>h=0.5</m> to approximate
+  the solution at the points <m>t=0.5, 1.0, 1.5, 2.0.</m></p>
+      <p>\begin{tabular}{|c|c|c|c|}
+      \hline
+      <m>t</m> &amp; <m>y</m> &amp; <m>dy/dt</m> &amp; <m>\Delta y</m> 
+      \hline
+      \bm 0.0 &amp; \wm\wm 1.0 \wm\wm &amp;  &amp;  
+      \bm \wm 0.5 \wm &amp;  &amp;  &amp;     
+      \bm 1.0 &amp;  &amp;  &amp;    
+      \bm 1.5 &amp;  &amp;  &amp;    
+      \bm 2.0 &amp;  &amp;  &amp;    
+      \hline
+    \end{tabular}</p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <task workspace="2in">
+      <statement>
+        <p>Now consider the equation
+  <md>
+  \frac{dy}{dt} = t - y.
+  </md>
+  Sketch the slope field below along with the solution with initial
+  value <m>y(0) = 1</m>.</p>
+        <p><image source="figures/31-slope-nonauton.eps"/></p>
+        <p>Now use Euler's method with a step size of <m>h=0.25</m> to approximate
+  the value of the solution at <m>t=0.25, 0.50, 0.75, 1.00</m>.</p>
+        <p>\begin{tabular}{|c|c|c|c|}
+      \hline
+      <m>t</m> &amp; <m>y</m> &amp; <m>dy/dt</m> &amp; <m>\Delta y</m> 
+      \hline
+      \bm 0.00 &amp; \wm\wm 1.0 \wm\wm &amp;  &amp;  
+      \bm \wm 0.25 \wm &amp;  &amp;  &amp;     
+      \bm 0.50 &amp;  &amp;  &amp;    
+      \bm 0.75 &amp;  &amp;  &amp;    
+      \bm 1.00 &amp;  &amp;  &amp;    
+      \hline
+    \end{tabular}</p>
+        <p>Check that the function <m>y(t) = t-1 + 2e^{-t}</m> is the solution to
+  this differential equation with this initial value.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is <m>y(1.00)</m> and how does it compare to your approximation?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

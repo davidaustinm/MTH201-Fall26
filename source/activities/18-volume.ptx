@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Volume</title>
+  <introduction>
+    <p>Consider the region in the plane that is bounded by <m>y=x^2</m> and the lines
+  <m>y=1</m> and <m>x=0</m>.</p>
+  </introduction>
+
+  <exercise>
+    <task workspace="3in">
+      <statement>
+        <p>Find the resulting volume when this region is spun about the
+  <m>x</m>-axis.</p>
+      </statement>
+    </task>
+    <task workspace="3in">
+      <statement>
+        <p>Find the volume if the region is spun about the <m>y</m>-axis.</p>
+      </statement>
+    </task>
+    <task workspace="2.5in">
+      <statement>
+        <p>Now find the volume if it's spun about the line <m>y=3</m>.</p>
+      </statement>
+    </task>
+    <task workspace="2.5in">
+      <statement>
+        <p>And finally, the find the volume if the region is spun about <m>x=3</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose that the area bounded by the horizontal line <m>y=1</m>, the
+  graph <m>y=1/x^2</m>, and the vertical line <m>x=S</m> has area 9/4.  Find the
+  value of <m>S</m>.</p>
+    </statement>
+  </exercise>
+
+</worksheet>

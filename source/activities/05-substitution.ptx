@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Antiderivatives using substitution (Section 5.3)</title>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Find the derivative of <m>e^{4x}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Use your result to find the family of antiderivatives <m>\int
+  e^{4x}~dx</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Let's do this using a substitution now.  We know that <m>\int e^u~du =
+  e^u + C</m> so let's try the subsitution <m>u=4x</m>.  What is <m>du</m> in terms
+  of <m>dx</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>How can we transform <m>\int e^{4x}~dx</m> into something involving <m>\int
+  e^u~du</m>?  Use this find <m>\int e^{4x}~dx</m> using substitution.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1.5in">
+      <statement>
+        <p>In the same way, find the following antiderivatives:</p>
+        <p><m>\ds \int \cos(7x)~dx</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1.8in">
+      <statement>
+        <p><m>\ds \int x(x^2+1)^4~dx</m> using the substitution <m>u=x^2+1</m></p>
+      </statement>
+    </task>
+    <task workspace="1.8in">
+      <statement>
+        <p><m>\ds\int\sqrt{3x^4+2x}\cdot(12x^3+2)~dx</m></p>
+      </statement>
+    </task>
+    <task workspace="1.8in">
+      <statement>
+        <p><m>\ds \int x\sin(7x^2)~dx</m></p>
+      </statement>
+    </task>
+    <task workspace="1.8in">
+      <statement>
+        <p><m>\ds \int\frac{1}{8x-9}~dx</m></p>
+      </statement>
+    </task>
+    <task workspace="1.8in">
+      <statement>
+        <p><m>\ds\int\frac{\sin x}{\cos x}~dx</m></p>
+      </statement>
+    </task>
+    <task workspace="1.8in">
+      <statement>
+        <p><m>\ds \int e^x\sin(e^x)~dx</m></p>
+      </statement>
+    </task>
+    <task workspace="1.8in">
+      <statement>
+        <p><m>\ds \int\frac{x^3}{(5x^4+1)^2}~dx</m></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p><m>\ds \int\frac{t}{1+t^2}~dt</m></p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>
