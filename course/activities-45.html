@@ -35,11 +35,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
-        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
+        "textmacros",
         "knowl"
       ]
     }
@@ -55,10 +55,10 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
-      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
+      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
@@ -77,8 +77,8 @@ window.MathJax = {
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
-<meta property="book:title" content="Course Name (change me)">
-<meta property="book:author" content="Instructor Lastname">
+<meta property="book:title" content="MTH 202:  Calculus II">
+<meta property="book:author" content="David Austin">
 <script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
@@ -115,8 +115,8 @@ eBookConfig.enable_chatcodes =  false;
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
-<h1 class="heading"><a href="root-1-2.html"><span class="title">Course Name (change me)</span> <span class="subtitle">MATH xxx Semester 20xx</span></a></h1>
-<p class="byline">Instructor Lastname</p>
+<h1 class="heading"><a href="root-1-2.html"><span class="title">MTH 202:  Calculus II</span> <span class="subtitle">Fall 2026</span></a></h1>
+<p class="byline">David Austin</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
 <div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
@@ -270,10 +270,12 @@ eBookConfig.enable_chatcodes =  false;
 <button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
 </div>
 </div>
-<section class="worksheet" id="activities-45" data-margins="0.75in 0.75in 0.75in 0.75in"><h2 class="heading hide-type">
+<section class="worksheet" id="activities-45" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h2 class="heading hide-type">
 <span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Lab 4:  Systems of differential equations</span><div class="print-links"><a href="?printpreview=activities-45" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h2>
-<section class="introduction" id="activities-45-2"><div class="para" id="activities-45-2-1">\begin{tabular}{ll} \begin{tabular}{l}<div class="autopermalink" data-description="Paragraph"><a href="#activities-45-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="activities-45-2">
+<div class="para" id="activities-45-2-1">\begin{tabular}{ll} \begin{tabular}{l}<div class="autopermalink" data-description="Paragraph"><a href="#activities-45-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="activities-45-2-2">
 <dfn class="terminology">Due:  April 3</dfn><div class="autopermalink" data-description="Paragraph"><a href="#activities-45-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -337,28 +339,42 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para">is called the Lotka-Volterra model for predator-prey interaction. Though a simple model, the basic effects predicted by the model have been observed in nature.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#activities-45-2-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><article class="exercise exercise-like" id="activities-45-3"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+</div></section>
+<article class="exercise exercise-like" id="activities-45-3"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <article class="task exercise-like" id="activities-45-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para" id="activities-45-3-1-1-1">Suppose at some time, there are 1500 deer and 60 wolves. Is the deer population increasing or decreasing?  Is the wolf population increasing or decreasing?<div class="autopermalink" data-description="Paragraph"><a href="#activities-45-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1.25in"></div>
-<div class="autopermalink" data-description="Task 1.a"><a href="#activities-45-3-1" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div></article><article class="task exercise-like" id="activities-45-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="autopermalink" data-description="Task 1.a"><a href="#activities-45-3-1" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-45-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="activities-45-3-2-1-1">For what values of <span class="process-math">\(W\)</span> does the deer population increase? For what values of <span class="process-math">\(D\)</span> does the wolf population increase?  Does this agree with your intuition about the situation?  Why or why not?<div class="autopermalink" data-description="Paragraph"><a href="#activities-45-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1.25in"></div>
-<div class="autopermalink" data-description="Task 1.b"><a href="#activities-45-3-2" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div></article><article class="task exercise-like" id="activities-45-3-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="autopermalink" data-description="Task 1.b"><a href="#activities-45-3-2" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-45-3-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="activities-45-3-3-1-1">Are there values for <span class="process-math">\(D\)</span> and <span class="process-math">\(W\)</span> so that neither quantity changes?<div class="autopermalink" data-description="Paragraph"><a href="#activities-45-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1.25in"></div>
-<div class="autopermalink" data-description="Task 1.c"><a href="#activities-45-3-3" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div></article><article class="task exercise-like" id="activities-45-3-4"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="autopermalink" data-description="Task 1.c"><a href="#activities-45-3-3" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-45-3-4"><h4 class="heading"><span class="codenumber">(d)</span></h4>
 <div class="para" id="activities-45-3-4-1-1">Suppose initially there are <span class="process-math">\(1000\)</span> deer and <span class="process-math">\(40\)</span> wolves; that is, <span class="process-math">\(D(0) = 1000\)</span> and <span class="process-math">\(W(0) = 40\text{.}\)</span>  Use Excel to implement Euler’s method with a step size of <span class="process-math">\(h=0.1\)</span> to find out how the populations behave over the course of one year.<div class="autopermalink" data-description="Paragraph"><a href="#activities-45-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-45-3-4-1-2">Your spreadsheet will probably begin something like this:<div class="autopermalink" data-description="Paragraph"><a href="#activities-45-3-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-45-3-4-1-3">\begin{tabular}{|c|c|c|c|c|c|} \hline <span class="process-math">\(h\)</span> &amp; <span class="process-math">\(t_k\)</span> &amp; <span class="process-math">\(D_k\)</span> &amp; <span class="process-math">\(W_k\)</span> &amp; <span class="process-math">\(\Delta D\)</span> &amp; <span class="process-math">\(\Delta W\)</span> \hline \hline<div class="autopermalink" data-description="Paragraph"><a href="#activities-45-3-4-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-45-3-4-1-4">0.1 &amp; 0.0 &amp; 1000.0 &amp; 40.0 &amp;4.00 &amp;0.00 0.1 &amp; 0.1 &amp; 1004.0 &amp; 40.0 &amp;4.02 &amp;0.00 0.1 &amp; 0.2 &amp; 1008.0 &amp; 40.0 &amp;4.03 &amp;0.00 0.1 &amp; 0.3 &amp; 1012.0 &amp; 40.0 &amp;4.05 &amp;0.00 %1 &amp; 0 &amp; 1000.00 &amp; 40.00 &amp; 40.00 &amp; 0.00 %1 &amp; 1 &amp; 1040.00 &amp; 40.00 &amp; 41.60 &amp; 0.03 %1 &amp; 2 &amp; 1081.60 &amp; 40.03 &amp; 43.23 &amp; 0.07 \hline \end{tabular}<div class="autopermalink" data-description="Paragraph"><a href="#activities-45-3-4-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-45-3-4-1-5">Sketch a graph of the populations <span class="process-math">\(D(t)\)</span> and <span class="process-math">\(W(t)\)</span> over one year below and discuss any interesting features that you see.  In particular, you should discuss the general behavior of the two graphs along with any relationships you notice between the two graphs.<div class="autopermalink" data-description="Paragraph"><a href="#activities-45-3-4-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-45-3-4-1-2">Your spreadsheet will probably begin something like this:<div class="autopermalink" data-description="Paragraph"><a href="#activities-45-3-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-45-3-4-1-3">\begin{tabular}{|c|c|c|c|c|c|} \hline <span class="process-math">\(h\)</span> &amp; <span class="process-math">\(t_k\)</span> &amp; <span class="process-math">\(D_k\)</span> &amp; <span class="process-math">\(W_k\)</span> &amp; <span class="process-math">\(\Delta D\)</span> &amp; <span class="process-math">\(\Delta W\)</span> \hline \hline<div class="autopermalink" data-description="Paragraph"><a href="#activities-45-3-4-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-45-3-4-1-4">0.1 &amp; 0.0 &amp; 1000.0 &amp; 40.0 &amp;4.00 &amp;0.00 0.1 &amp; 0.1 &amp; 1004.0 &amp; 40.0 &amp;4.02 &amp;0.00 0.1 &amp; 0.2 &amp; 1008.0 &amp; 40.0 &amp;4.03 &amp;0.00 0.1 &amp; 0.3 &amp; 1012.0 &amp; 40.0 &amp;4.05 &amp;0.00 %1 &amp; 0 &amp; 1000.00 &amp; 40.00 &amp; 40.00 &amp; 0.00 %1 &amp; 1 &amp; 1040.00 &amp; 40.00 &amp; 41.60 &amp; 0.03 %1 &amp; 2 &amp; 1081.60 &amp; 40.03 &amp; 43.23 &amp; 0.07 \hline \end{tabular}<div class="autopermalink" data-description="Paragraph"><a href="#activities-45-3-4-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-45-3-4-1-5">Sketch a graph of the populations <span class="process-math">\(D(t)\)</span> and <span class="process-math">\(W(t)\)</span> over one year below and discuss any interesting features that you see.  In particular, you should discuss the general behavior of the two graphs along with any relationships you notice between the two graphs.<div class="autopermalink" data-description="Paragraph"><a href="#activities-45-3-4-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Task 1.d"><a href="#activities-45-3-4" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#activities-45-3" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="activities-45-4"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="autopermalink" data-description="Task 1.d"><a href="#activities-45-3-4" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#activities-45-3" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-45-4"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <article class="task exercise-like" id="activities-45-4-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para logical" id="activities-45-4-1-1-1">
 <div class="para">We’ll now examine another system of differential equations but now we will imagine we have two species <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> that compete for food.  If there is one species without the other, we will assume a logistic model for population growth:  say,</div>
@@ -387,14 +403,19 @@ eBookConfig.enable_chatcodes =  false;
 \end{align*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#activities-45-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-45-4-1-1-2">Set up a spreadsheet to study this system of equations with the intial values <span class="process-math">\(x(0) = 1.5\)</span> and <span class="process-math">\(y(0)=0.25\)</span> using a step size of <span class="process-math">\(h=0.1\text{.}\)</span>  Make a plot of <span class="process-math">\(x(t)\)</span> and <span class="process-math">\(y(t)\text{.}\)</span>  What happens after a very long time?<div class="autopermalink" data-description="Paragraph"><a href="#activities-45-4-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-45-4-1-1-2">Set up a spreadsheet to study this system of equations with the intial values <span class="process-math">\(x(0) = 1.5\)</span> and <span class="process-math">\(y(0)=0.25\)</span> using a step size of <span class="process-math">\(h=0.1\text{.}\)</span>  Make a plot of <span class="process-math">\(x(t)\)</span> and <span class="process-math">\(y(t)\text{.}\)</span>  What happens after a very long time?<div class="autopermalink" data-description="Paragraph"><a href="#activities-45-4-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.a"><a href="#activities-45-4-1" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div></article><article class="task exercise-like" id="activities-45-4-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="autopermalink" data-description="Task 2.a"><a href="#activities-45-4-1" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-45-4-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="activities-45-4-2-1-1">Study what happens with a few different values of the initial values.  What do you notice happens here?<div class="autopermalink" data-description="Paragraph"><a href="#activities-45-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.b"><a href="#activities-45-4-2" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div></article><article class="task exercise-like" id="activities-45-4-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="autopermalink" data-description="Task 2.b"><a href="#activities-45-4-2" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-45-4-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para logical" id="activities-45-4-3-1-1">
 <div class="para">If the constants are adjusted just a little bit, there is a very different kind of behavior.  Consider the system of equations</div>
 <div class="displaymath process-math" id="activities-45-4-3-1-1-1">
@@ -404,18 +425,26 @@ eBookConfig.enable_chatcodes =  false;
 \end{align*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#activities-45-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-45-4-3-1-2">Study this system with <span class="process-math">\(x(0) = 1.5\)</span> and <span class="process-math">\(y(0)=0.25\text{.}\)</span>  Again, make a plot of <span class="process-math">\(x(t)\)</span> and <span class="process-math">\(y(t)\text{.}\)</span>  What happens after a very long time?<div class="autopermalink" data-description="Paragraph"><a href="#activities-45-4-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-45-4-3-1-2">Study this system with <span class="process-math">\(x(0) = 1.5\)</span> and <span class="process-math">\(y(0)=0.25\text{.}\)</span>  Again, make a plot of <span class="process-math">\(x(t)\)</span> and <span class="process-math">\(y(t)\text{.}\)</span>  What happens after a very long time?<div class="autopermalink" data-description="Paragraph"><a href="#activities-45-4-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.c"><a href="#activities-45-4-3" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div></article><article class="task exercise-like" id="activities-45-4-4"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="autopermalink" data-description="Task 2.c"><a href="#activities-45-4-3" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-45-4-4"><h4 class="heading"><span class="codenumber">(d)</span></h4>
 <div class="para" id="activities-45-4-4-1-1">Now consider the initial values <span class="process-math">\(x(0) = 0.5\)</span> and <span class="process-math">\(y(0)=1\text{.}\)</span>  What happens after a very long time?<div class="autopermalink" data-description="Paragraph"><a href="#activities-45-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.d"><a href="#activities-45-4-4" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div></article><article class="task exercise-like" id="activities-45-4-5"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="autopermalink" data-description="Task 2.d"><a href="#activities-45-4-4" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-45-4-5"><h4 class="heading"><span class="codenumber">(e)</span></h4>
 <div class="para" id="activities-45-4-5-1-1">How do these two examples of systems of competing species differ from one another?<div class="autopermalink" data-description="Paragraph"><a href="#activities-45-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.e"><a href="#activities-45-4-5" title="Copy heading and permalink for Task 2.e" aria-label="Copy heading and permalink for Task 2.e">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#activities-45-4" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div></article><div class="autopermalink" data-description="Worksheet: Lab 4:  Systems of differential equations"><a href="#activities-45" title="Copy heading and permalink for Worksheet: Lab 4:  Systems of differential equations" aria-label="Copy heading and permalink for Worksheet: Lab 4:  Systems of differential equations">🔗</a></div></section>
+<div class="autopermalink" data-description="Task 2.e"><a href="#activities-45-4-5" title="Copy heading and permalink for Task 2.e" aria-label="Copy heading and permalink for Task 2.e">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#activities-45-4" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet: Lab 4:  Systems of differential equations"><a href="#activities-45" title="Copy heading and permalink for Worksheet: Lab 4:  Systems of differential equations" aria-label="Copy heading and permalink for Worksheet: Lab 4:  Systems of differential equations">🔗</a></div>
+</section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="activities-44.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="activities-46.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

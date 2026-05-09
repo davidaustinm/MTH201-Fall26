@@ -35,11 +35,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
-        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
+        "textmacros",
         "knowl"
       ]
     }
@@ -55,10 +55,10 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
-      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
+      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
@@ -77,8 +77,8 @@ window.MathJax = {
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
-<meta property="book:title" content="Course Name (change me)">
-<meta property="book:author" content="Instructor Lastname">
+<meta property="book:title" content="MTH 202:  Calculus II">
+<meta property="book:author" content="David Austin">
 <script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
@@ -115,8 +115,8 @@ eBookConfig.enable_chatcodes =  false;
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
-<h1 class="heading"><a href="root-1-2.html"><span class="title">Course Name (change me)</span> <span class="subtitle">MATH xxx Semester 20xx</span></a></h1>
-<p class="byline">Instructor Lastname</p>
+<h1 class="heading"><a href="root-1-2.html"><span class="title">MTH 202:  Calculus II</span> <span class="subtitle">Fall 2026</span></a></h1>
+<p class="byline">David Austin</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
 <div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
@@ -270,23 +270,33 @@ eBookConfig.enable_chatcodes =  false;
 <button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
 </div>
 </div>
-<section class="worksheet" id="activities-37" data-margins="0.75in 0.75in 0.75in 0.75in"><h2 class="heading hide-type">
+<section class="worksheet" id="activities-37" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h2 class="heading hide-type">
 <span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Lab 3:  Euler’s Method</span><div class="print-links"><a href="?printpreview=activities-37" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h2>
 <article class="exercise exercise-like" id="activities-37-2"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="para" id="activities-37-2-1-1">\begin{tabular}{ll} \begin{tabular}{c}<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-37-2-1-2">
+</div> 
+<div class="para" id="activities-37-2-1-2">
 <dfn class="terminology">Due:  March 20</dfn><div class="autopermalink" data-description="Paragraph"><a href="#activities-37-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-37-2-1-3">\end{tabular}<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-37-2-1-4">\begin{tabular}{l} % Names: \hrulefill \hphantom{Names:} \hrulefill \hphantom{Names:} \hrulefill<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-2-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-37-2-1-5">\end{tabular} \end{tabular}<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-2-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-37-2-1-6">
+</div> 
+<div class="para" id="activities-37-2-1-3">\end{tabular}<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-37-2-1-4">\begin{tabular}{l} % Names: \hrulefill \hphantom{Names:} \hrulefill \hphantom{Names:} \hrulefill<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-2-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-37-2-1-5">\end{tabular} \end{tabular}<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-2-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-37-2-1-6">
 <dfn class="terminology">Instructions:</dfn> The exercises here should be completed in groups of 2 or 3 students with one write-up submitted from each group. You may write directly on this handout.  When asked for an explanation, please use complete sentences.  Be sure to include everyone’s name on the write-up.<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-2-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-37-2-1-7">We have used Euler’s method to help us approximate solutions to differential equations.  Today we will use spreadsheets to implement Euler’s method (``Oiler’s method’’).<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-2-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-37-2-1-8">Remember:  the derivative <span class="process-math">\(dy/dt\)</span> gives the instantaneous rate of change.  When we move forward in time, the change in <span class="process-math">\(y\)</span> is approximately<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-2-1-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-37-2-1-9">
+</div> 
+<div class="para" id="activities-37-2-1-7">We have used Euler’s method to help us approximate solutions to differential equations.  Today we will use spreadsheets to implement Euler’s method (``Oiler’s method’’).<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-2-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-37-2-1-8">Remember:  the derivative <span class="process-math">\(dy/dt\)</span> gives the instantaneous rate of change.  When we move forward in time, the change in <span class="process-math">\(y\)</span> is approximately<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-2-1-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-37-2-1-9">
 <span class="process-math">\(\Delta y \approx dy/dt\)</span> <span class="process-math">\(\times\)</span> Change in time<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-2-1-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para logical" id="activities-37-2-1-10">
+</div> 
+<div class="para logical" id="activities-37-2-1-10">
 <div class="para">\begin{itemize} \item[1.] We’ll begin by considering the differential equation</div>
 <div class="displaymath process-math" id="activities-37-2-1-10-1">
 \begin{equation*}
@@ -297,41 +307,65 @@ eBookConfig.enable_chatcodes =  false;
 t\leq 1\text{.}\)</span>
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#activities-37-2-1-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-37-2-1-11">Verify that <span class="process-math">\(y(t) = 3e^{2t}\)</span> is a solution to this differential equation with the appropriate initial value.<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-2-1-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-37-2-1-11">Verify that <span class="process-math">\(y(t) = 3e^{2t}\)</span> is a solution to this differential equation with the appropriate initial value.<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-2-1-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#activities-37-2" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="activities-37-3"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#activities-37-2" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-37-3"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="para" id="activities-37-3-1-1">Since we now have an explicit formula for the solution, we don’t really need to build a numerical approximation to the solution. However, this is a good problem to start with since we can test the accuracy of our approximation.<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-37-3-1-2">We will walk from <span class="process-math">\(t=0\)</span> to <span class="process-math">\(t=1\)</span> taking steps of size <span class="process-math">\(h=0.1\text{;}\)</span>  that is, we will approximate the solution at <span class="process-math">\(t=0.1, 0.2, 0.3, \ldots, 1\text{.}\)</span> We can do the first steps as follows.<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-37-3-1-3">Since <span class="process-math">\(y(0) = 3\)</span> and <span class="process-math">\(dy/dt = 2y\text{,}\)</span> what is <span class="process-math">\(dy/dt\)</span> at this time?  By approximately how much does <span class="process-math">\(y\)</span> change when we move from <span class="process-math">\(t=0\)</span> to <span class="process-math">\(t=0.1\text{?}\)</span> Approximately what is <span class="process-math">\(y(0.1)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-37-3-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-37-3-1-4">Now we have an approximation for <span class="process-math">\(y(0.1)\text{.}\)</span>  What is <span class="process-math">\(dy/dt\)</span> at this time?  By approximately how much does <span class="process-math">\(y\)</span> change when we move from <span class="process-math">\(t=0.1\)</span> to <span class="process-math">\(t=0.2\text{?}\)</span>  Approximately what is <span class="process-math">\(y(0.2)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-37-3-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-37-3-1-2">We will walk from <span class="process-math">\(t=0\)</span> to <span class="process-math">\(t=1\)</span> taking steps of size <span class="process-math">\(h=0.1\text{;}\)</span>  that is, we will approximate the solution at <span class="process-math">\(t=0.1, 0.2, 0.3, \ldots, 1\text{.}\)</span> We can do the first steps as follows.<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-37-3-1-3">Since <span class="process-math">\(y(0) = 3\)</span> and <span class="process-math">\(dy/dt = 2y\text{,}\)</span> what is <span class="process-math">\(dy/dt\)</span> at this time?  By approximately how much does <span class="process-math">\(y\)</span> change when we move from <span class="process-math">\(t=0\)</span> to <span class="process-math">\(t=0.1\text{?}\)</span> Approximately what is <span class="process-math">\(y(0.1)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-37-3-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-37-3-1-4">Now we have an approximation for <span class="process-math">\(y(0.1)\text{.}\)</span>  What is <span class="process-math">\(dy/dt\)</span> at this time?  By approximately how much does <span class="process-math">\(y\)</span> change when we move from <span class="process-math">\(t=0.1\)</span> to <span class="process-math">\(t=0.2\text{?}\)</span>  Approximately what is <span class="process-math">\(y(0.2)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-37-3-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#activities-37-3" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="activities-37-4"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#activities-37-3" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-37-4"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="para" id="activities-37-4-1-1">Now we will build a Google sheet that continues this approximation process as shown below. Remember that the differential equation gives the slope of the tangent lines.<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-37-4-1-2">\begin{tabular}{|c|c|c|c|c|c|} \hline <span class="process-math">\(h\)</span> &amp; <span class="process-math">\(t\)</span> &amp; <span class="process-math">\(y\)</span> &amp;  <span class="process-math">\(dy/dt\)</span>   &amp;  <span class="process-math">\(\Delta y\)</span> &amp; Exact solution \hline 0.1000&amp;0.0000&amp;3.0000&amp;6.0000&amp;0.6000&amp;3.0000 0.1000&amp;0.1000&amp;&amp;&amp;&amp; 0.1000&amp;0.2000&amp;&amp;&amp;&amp; 0.1000&amp;0.3000&amp;&amp;&amp;&amp; \hline \end{tabular}<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-37-4-1-3">Now that you have the change in <span class="process-math">\(y\text{,}\)</span> how do you find the next value, <span class="process-math">\(y(0.1)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-37-4-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-37-4-1-4">\begin{tabular}{|c|c|c|c|c|c|} \hline <span class="process-math">\(h\)</span> &amp; <span class="process-math">\(t\)</span> &amp; <span class="process-math">\(y\)</span> &amp;  Slope   &amp; <span class="process-math">\(\Delta y\)</span> &amp; Exact solution \hline 0.1000&amp;0.0000&amp;3.0000&amp;6.0000&amp;0.6000&amp;3.0000 0.1000&amp;0.1000&amp;3.6000&amp;&amp;&amp; 0.1000&amp;0.2000&amp;&amp;&amp;&amp; 0.1000&amp;0.3000&amp;&amp;&amp;&amp; \hline \end{tabular}<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-4-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-37-4-1-5">Now continue this process:<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-4-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-37-4-1-6">\begin{tabular}{|c|c|c|c|c|c|} \hline <span class="process-math">\(h\)</span> &amp; <span class="process-math">\(t\)</span> &amp; <span class="process-math">\(y\)</span> &amp;  Slope   &amp; <span class="process-math">\(\Delta y\)</span> &amp; Exact solution \hline 0.1000&amp;0.0000&amp;3.0000&amp;6.0000&amp;0.6000&amp;3.0000 0.1000&amp;0.1000&amp;3.6000&amp;7.2000&amp;0.7200&amp;3.6642 0.1000&amp;0.2000&amp;4.3200&amp;8.6400&amp;0.8640&amp;4.4755 0.1000&amp;0.3000&amp;5.1840&amp;10.3680&amp;1.0368&amp;5.4664 \hline \end{tabular}<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-4-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-37-4-1-7">What does Euler’s Method give for the approximate value of <span class="process-math">\(y(1)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-37-4-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-37-4-1-2">\begin{tabular}{|c|c|c|c|c|c|} \hline <span class="process-math">\(h\)</span> &amp; <span class="process-math">\(t\)</span> &amp; <span class="process-math">\(y\)</span> &amp;  <span class="process-math">\(dy/dt\)</span>   &amp;  <span class="process-math">\(\Delta y\)</span> &amp; Exact solution \hline 0.1000&amp;0.0000&amp;3.0000&amp;6.0000&amp;0.6000&amp;3.0000 0.1000&amp;0.1000&amp;&amp;&amp;&amp; 0.1000&amp;0.2000&amp;&amp;&amp;&amp; 0.1000&amp;0.3000&amp;&amp;&amp;&amp; \hline \end{tabular}<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-37-4-1-3">Now that you have the change in <span class="process-math">\(y\text{,}\)</span> how do you find the next value, <span class="process-math">\(y(0.1)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-37-4-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-37-4-1-4">\begin{tabular}{|c|c|c|c|c|c|} \hline <span class="process-math">\(h\)</span> &amp; <span class="process-math">\(t\)</span> &amp; <span class="process-math">\(y\)</span> &amp;  Slope   &amp; <span class="process-math">\(\Delta y\)</span> &amp; Exact solution \hline 0.1000&amp;0.0000&amp;3.0000&amp;6.0000&amp;0.6000&amp;3.0000 0.1000&amp;0.1000&amp;3.6000&amp;&amp;&amp; 0.1000&amp;0.2000&amp;&amp;&amp;&amp; 0.1000&amp;0.3000&amp;&amp;&amp;&amp; \hline \end{tabular}<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-4-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-37-4-1-5">Now continue this process:<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-4-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-37-4-1-6">\begin{tabular}{|c|c|c|c|c|c|} \hline <span class="process-math">\(h\)</span> &amp; <span class="process-math">\(t\)</span> &amp; <span class="process-math">\(y\)</span> &amp;  Slope   &amp; <span class="process-math">\(\Delta y\)</span> &amp; Exact solution \hline 0.1000&amp;0.0000&amp;3.0000&amp;6.0000&amp;0.6000&amp;3.0000 0.1000&amp;0.1000&amp;3.6000&amp;7.2000&amp;0.7200&amp;3.6642 0.1000&amp;0.2000&amp;4.3200&amp;8.6400&amp;0.8640&amp;4.4755 0.1000&amp;0.3000&amp;5.1840&amp;10.3680&amp;1.0368&amp;5.4664 \hline \end{tabular}<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-4-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-37-4-1-7">What does Euler’s Method give for the approximate value of <span class="process-math">\(y(1)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-37-4-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="0.5in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#activities-37-4" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="activities-37-5"><h3 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#activities-37-4" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-37-5"><h3 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="para" id="activities-37-5-1-1">Now repeat using a step size of <span class="process-math">\(h = 0.01\text{.}\)</span>  If your worksheet is set up efficiently, you should only have to change one entry. What does Euler’s Method give for the approximate value of <span class="process-math">\(y(1)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-37-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="0.5in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 4"><a href="#activities-37-5" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div></article><article class="exercise exercise-like" id="activities-37-6"><h3 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="autopermalink" data-description="Worksheet Exercise 4"><a href="#activities-37-5" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-37-6"><h3 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="para" id="activities-37-6-1-1">Finally, repeat again using a step size of <span class="process-math">\(h = 0.001\text{.}\)</span>  What is your approximation for the value of <span class="process-math">\(y(1)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-37-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="0.5in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 5"><a href="#activities-37-6" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div></article><article class="exercise exercise-like" id="activities-37-7"><h3 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="autopermalink" data-description="Worksheet Exercise 5"><a href="#activities-37-6" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-37-7"><h3 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="para" id="activities-37-7-1-1">Fill in the table below (``Error’’ is just the difference in the exact value and your approximation):<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-37-7-1-2">\begin{tabular}{|c|c|c|} \hline Step size &amp; Approximate Value of <span class="process-math">\(y(1)\)</span> &amp; Error \hline \bm 0.1 &amp; &amp; \bm 0.01 &amp; &amp; \bm 0.001 &amp; &amp; \hline \end{tabular}<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-7-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-37-7-1-3">Describe quantitatively how the error changes as the step size changes.<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-7-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-37-7-1-2">\begin{tabular}{|c|c|c|} \hline Step size &amp; Approximate Value of <span class="process-math">\(y(1)\)</span> &amp; Error \hline \bm 0.1 &amp; &amp; \bm 0.01 &amp; &amp; \bm 0.001 &amp; &amp; \hline \end{tabular}<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-7-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-37-7-1-3">Describe quantitatively how the error changes as the step size changes.<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-7-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1.5in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 6"><a href="#activities-37-7" title="Copy heading and permalink for Worksheet Exercise 6" aria-label="Copy heading and permalink for Worksheet Exercise 6">🔗</a></div></article><article class="exercise exercise-like" id="activities-37-8"><h3 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="autopermalink" data-description="Worksheet Exercise 6"><a href="#activities-37-7" title="Copy heading and permalink for Worksheet Exercise 6" aria-label="Copy heading and permalink for Worksheet Exercise 6">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-37-8"><h3 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="para logical" id="activities-37-8-1-1">
 <div class="para">\item[2.]  Now we’ll consider the differential equation</div>
 <div class="displaymath process-math" id="activities-37-8-1-1-1">
@@ -340,34 +374,49 @@ t\leq 1\text{.}\)</span>
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#activities-37-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-37-8-1-2">Plot below a graph of <span class="process-math">\(\frac{dy}{dt}\)</span> versus <span class="process-math">\(y\)</span> and sketch a slope field.<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-8-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-37-8-1-2">Plot below a graph of <span class="process-math">\(\frac{dy}{dt}\)</span> versus <span class="process-math">\(y\)</span> and sketch a slope field.<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-8-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1.75in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 7"><a href="#activities-37-8" title="Copy heading and permalink for Worksheet Exercise 7" aria-label="Copy heading and permalink for Worksheet Exercise 7">🔗</a></div></article><article class="exercise exercise-like" id="activities-37-9"><h3 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="autopermalink" data-description="Worksheet Exercise 7"><a href="#activities-37-8" title="Copy heading and permalink for Worksheet Exercise 7" aria-label="Copy heading and permalink for Worksheet Exercise 7">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-37-9"><h3 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="para" id="activities-37-9-1-1">If we look at the solution with the initial value <span class="process-math">\(y(0) = 1\text{,}\)</span> what do you expect to happen over a very long time?<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="0.5in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 8"><a href="#activities-37-9" title="Copy heading and permalink for Worksheet Exercise 8" aria-label="Copy heading and permalink for Worksheet Exercise 8">🔗</a></div></article><article class="exercise exercise-like" id="activities-37-10"><h3 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="autopermalink" data-description="Worksheet Exercise 8"><a href="#activities-37-9" title="Copy heading and permalink for Worksheet Exercise 8" aria-label="Copy heading and permalink for Worksheet Exercise 8">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-37-10"><h3 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="para" id="activities-37-10-1-1">If we look at the solution with the initial value <span class="process-math">\(y(0) = 8\text{,}\)</span> what do you expect to happen over a very long time?<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="0.5in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 9"><a href="#activities-37-10" title="Copy heading and permalink for Worksheet Exercise 9" aria-label="Copy heading and permalink for Worksheet Exercise 9">🔗</a></div></article><article class="exercise exercise-like" id="activities-37-11"><h3 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="autopermalink" data-description="Worksheet Exercise 9"><a href="#activities-37-10" title="Copy heading and permalink for Worksheet Exercise 9" aria-label="Copy heading and permalink for Worksheet Exercise 9">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-37-11"><h3 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="para" id="activities-37-11-1-1">Now build a Google sheet implementing Euler’s method to find the solution to this differential equation with <span class="process-math">\(y(0) = 1\)</span> using a step size of <span class="process-math">\(h = 0.1\)</span> over the range <span class="process-math">\(0 \leq t \leq 12\text{.}\)</span>  Plot the approximate solution as a function of time and include a sketch below. Does this verify your expection from above?  Explain.<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1.5in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 10"><a href="#activities-37-11" title="Copy heading and permalink for Worksheet Exercise 10" aria-label="Copy heading and permalink for Worksheet Exercise 10">🔗</a></div></article><article class="exercise exercise-like" id="activities-37-12"><h3 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="autopermalink" data-description="Worksheet Exercise 10"><a href="#activities-37-11" title="Copy heading and permalink for Worksheet Exercise 10" aria-label="Copy heading and permalink for Worksheet Exercise 10">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-37-12"><h3 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="para" id="activities-37-12-1-1">By looking at the graph of your approximate solution, what is the value of <span class="process-math">\(y\)</span> when the slope is the greatest?  Offer an explanation of this by looking at your graph of <span class="process-math">\(\frac{dy}{dt}\)</span> versus <span class="process-math">\(y\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-37-12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1.5in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 11"><a href="#activities-37-12" title="Copy heading and permalink for Worksheet Exercise 11" aria-label="Copy heading and permalink for Worksheet Exercise 11">🔗</a></div></article><article class="exercise exercise-like" id="activities-37-13"><h3 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="autopermalink" data-description="Worksheet Exercise 11"><a href="#activities-37-12" title="Copy heading and permalink for Worksheet Exercise 11" aria-label="Copy heading and permalink for Worksheet Exercise 11">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-37-13"><h3 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="para" id="activities-37-13-1-1">Now look at the solution with <span class="process-math">\(y(0) = 8\text{.}\)</span>  If you have your worksheet set up efficiently, you should only have to change one entry.  Include a sketch of your solution below.  Does the long-term behavior verify your expectation?<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1.0in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 12"><a href="#activities-37-13" title="Copy heading and permalink for Worksheet Exercise 12" aria-label="Copy heading and permalink for Worksheet Exercise 12">🔗</a></div></article><article class="exercise exercise-like" id="activities-37-14"><h3 class="heading"><span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="autopermalink" data-description="Worksheet Exercise 12"><a href="#activities-37-13" title="Copy heading and permalink for Worksheet Exercise 12" aria-label="Copy heading and permalink for Worksheet Exercise 12">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-37-14"><h3 class="heading"><span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="para" id="activities-37-14-1-1">\end{itemize}<div class="autopermalink" data-description="Paragraph"><a href="#activities-37-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 13"><a href="#activities-37-14" title="Copy heading and permalink for Worksheet Exercise 13" aria-label="Copy heading and permalink for Worksheet Exercise 13">🔗</a></div></article><div class="autopermalink" data-description="Worksheet: Lab 3:  Euler’s Method"><a href="#activities-37" title="Copy heading and permalink for Worksheet: Lab 3:  Euler’s Method" aria-label="Copy heading and permalink for Worksheet: Lab 3:  Euler’s Method">🔗</a></div></section>
+<div class="autopermalink" data-description="Worksheet Exercise 13"><a href="#activities-37-14" title="Copy heading and permalink for Worksheet Exercise 13" aria-label="Copy heading and permalink for Worksheet Exercise 13">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet: Lab 3:  Euler’s Method"><a href="#activities-37" title="Copy heading and permalink for Worksheet: Lab 3:  Euler’s Method" aria-label="Copy heading and permalink for Worksheet: Lab 3:  Euler’s Method">🔗</a></div>
+</section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="activities-36.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="activities-38.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
