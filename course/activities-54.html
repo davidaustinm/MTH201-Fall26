@@ -35,11 +35,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
-        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
+        "textmacros",
         "knowl"
       ]
     }
@@ -55,10 +55,10 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
-      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
+      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
@@ -270,19 +270,23 @@ eBookConfig.enable_chatcodes =  false;
 <button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
 </div>
 </div>
-<section class="worksheet" id="activities-54" data-margins="0.75in 0.75in 0.75in 0.75in"><h2 class="heading hide-type">
+<section class="worksheet" id="activities-54" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h2 class="heading hide-type">
 <span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Review</span><div class="print-links"><a href="?printpreview=activities-54" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h2>
 <article class="exercise exercise-like" id="activities-54-2"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <article class="task exercise-like" id="activities-54-2-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para" id="activities-54-2-1-1-1">Shown below on the left is the graph of a function <span class="process-math">\(g(t)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-54-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-54-2-1-1-2">
+</div> 
+<div class="para" id="activities-54-2-1-1-2">
 <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/figures/50-ftc.eps" class="contained"></div>
 <div class="autopermalink" data-description="Paragraph"><a href="#activities-54-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-54-2-1-1-3">
+</div> 
+<div class="para" id="activities-54-2-1-1-3">
 <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/figures/50-ftc-empty.eps" class="contained"></div>
 <div class="autopermalink" data-description="Paragraph"><a href="#activities-54-2-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para logical" id="activities-54-2-1-1-4">
+</div> 
+<div class="para logical" id="activities-54-2-1-1-4">
 <div class="para">We will define a new function by</div>
 <div class="displaymath process-math" id="activities-54-2-1-1-4-1">
 \begin{equation*}
@@ -290,24 +294,34 @@ A(x) = \int_1^x g(t)~dt.
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#activities-54-2-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-54-2-1-1-5">What is the value of <span class="process-math">\(A'(3)\text{?}\)</span>  Explain your response.<div class="autopermalink" data-description="Paragraph"><a href="#activities-54-2-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-54-2-1-1-5">What is the value of <span class="process-math">\(A'(3)\text{?}\)</span>  Explain your response.<div class="autopermalink" data-description="Paragraph"><a href="#activities-54-2-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="0.9in"></div>
-<div class="autopermalink" data-description="Task 1.a"><a href="#activities-54-2-1" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div></article><article class="task exercise-like" id="activities-54-2-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="autopermalink" data-description="Task 1.a"><a href="#activities-54-2-1" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-54-2-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="activities-54-2-2-1-1">What is the value of <span class="process-math">\(A(2)?\)</span>  Explain your response.<div class="autopermalink" data-description="Paragraph"><a href="#activities-54-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="0.9in"></div>
-<div class="autopermalink" data-description="Task 1.b"><a href="#activities-54-2-2" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div></article><article class="task exercise-like" id="activities-54-2-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="autopermalink" data-description="Task 1.b"><a href="#activities-54-2-2" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-54-2-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="activities-54-2-3-1-1">On what intervals is <span class="process-math">\(A\)</span> increasing and one which is it decreasing?<div class="autopermalink" data-description="Paragraph"><a href="#activities-54-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="0.9in"></div>
-<div class="autopermalink" data-description="Task 1.c"><a href="#activities-54-2-3" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div></article><article class="task exercise-like" id="activities-54-2-4"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="autopermalink" data-description="Task 1.c"><a href="#activities-54-2-3" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-54-2-4"><h4 class="heading"><span class="codenumber">(d)</span></h4>
 <div class="para" id="activities-54-2-4-1-1">Determine any relative maxima and minima of <span class="process-math">\(A(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-54-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="0.9in"></div>
-<div class="autopermalink" data-description="Task 1.d"><a href="#activities-54-2-4" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div></article><article class="task exercise-like" id="activities-54-2-5"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="autopermalink" data-description="Task 1.d"><a href="#activities-54-2-4" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-54-2-5"><h4 class="heading"><span class="codenumber">(e)</span></h4>
 <div class="para" id="activities-54-2-5-1-1">Find the exact values of <span class="process-math">\(A(x)\)</span> to complete the table below.<div class="autopermalink" data-description="Paragraph"><a href="#activities-54-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-54-2-5-1-2">
+</div> 
+<div class="para" id="activities-54-2-5-1-2">
 <div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l0 t0 lines">
@@ -335,10 +349,14 @@ A(x) = \int_1^x g(t)~dt.
 </tr>
 </table></div>
 <div class="autopermalink" data-description="Paragraph"><a href="#activities-54-2-5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-54-2-5-1-3">Sketch a graph of <span class="process-math">\(A(x)\)</span> on the right above.<div class="autopermalink" data-description="Paragraph"><a href="#activities-54-2-5-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-54-2-5-1-3">Sketch a graph of <span class="process-math">\(A(x)\)</span> on the right above.<div class="autopermalink" data-description="Paragraph"><a href="#activities-54-2-5-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 1.e"><a href="#activities-54-2-5" title="Copy heading and permalink for Task 1.e" aria-label="Copy heading and permalink for Task 1.e">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#activities-54-2" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="activities-54-3"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="autopermalink" data-description="Task 1.e"><a href="#activities-54-2-5" title="Copy heading and permalink for Task 1.e" aria-label="Copy heading and permalink for Task 1.e">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#activities-54-2" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-54-3"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <article class="task exercise-like" id="activities-54-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para logical" id="activities-54-3-1-1-1">
 <div class="para">The <em class="emphasis">Fresnel integral function</em> is defined by</div>
@@ -349,34 +367,50 @@ S(x) = \int_0^x \sin(t^2)~dt
 </div>
 <div class="para">and is used in the study of optics.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#activities-54-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-54-3-1-1-2">What is <span class="process-math">\(S(0)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-54-3-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-54-3-1-1-2">What is <span class="process-math">\(S(0)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-54-3-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.a"><a href="#activities-54-3-1" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div></article><article class="task exercise-like" id="activities-54-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="autopermalink" data-description="Task 2.a"><a href="#activities-54-3-1" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-54-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="activities-54-3-2-1-1">Use some computational device (maybe your calculator or Desmos) to estimate <span class="process-math">\(S(1)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-54-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.b"><a href="#activities-54-3-2" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div></article><article class="task exercise-like" id="activities-54-3-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="autopermalink" data-description="Task 2.b"><a href="#activities-54-3-2" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-54-3-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="activities-54-3-3-1-1">What is <span class="process-math">\(S'(1)\text{?}\)</span>  Is <span class="process-math">\(S(x)\)</span> increasing or decreasing at <span class="process-math">\(x=1\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-54-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.c"><a href="#activities-54-3-3" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div></article><article class="task exercise-like" id="activities-54-3-4"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="autopermalink" data-description="Task 2.c"><a href="#activities-54-3-3" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-54-3-4"><h4 class="heading"><span class="codenumber">(d)</span></h4>
 <div class="para" id="activities-54-3-4-1-1">By looking at a graph of <span class="process-math">\(S'(x)\text{,}\)</span> find the first relative maximum to the right of <span class="process-math">\(x=0\text{.}\)</span>  What is the value of <span class="process-math">\(S\)</span> at this relative maximum?<div class="autopermalink" data-description="Paragraph"><a href="#activities-54-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.d"><a href="#activities-54-3-4" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div></article><article class="task exercise-like" id="activities-54-3-5"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="autopermalink" data-description="Task 2.d"><a href="#activities-54-3-4" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-54-3-5"><h4 class="heading"><span class="codenumber">(e)</span></h4>
 <div class="para" id="activities-54-3-5-1-1">Find the first relative minimum to the right of <span class="process-math">\(x=0\text{.}\)</span>  What is the value of <span class="process-math">\(S\)</span> at this relative maximum?<div class="autopermalink" data-description="Paragraph"><a href="#activities-54-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.e"><a href="#activities-54-3-5" title="Copy heading and permalink for Task 2.e" aria-label="Copy heading and permalink for Task 2.e">🔗</a></div></article><article class="task exercise-like" id="activities-54-3-6"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<div class="autopermalink" data-description="Task 2.e"><a href="#activities-54-3-5" title="Copy heading and permalink for Task 2.e" aria-label="Copy heading and permalink for Task 2.e">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-54-3-6"><h4 class="heading"><span class="codenumber">(f)</span></h4>
 <div class="para" id="activities-54-3-6-1-1">Find the second relative maximum to the right of <span class="process-math">\(x=0\)</span> and the value of <span class="process-math">\(S\)</span> at this relative maximum.<div class="autopermalink" data-description="Paragraph"><a href="#activities-54-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.f"><a href="#activities-54-3-6" title="Copy heading and permalink for Task 2.f" aria-label="Copy heading and permalink for Task 2.f">🔗</a></div></article><article class="task exercise-like" id="activities-54-3-7"><h4 class="heading"><span class="codenumber">(g)</span></h4>
+<div class="autopermalink" data-description="Task 2.f"><a href="#activities-54-3-6" title="Copy heading and permalink for Task 2.f" aria-label="Copy heading and permalink for Task 2.f">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-54-3-7"><h4 class="heading"><span class="codenumber">(g)</span></h4>
 <div class="para" id="activities-54-3-7-1-1">Sketch the graph of <span class="process-math">\(S(x)\)</span> below.<div class="autopermalink" data-description="Paragraph"><a href="#activities-54-3-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Task 2.g"><a href="#activities-54-3-7" title="Copy heading and permalink for Task 2.g" aria-label="Copy heading and permalink for Task 2.g">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#activities-54-3" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div></article><div class="autopermalink" data-description="Worksheet: Review"><a href="#activities-54" title="Copy heading and permalink for Worksheet: Review" aria-label="Copy heading and permalink for Worksheet: Review">🔗</a></div></section>
+<div class="autopermalink" data-description="Task 2.g"><a href="#activities-54-3-7" title="Copy heading and permalink for Task 2.g" aria-label="Copy heading and permalink for Task 2.g">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#activities-54-3" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet: Review"><a href="#activities-54" title="Copy heading and permalink for Worksheet: Review" aria-label="Copy heading and permalink for Worksheet: Review">🔗</a></div>
+</section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="activities-53.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="activities-55.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

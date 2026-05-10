@@ -35,11 +35,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
-        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
+        "textmacros",
         "knowl"
       ]
     }
@@ -55,10 +55,10 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
-      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
+      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
@@ -270,16 +270,20 @@ eBookConfig.enable_chatcodes =  false;
 <button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
 </div>
 </div>
-<section class="worksheet" id="activities-29" data-margins="0.75in 0.75in 0.75in 0.75in"><h2 class="heading hide-type">
+<section class="worksheet" id="activities-29" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h2 class="heading hide-type">
 <span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Probability density functions</span><div class="print-links"><a href="?printpreview=activities-29" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h2>
 <article class="exercise exercise-like" id="activities-29-2"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="para" id="activities-29-2-1-1">Suppose that you perform an experiment with outcomes <span class="process-math">\(0\leq x\leq
 10\)</span> and that your data is described by the probability density function <span class="process-math">\(p(x) = \frac 1{50}x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-29-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-29-2-1-2">Find the median of the data and the average <span class="process-math">\(\bar{x}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-29-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-29-2-1-2">Find the median of the data and the average <span class="process-math">\(\bar{x}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-29-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#activities-29-2" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="activities-29-3"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#activities-29-2" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-29-3"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <article class="task exercise-like" id="activities-29-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para logical" id="activities-29-3-1-1-1">
 <div class="para">Two fast food restaurants collect data about how long customers wait before their order is taken.  One restaurant finds that the waiting time is described by the probability density function</div>
@@ -295,38 +299,56 @@ p_2(t) = \frac 14e^{-t/4}.
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#activities-29-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-29-3-1-1-2">Verify that <span class="process-math">\(p_1(t)\)</span> is a probability density function;  that is, check that <span class="process-math">\(\int_0^\infty p(t)~dt = 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-29-3-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-29-3-1-1-2">Verify that <span class="process-math">\(p_1(t)\)</span> is a probability density function;  that is, check that <span class="process-math">\(\int_0^\infty p(t)~dt = 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-29-3-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.a"><a href="#activities-29-3-1" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div></article><article class="task exercise-like" id="activities-29-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="autopermalink" data-description="Task 2.a"><a href="#activities-29-3-1" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-29-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="activities-29-3-2-1-1">For the first restaurant, what fraction of patrons waits less than one minute?  What fraction waits between 1 and 2 minutes?<div class="autopermalink" data-description="Paragraph"><a href="#activities-29-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.b"><a href="#activities-29-3-2" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div></article><article class="task exercise-like" id="activities-29-3-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="autopermalink" data-description="Task 2.b"><a href="#activities-29-3-2" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-29-3-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="activities-29-3-3-1-1">Sketch the graphs of the two functions <span class="process-math">\(p_1(t)\)</span> and <span class="process-math">\(p_2(t)\)</span> on the same plot.  Based only on these graphs, which restaurant offers generally faster service?  Explain your response.<div class="autopermalink" data-description="Paragraph"><a href="#activities-29-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1.5in"></div>
-<div class="autopermalink" data-description="Task 2.c"><a href="#activities-29-3-3" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div></article><article class="task exercise-like" id="activities-29-3-4"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="autopermalink" data-description="Task 2.c"><a href="#activities-29-3-3" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-29-3-4"><h4 class="heading"><span class="codenumber">(d)</span></h4>
 <div class="para" id="activities-29-3-4-1-1">Now find the average waiting time for the two restaurants. Does your result confirm what you saw in the graphs?<div class="autopermalink" data-description="Paragraph"><a href="#activities-29-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Task 2.d"><a href="#activities-29-3-4" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div></article><article class="task exercise-like" id="activities-29-3-5"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="autopermalink" data-description="Task 2.d"><a href="#activities-29-3-4" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-29-3-5"><h4 class="heading"><span class="codenumber">(e)</span></h4>
 <div class="para" id="activities-29-3-5-1-1">Suppose that <span class="process-math">\(C_1(s)\)</span> is the cumulative distribution function for the first restaurant.  Explain what this function measures.<div class="autopermalink" data-description="Paragraph"><a href="#activities-29-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.e"><a href="#activities-29-3-5" title="Copy heading and permalink for Task 2.e" aria-label="Copy heading and permalink for Task 2.e">🔗</a></div></article><article class="task exercise-like" id="activities-29-3-6"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<div class="autopermalink" data-description="Task 2.e"><a href="#activities-29-3-5" title="Copy heading and permalink for Task 2.e" aria-label="Copy heading and permalink for Task 2.e">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-29-3-6"><h4 class="heading"><span class="codenumber">(f)</span></h4>
 <div class="para" id="activities-29-3-6-1-1">Find the cumulative distribution function <span class="process-math">\(C_1(s)\)</span> and use it to find the median waiting time of the first restaurant.<div class="autopermalink" data-description="Paragraph"><a href="#activities-29-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1.5in"></div>
-<div class="autopermalink" data-description="Task 2.f"><a href="#activities-29-3-6" title="Copy heading and permalink for Task 2.f" aria-label="Copy heading and permalink for Task 2.f">🔗</a></div></article><article class="task exercise-like" id="activities-29-3-7"><h4 class="heading"><span class="codenumber">(g)</span></h4>
+<div class="autopermalink" data-description="Task 2.f"><a href="#activities-29-3-6" title="Copy heading and permalink for Task 2.f" aria-label="Copy heading and permalink for Task 2.f">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-29-3-7"><h4 class="heading"><span class="codenumber">(g)</span></h4>
 <div class="para" id="activities-29-3-7-1-1">Is this median lower or higher than the average waiting time?<div class="autopermalink" data-description="Paragraph"><a href="#activities-29-3-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.g"><a href="#activities-29-3-7" title="Copy heading and permalink for Task 2.g" aria-label="Copy heading and permalink for Task 2.g">🔗</a></div></article><article class="task exercise-like" id="activities-29-3-8"><h4 class="heading"><span class="codenumber">(h)</span></h4>
+<div class="autopermalink" data-description="Task 2.g"><a href="#activities-29-3-7" title="Copy heading and permalink for Task 2.g" aria-label="Copy heading and permalink for Task 2.g">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-29-3-8"><h4 class="heading"><span class="codenumber">(h)</span></h4>
 <div class="para" id="activities-29-3-8-1-1">How do the medians of the two restaurants compare?<div class="autopermalink" data-description="Paragraph"><a href="#activities-29-3-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.h"><a href="#activities-29-3-8" title="Copy heading and permalink for Task 2.h" aria-label="Copy heading and permalink for Task 2.h">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#activities-29-3" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div></article><article class="exercise exercise-like" id="activities-29-4"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="autopermalink" data-description="Task 2.h"><a href="#activities-29-3-8" title="Copy heading and permalink for Task 2.h" aria-label="Copy heading and permalink for Task 2.h">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#activities-29-3" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-29-4"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <article class="task exercise-like" id="activities-29-4-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para logical" id="activities-29-4-1-1-1">
 <div class="para">Suppose there is a company that makes phones, and they study how long it takes for a phone to fail.  A typical probability distribution in this case is a ``Gamma distribution,’’ such as</div>
@@ -336,22 +358,32 @@ p(x) = \frac{1}{16}x^2e^{-\frac12 x}.
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#activities-29-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="activities-29-4-1-1-2">Graph this function and determine the most likely time for a phone to fail.<div class="autopermalink" data-description="Paragraph"><a href="#activities-29-4-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="activities-29-4-1-1-2">Graph this function and determine the most likely time for a phone to fail.<div class="autopermalink" data-description="Paragraph"><a href="#activities-29-4-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1.5in"></div>
-<div class="autopermalink" data-description="Task 3.a"><a href="#activities-29-4-1" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="activities-29-4-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="autopermalink" data-description="Task 3.a"><a href="#activities-29-4-1" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-29-4-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="activities-29-4-2-1-1">What is the chance that a phone lasts longer than 4 years?<div class="autopermalink" data-description="Paragraph"><a href="#activities-29-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 3.b"><a href="#activities-29-4-2" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div></article><article class="task exercise-like" id="activities-29-4-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="autopermalink" data-description="Task 3.b"><a href="#activities-29-4-2" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-29-4-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="activities-29-4-3-1-1">What is the average time it takes a phone to fail?<div class="autopermalink" data-description="Paragraph"><a href="#activities-29-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 3.c"><a href="#activities-29-4-3" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div></article><article class="task exercise-like" id="activities-29-4-4"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="autopermalink" data-description="Task 3.c"><a href="#activities-29-4-3" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-29-4-4"><h4 class="heading"><span class="codenumber">(d)</span></h4>
 <div class="para" id="activities-29-4-4-1-1">At what point will 50% of phones have failed?  What’s another word for this time?<div class="autopermalink" data-description="Paragraph"><a href="#activities-29-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 3.d"><a href="#activities-29-4-4" title="Copy heading and permalink for Task 3.d" aria-label="Copy heading and permalink for Task 3.d">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#activities-29-4" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div></article><div class="autopermalink" data-description="Worksheet: Probability density functions"><a href="#activities-29" title="Copy heading and permalink for Worksheet: Probability density functions" aria-label="Copy heading and permalink for Worksheet: Probability density functions">🔗</a></div></section>
+<div class="autopermalink" data-description="Task 3.d"><a href="#activities-29-4-4" title="Copy heading and permalink for Task 3.d" aria-label="Copy heading and permalink for Task 3.d">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#activities-29-4" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet: Probability density functions"><a href="#activities-29" title="Copy heading and permalink for Worksheet: Probability density functions" aria-label="Copy heading and permalink for Worksheet: Probability density functions">🔗</a></div>
+</section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="activities-28.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="activities-30.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

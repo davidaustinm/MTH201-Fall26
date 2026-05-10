@@ -35,11 +35,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
-        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
+        "textmacros",
         "knowl"
       ]
     }
@@ -55,10 +55,10 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
-      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
+      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
@@ -270,7 +270,8 @@ eBookConfig.enable_chatcodes =  false;
 <button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
 </div>
 </div>
-<section class="worksheet" id="activities-50" data-margins="0.75in 0.75in 0.75in 0.75in"><h2 class="heading hide-type">
+<section class="worksheet" id="activities-50" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h2 class="heading hide-type">
 <span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Taylor series</span><div class="print-links"><a href="?printpreview=activities-50" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h2>
 <article class="exercise exercise-like" id="activities-50-2"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
@@ -279,11 +280,15 @@ eBookConfig.enable_chatcodes =  false;
 1/\sqrt{1+x} = (1+x)^{-1/2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-50-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="3.5in"></div>
-<div class="autopermalink" data-description="Task 1.a"><a href="#activities-50-2-1" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div></article><article class="task exercise-like" id="activities-50-2-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="autopermalink" data-description="Task 1.a"><a href="#activities-50-2-1" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-50-2-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="activities-50-2-2-1-1">How can you use this to find the Taylor series for <span class="process-math">\(1/\sqrt{1-u^2}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-50-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1.5in"></div>
-<div class="autopermalink" data-description="Task 1.b"><a href="#activities-50-2-2" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div></article><article class="task exercise-like" id="activities-50-2-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="autopermalink" data-description="Task 1.b"><a href="#activities-50-2-2" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-50-2-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para logical" id="activities-50-2-3-1-1">
 <div class="para">You may remember that</div>
 <div class="displaymath process-math" id="activities-50-2-3-1-1-1">
@@ -297,22 +302,32 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Paragraph"><a href="#activities-50-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Task 1.c"><a href="#activities-50-2-3" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#activities-50-2" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="activities-50-3"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="autopermalink" data-description="Task 1.c"><a href="#activities-50-2-3" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#activities-50-2" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activities-50-3"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <article class="task exercise-like" id="activities-50-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para" id="activities-50-3-1-1-1">Starting with the geometric series <span class="process-math">\(\displaystyle \frac1{1-x} =
 1 + x + x^2 + x^3 + \ldots\text{,}\)</span> write the Taylor series for <span class="process-math">\(\displaystyle \frac1{1+u^2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-50-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Task 2.a"><a href="#activities-50-3-1" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div></article><article class="task exercise-like" id="activities-50-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="autopermalink" data-description="Task 2.a"><a href="#activities-50-3-1" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-50-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="activities-50-3-2-1-1">Use this to write the Taylor series of the function <span class="process-math">\(\arctan(x) =
 \int_0^x \frac{1}{1+u^2}~du\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-50-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="3in"></div>
-<div class="autopermalink" data-description="Task 2.b"><a href="#activities-50-3-2" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div></article><article class="task exercise-like" id="activities-50-3-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="autopermalink" data-description="Task 2.b"><a href="#activities-50-3-2" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="activities-50-3-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="activities-50-3-3-1-1">Use the first five nonzero terms to estimate <span class="process-math">\(\arctan(0.5)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-50-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.c"><a href="#activities-50-3-3" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#activities-50-3" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div></article><div class="autopermalink" data-description="Worksheet: Taylor series"><a href="#activities-50" title="Copy heading and permalink for Worksheet: Taylor series" aria-label="Copy heading and permalink for Worksheet: Taylor series">🔗</a></div></section>
+<div class="autopermalink" data-description="Task 2.c"><a href="#activities-50-3-3" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#activities-50-3" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet: Taylor series"><a href="#activities-50" title="Copy heading and permalink for Worksheet: Taylor series" aria-label="Copy heading and permalink for Worksheet: Taylor series">🔗</a></div>
+</section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="activities-49.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="activities-51.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
