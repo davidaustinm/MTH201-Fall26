@@ -35,11 +35,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
+        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
-        "textmacros",
         "knowl"
       ]
     }
@@ -55,10 +55,10 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
+      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
-      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
@@ -270,15 +270,13 @@ eBookConfig.enable_chatcodes =  false;
 <button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
 </div>
 </div>
-<section class="worksheet" id="activities-43" data-margins="0.75in 0.75in 0.75in 0.75in">
-<h2 class="heading hide-type">
+<section class="worksheet" id="activities-43" data-margins="0.75in 0.75in 0.75in 0.75in"><h2 class="heading hide-type">
 <span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Population Growth</span><div class="print-links"><a href="?printpreview=activities-43" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h2>
 <article class="exercise exercise-like" id="activities-43-2"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <article class="task exercise-like" id="activities-43-2-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para" id="activities-43-2-1-1-1">Let’s begin with a simple model for how the Earth’s population will evolve.  For a first guess, we will suppose that \begin{quote} <em class="emphasis">the rate of change of the population is proportional to the population</em>. \end{quote}<div class="autopermalink" data-description="Paragraph"><a href="#activities-43-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para logical" id="activities-43-2-1-1-2">
+</div> <div class="para logical" id="activities-43-2-1-1-2">
 <div class="para">In mathematical notation, this assumption may be written</div>
 <div class="displaymath process-math" id="activities-43-2-1-1-2-1">
 \begin{equation*}
@@ -289,9 +287,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Paragraph"><a href="#activities-43-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1.5in"></div>
-<div class="autopermalink" data-description="Task 1.a"><a href="#activities-43-2-1" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
-</article>
-<article class="task exercise-like" id="activities-43-2-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="autopermalink" data-description="Task 1.a"><a href="#activities-43-2-1" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div></article><article class="task exercise-like" id="activities-43-2-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para logical" id="activities-43-2-2-1-1">
 <div class="para">The quantity</div>
 <div class="displaymath process-math" id="activities-43-2-2-1-1-1">
@@ -301,34 +297,43 @@ k=\frac{\frac{dP}{dt}}{P}
 </div>
 <div class="para">is often called the per capita growth rate.  It measures how much of the rate of change of <span class="process-math">\(P\)</span> is due to a single person.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#activities-43-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="activities-43-2-2-1-2">Here is some data.  Use it to estimate the per capita growth rate.  (The population is given in billions.)<div class="autopermalink" data-description="Paragraph"><a href="#activities-43-2-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="activities-43-2-2-1-3">\begin{tabular}{|c|c|} \hline Year &amp; Population <span class="process-math">\(P(t)\)</span> \hline 1970 &amp; 3.70 1980 &amp; 4.44 1990 &amp; 5.27 \hline \end{tabular}<div class="autopermalink" data-description="Paragraph"><a href="#activities-43-2-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="activities-43-2-2-1-2">Here is some data.  Use it to estimate the per capita growth rate.  (The population is given in billions.)<div class="autopermalink" data-description="Paragraph"><a href="#activities-43-2-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="activities-43-2-2-1-3">
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l0 t0 lines">Year</td>
+<td class="c m b1 r0 l0 t0 lines">Population <span class="process-math">\(P(t)\)</span>
+</td>
+</tr>
+<tr>
+<td class="c m b0 r1 l0 t0 lines">1970</td>
+<td class="c m b0 r0 l0 t0 lines">3.70</td>
+</tr>
+<tr>
+<td class="c m b0 r1 l0 t0 lines">1980</td>
+<td class="c m b0 r0 l0 t0 lines">4.44</td>
+</tr>
+<tr>
+<td class="c m b0 r1 l0 t0 lines">1990</td>
+<td class="c m b0 r0 l0 t0 lines">5.27</td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#activities-43-2-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="0.5in"></div>
-<div class="autopermalink" data-description="Task 1.b"><a href="#activities-43-2-2" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
-</article>
-<article class="task exercise-like" id="activities-43-2-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="autopermalink" data-description="Task 1.b"><a href="#activities-43-2-2" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div></article><article class="task exercise-like" id="activities-43-2-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="activities-43-2-3-1-1">Suppose we say that <span class="process-math">\(t=0\)</span> corresponds to the year 1980. What function satisfies the assumption we’ve made?<div class="autopermalink" data-description="Paragraph"><a href="#activities-43-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1.5in"></div>
-<div class="autopermalink" data-description="Task 1.c"><a href="#activities-43-2-3" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div>
-</article>
-<article class="task exercise-like" id="activities-43-2-4"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="autopermalink" data-description="Task 1.c"><a href="#activities-43-2-3" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div></article><article class="task exercise-like" id="activities-43-2-4"><h4 class="heading"><span class="codenumber">(d)</span></h4>
 <div class="para" id="activities-43-2-4-1-1">What does this predict for the population in the year 2080? 2180?  2580?<div class="autopermalink" data-description="Paragraph"><a href="#activities-43-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1.5in"></div>
-<div class="autopermalink" data-description="Task 1.d"><a href="#activities-43-2-4" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div>
-</article>
-<article class="task exercise-like" id="activities-43-2-5"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="autopermalink" data-description="Task 1.d"><a href="#activities-43-2-4" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div></article><article class="task exercise-like" id="activities-43-2-5"><h4 class="heading"><span class="codenumber">(e)</span></h4>
 <div class="para" id="activities-43-2-5-1-1">Does this seem like a reasonable model for population growth? Explain why or why not.<div class="autopermalink" data-description="Paragraph"><a href="#activities-43-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 1.e"><a href="#activities-43-2-5" title="Copy heading and permalink for Task 1.e" aria-label="Copy heading and permalink for Task 1.e">🔗</a></div>
-</article><div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#activities-43-2" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="activities-43-3"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="autopermalink" data-description="Task 1.e"><a href="#activities-43-2-5" title="Copy heading and permalink for Task 1.e" aria-label="Copy heading and permalink for Task 1.e">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#activities-43-2" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div></article><article class="exercise exercise-like" id="activities-43-3"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <article class="task exercise-like" id="activities-43-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para logical" id="activities-43-3-1-1-1">
 <div class="para">Our original model where <span class="process-math">\(dP/dt = kP\)</span> is clearly not useful for making long-term predictions.  Realistically, we don’t expect the per capita growth rate <span class="process-math">\(k\)</span> to be constant.  It would probably make more sense to imagine that the per capita growth rate decreases when the population becomes very large.  In our new model, we will assume that the per capita growth rate is a linearly decreasing function</div>
@@ -338,49 +343,73 @@ k=\frac{\frac{dP}{dt}}{P}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#activities-43-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="activities-43-3-1-1-2">Here is some more data for the world’s population. Complete the table by estimating the derivative <span class="process-math">\(dP/dt\)</span> as the average rate of change of the population over 10 year intervals.  Then find the per capita growth rate.<div class="autopermalink" data-description="Paragraph"><a href="#activities-43-3-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="activities-43-3-1-1-3">\begin{tabular}{|c|c|c|c|} \hline Year &amp; Population <span class="process-math">\(P(t)\)</span> &amp; <span class="process-math">\(dP/dt\)</span> &amp; <span class="process-math">\(\frac 1PdP/dt\)</span> \hline 1960 &amp; 3.02\vphantom{\Huge M} &amp; --- &amp; --- 1970 &amp; 3.70\vphantom{\Huge M}  &amp;  &amp; 1980 &amp; 4.44\vphantom{\Huge M}  &amp; &amp; 1990 &amp; 5.27\vphantom{\Huge M}  &amp; &amp; 2000 &amp; 6.06\vphantom{\Huge M}  &amp; --- &amp; --- \hline \end{tabular}<div class="autopermalink" data-description="Paragraph"><a href="#activities-43-3-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="activities-43-3-1-1-4">For your three data points, plot the per capita growth rate versus the population below:<div class="autopermalink" data-description="Paragraph"><a href="#activities-43-3-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="activities-43-3-1-1-5">%    \epsfbox[100 400 300 550]{popgraph.eps} <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/figures/popgraph.eps" class="contained"></div>
+</div> <div class="para" id="activities-43-3-1-1-2">Here is some more data for the world’s population. Complete the table by estimating the derivative <span class="process-math">\(dP/dt\)</span> as the average rate of change of the population over 10 year intervals.  Then find the per capita growth rate.<div class="autopermalink" data-description="Paragraph"><a href="#activities-43-3-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="activities-43-3-1-1-3">
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l0 t0 lines">Year</td>
+<td class="c m b1 r1 l0 t0 lines">Population <span class="process-math">\(P(t)\)</span>
+</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(dP/dt\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(\frac 1PdP/dt\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r1 l0 t0 lines">1960</td>
+<td class="c m b0 r1 l0 t0 lines">3.02\vphantom{\Huge M}</td>
+<td class="c m b0 r1 l0 t0 lines">---</td>
+<td class="c m b0 r0 l0 t0 lines">---</td>
+</tr>
+<tr>
+<td class="c m b0 r1 l0 t0 lines">1970</td>
+<td class="c m b0 r1 l0 t0 lines">3.70\vphantom{\Huge M}</td>
+<td class="c m b0 r1 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r1 l0 t0 lines">1980</td>
+<td class="c m b0 r1 l0 t0 lines">4.44\vphantom{\Huge M}</td>
+<td class="c m b0 r1 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r1 l0 t0 lines">1990</td>
+<td class="c m b0 r1 l0 t0 lines">5.27\vphantom{\Huge M}</td>
+<td class="c m b0 r1 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r1 l0 t0 lines">2000</td>
+<td class="c m b0 r1 l0 t0 lines">6.06\vphantom{\Huge M}</td>
+<td class="c m b0 r1 l0 t0 lines">---</td>
+<td class="c m b0 r0 l0 t0 lines">---</td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#activities-43-3-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="activities-43-3-1-1-4">For your three data points, plot the per capita growth rate versus the population below:<div class="autopermalink" data-description="Paragraph"><a href="#activities-43-3-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="activities-43-3-1-1-5">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/figures/popgraph.eps" class="contained"></div>
 <div class="autopermalink" data-description="Paragraph"><a href="#activities-43-3-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="activities-43-3-1-1-6">Now sketch in a straight line that seems to best fit your data and use this to determine the constants <span class="process-math">\(k\)</span> and <span class="process-math">\(N\)</span> in the logistic equation.<div class="autopermalink" data-description="Paragraph"><a href="#activities-43-3-1-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="activities-43-3-1-1-6">Now sketch in a straight line that seems to best fit your data and use this to determine the constants <span class="process-math">\(k\)</span> and <span class="process-math">\(N\)</span> in the logistic equation.<div class="autopermalink" data-description="Paragraph"><a href="#activities-43-3-1-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.a"><a href="#activities-43-3-1" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
-</article>
-<article class="task exercise-like" id="activities-43-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="autopermalink" data-description="Task 2.a"><a href="#activities-43-3-1" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div></article><article class="task exercise-like" id="activities-43-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="activities-43-3-2-1-1">What is the differential equation for <span class="process-math">\(dP/dt\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activities-43-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.b"><a href="#activities-43-3-2" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
-</article>
-<article class="task exercise-like" id="activities-43-3-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="autopermalink" data-description="Task 2.b"><a href="#activities-43-3-2" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div></article><article class="task exercise-like" id="activities-43-3-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="activities-43-3-3-1-1">Sketch the rate of change <span class="process-math">\(dP/dt\)</span> as a function of <span class="process-math">\(P\text{.}\)</span> (Don’t worry about the scale on the axes.  We’re just interested in the shape.)<div class="autopermalink" data-description="Paragraph"><a href="#activities-43-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="activities-43-3-3-1-2">For what values of the population is <span class="process-math">\(dP/dt =0\text{?}\)</span> What does this mean?<div class="autopermalink" data-description="Paragraph"><a href="#activities-43-3-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="activities-43-3-3-1-2">For what values of the population is <span class="process-math">\(dP/dt =0\text{?}\)</span> What does this mean?<div class="autopermalink" data-description="Paragraph"><a href="#activities-43-3-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.c"><a href="#activities-43-3-3" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
-</article>
-<article class="task exercise-like" id="activities-43-3-4"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="autopermalink" data-description="Task 2.c"><a href="#activities-43-3-3" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div></article><article class="task exercise-like" id="activities-43-3-4"><h4 class="heading"><span class="codenumber">(d)</span></h4>
 <div class="para" id="activities-43-3-4-1-1">Based upon your graph, for what values of the population will the population increase?  For what values will it decrease?<div class="autopermalink" data-description="Paragraph"><a href="#activities-43-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1.5in"></div>
-<div class="autopermalink" data-description="Task 2.d"><a href="#activities-43-3-4" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div>
-</article>
-<article class="task exercise-like" id="activities-43-3-5"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="autopermalink" data-description="Task 2.d"><a href="#activities-43-3-4" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div></article><article class="task exercise-like" id="activities-43-3-5"><h4 class="heading"><span class="codenumber">(e)</span></h4>
 <div class="para" id="activities-43-3-5-1-1">What does this predict about the Earth’s population?<div class="autopermalink" data-description="Paragraph"><a href="#activities-43-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Task 2.e"><a href="#activities-43-3-5" title="Copy heading and permalink for Task 2.e" aria-label="Copy heading and permalink for Task 2.e">🔗</a></div>
-</article><div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#activities-43-3" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
-</article><div class="autopermalink" data-description="Worksheet: Population Growth"><a href="#activities-43" title="Copy heading and permalink for Worksheet: Population Growth" aria-label="Copy heading and permalink for Worksheet: Population Growth">🔗</a></div>
-</section>
+<div class="autopermalink" data-description="Task 2.e"><a href="#activities-43-3-5" title="Copy heading and permalink for Task 2.e" aria-label="Copy heading and permalink for Task 2.e">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#activities-43-3" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div></article><div class="autopermalink" data-description="Worksheet: Population Growth"><a href="#activities-43" title="Copy heading and permalink for Worksheet: Population Growth" aria-label="Copy heading and permalink for Worksheet: Population Growth">🔗</a></div></section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="activities-42.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="activities-44.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
