@@ -61,7 +61,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Some concepts from Math 201",
-  "body": " Some concepts from Math 201     Suppose you drive in your car at 70mph for 3 hours. How far will you travel? If you know your speed and the amount of time you travel at that speed, what is the general rule for determining the distance traveled?      Suppose you take a trip in your car and measure your speed for 30 seconds:            Time (seconds)  0  5  10  15  20  25  30    Speed (feet\/second)  10  25  35  45  50  60  70    Estimate how far you travel during the first five seconds. There are a couple of ways you could do this so write one sentence that explains what you did and share it with your group mates.      Estimate how far you have traveled over the entire 30-second interval.      Estimate your average speed over the 30-second interval.        Suppose that is a function satisfying , and . Sketch a possible graph for on the left below.    Suppose that is a function with and . Sketch a possible graph for on the right above.  Suppose that a function satisfies and . Using this information, estimate . What would knowledge of tell you about your estimate?           Shown below are the graphs of two functions. On       Shown below is the graph of a function .   Evaluate the definite integrals:                                  Evaluate the definite integrals using the Fundamental Theorem of Calculus:                "
+  "body": " Some concepts from Math 201     Suppose you drive in your car at 70mph for 3 hours. How far will you travel? If you know your speed and the amount of time you travel at that speed, what is the general rule for determining the distance traveled?      Suppose you take a trip in your car and measure your speed for 30 seconds:            Time (seconds)  0  5  10  15  20  25  30    Speed (feet\/second)  10  25  35  45  50  60  70    Estimate how far you travel during the first five seconds. There are a couple of ways you could do this so write one sentence that explains what you did and share it with your group mates.      Estimate how far you have traveled over the entire 30-second interval.      Estimate your average speed over the 30-second interval.       Suppose that is a function satisfying , and . Sketch a possible graph for on the left below.    Suppose that is a function with and . Sketch a possible graph for on the right above.  Suppose that a function satisfies and . Using this information, estimate . What would knowledge of tell you about your estimate?       Shown below is the graph of a function .   Evaluate the definite integrals:                                  Evaluate the definite integrals using the Fundamental Theorem of Calculus:                "
 },
 {
   "id": "activities-4-2",
@@ -79,7 +79,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "   Suppose that is a function satisfying , and . Sketch a possible graph for on the left below.    Suppose that is a function with and . Sketch a possible graph for on the right above.  Suppose that a function satisfies and . Using this information, estimate . What would knowledge of tell you about your estimate?        "
+  "body": "  Suppose that is a function satisfying , and . Sketch a possible graph for on the left below.    Suppose that is a function with and . Sketch a possible graph for on the right above.  Suppose that a function satisfies and . Using this information, estimate . What would knowledge of tell you about your estimate?   "
 },
 {
   "id": "activities-4-4",
@@ -88,7 +88,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "  Shown below are the graphs of two functions. On   "
+  "body": "   Shown below is the graph of a function .   Evaluate the definite integrals:                              "
 },
 {
   "id": "activities-4-5",
@@ -96,15 +96,6 @@ var ptx_lunr_docs = [
   "url": "activities-4.html#activities-4-5",
   "type": "Worksheet Exercise",
   "number": "4",
-  "title": "",
-  "body": "   Shown below is the graph of a function .   Evaluate the definite integrals:                              "
-},
-{
-  "id": "activities-4-6",
-  "level": "2",
-  "url": "activities-4.html#activities-4-6",
-  "type": "Worksheet Exercise",
-  "number": "5",
   "title": "",
   "body": "   Evaluate the definite integrals using the Fundamental Theorem of Calculus:               "
 },
@@ -160,7 +151,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Second Fundamental Theorem of Calculus (Section 5.2)",
-  "body": " Second Fundamental Theorem of Calculus (Section 5.2)     Shown below on the left is the graph of a function .    We will define a new function by  Let's begin by evaluating .      Find the exact values of to complete the table below.             \\vphantom{\\Huge M}  0  1  2  3  4  5  6  7    \\vphantom{\\Huge M}            Sketch a graph of on the right above.  On what intervals is increasing and how does this relate to the behavior of ? Also, on what intervals is decreasing?      Where does have a relative minimum or maximum? How is this related to the value of ?      Remembering that is an antiderivative of , what is the value of the derivative ?            Suppose that is the function whose graph is shown on the                                    The Fresnel integral function is defined by and is used in the study of optics.  What is ?      Use some computational device (maybe your calculator or Desmos) to estimate .      What is ? Is increasing or decreasing at ?      Find the first relative maximum to the right of . What is the value of at this relative maximum?      Find the first relative minimum to the right of . What is the value of at this relative maximum?      Find the second relative maximum to the right of and the value of at this relative maximum.      Sketch the graph of below.        The function appears frequently in probability and statistics and is closely related to an important function called the error function .  What is the derivative ?      Use some computational device to estimate the value .      Explain why is an always increasing function.      Sketch the graph of below.     "
+  "body": " Second Fundamental Theorem of Calculus (Section 5.2)     Shown below on the left is the graph of a function .    We will define a new function by  Let's begin by evaluating .      Find the exact values of to complete the table below.             \\vphantom{\\Huge M}  0  1  2  3  4  5  6  7    \\vphantom{\\Huge M}            Sketch a graph of on the right above.  On what intervals is increasing and how does this relate to the behavior of ? Also, on what intervals is decreasing?      Where does have a relative minimum or maximum? How is this related to the value of ?      Remembering that is an antiderivative of , what is the value of the derivative ?        The Fresnel integral function is defined by and is used in the study of optics.  What is ?      Use some computational device (maybe your calculator or Desmos) to estimate .      What is ? Is increasing or decreasing at ?      Find the first relative maximum to the right of . What is the value of at this relative maximum?      Find the first relative minimum to the right of . What is the value of at this relative maximum?      Find the second relative maximum to the right of and the value of at this relative maximum.      Sketch the graph of below.        The function appears frequently in probability and statistics and is closely related to an important function called the error function .  What is the derivative ?      Use some computational device to estimate the value .      Explain why is an always increasing function.      Sketch the graph of below.     "
 },
 {
   "id": "activities-6-2",
@@ -169,7 +160,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "   Shown below on the left is the graph of a function .    We will define a new function by  Let's begin by evaluating .      Find the exact values of to complete the table below.             \\vphantom{\\Huge M}  0  1  2  3  4  5  6  7    \\vphantom{\\Huge M}            Sketch a graph of on the right above.  On what intervals is increasing and how does this relate to the behavior of ? Also, on what intervals is decreasing?      Where does have a relative minimum or maximum? How is this related to the value of ?      Remembering that is an antiderivative of , what is the value of the derivative ?        "
+  "body": "   Shown below on the left is the graph of a function .    We will define a new function by  Let's begin by evaluating .      Find the exact values of to complete the table below.             \\vphantom{\\Huge M}  0  1  2  3  4  5  6  7    \\vphantom{\\Huge M}            Sketch a graph of on the right above.  On what intervals is increasing and how does this relate to the behavior of ? Also, on what intervals is decreasing?      Where does have a relative minimum or maximum? How is this related to the value of ?      Remembering that is an antiderivative of , what is the value of the derivative ?    "
 },
 {
   "id": "activities-6-3",
@@ -178,7 +169,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "   Suppose that is the function whose graph is shown on the                                "
+  "body": "   The Fresnel integral function is defined by and is used in the study of optics.  What is ?      Use some computational device (maybe your calculator or Desmos) to estimate .      What is ? Is increasing or decreasing at ?      Find the first relative maximum to the right of . What is the value of at this relative maximum?      Find the first relative minimum to the right of . What is the value of at this relative maximum?      Find the second relative maximum to the right of and the value of at this relative maximum.      Sketch the graph of below.    "
 },
 {
   "id": "activities-6-4",
@@ -186,15 +177,6 @@ var ptx_lunr_docs = [
   "url": "activities-6.html#activities-6-4",
   "type": "Worksheet Exercise",
   "number": "3",
-  "title": "",
-  "body": "   The Fresnel integral function is defined by and is used in the study of optics.  What is ?      Use some computational device (maybe your calculator or Desmos) to estimate .      What is ? Is increasing or decreasing at ?      Find the first relative maximum to the right of . What is the value of at this relative maximum?      Find the first relative minimum to the right of . What is the value of at this relative maximum?      Find the second relative maximum to the right of and the value of at this relative maximum.      Sketch the graph of below.    "
-},
-{
-  "id": "activities-6-5",
-  "level": "2",
-  "url": "activities-6.html#activities-6-5",
-  "type": "Worksheet Exercise",
-  "number": "4",
   "title": "",
   "body": "   The function appears frequently in probability and statistics and is closely related to an important function called the error function .  What is the derivative ?      Use some computational device to estimate the value .      Explain why is an always increasing function.      Sketch the graph of below.    "
 },
@@ -403,7 +385,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Lab 1, Due: Monday, January 29",
-  "body": " Lab 1, Due: Monday, January 29   Instructions: The exercises here should be completed in groups of 2 or 3 students. You only need to hand in one copy per group, but please include everyone's name.  There are two aims for this lab. First, I want to introduce you to spreadsheets as a tool for understanding some ideas in calculus. At the beginning of the class, I will demonstrate for you some fundamental things: how to enter data in cells, how to refer to other cells and how to copy information from one cell to another. Second, I would like to review how definite integrals are constructed; namely, I would like for you to think of an integral as a fancy sum.          Your first task is to create an Excel worksheet to            Remember that if we have a function , we can define the definite integral by looking at either left sums or right sums . To form these, we choose some value for and define and the points . The left and right Riemann sums are The definite integral is then defined as  Let's now consider the function and the definite integral First off, use the Fundamental Theorem of Calculus to evaluate this integral exactly.      Set up a Google sheet as shown below to evaluate the Riemann sums with . The first column is . The second column starts at and each subsequent entry is obtained by adding to the entry above. This generates the points . The third column is simply the function evaluated at . The fourth column will add the terms for the left sum, and the fifth column will add the terms for the right sum. To obtain the entry in one row, simply add the appropriate term to the entry directly above.  A convenient way to set this up is to enter 0.1 for in cell A2 , enter ``=A2'' in cell A3 and copy that entry into the rest of the column. That way, if you change in one place, it will change everywhere.                0.1000  0.0000  0.0000      0.1000  0.1000  0.0010  0.0000  0.0001    0.1000  0.2000  0.0080  0.0001  0.0009    0.1000  0.3000  0.0270  0.0009  0.0036    \\vdots  \\vdots  \\vdots  \\vdots     What do you find for the Riemann sums, and ? Be sure that you have actually included exactly 10 terms in your approximations. State your results with 6 digits after the decimal place.      Now repeat this using . This corresponds to . If you set up your earlier worksheet well, you should only need to change the entry for in one location. What do you find for the Riemann sums? State your result with 6 digits after the decimal place.      Repeat using . What do you find for the Riemann sums? State your result with 6 digits after the decimal place.      Shown below is the graph of the function . Sketch in the rectangles you used in building the left Riemann sum with . Then use your figure to explain why the approximations and to the definite integral you found above are either too large or too small.       Now fill in the following table:         Error    0.1 \\vphantom{\\Huge p}      0.01 \\vphantom{\\Huge p}      0.001 \\vphantom{\\Huge p}      What do you notice about the error? Try to be quantitative rather than just qualitative; that is, when the width of the intervals decreases by a factor of one tenth, by roughly what factor does the error decrease?       The definite integral cannot be evaluated using the Fundamental Theorem of Calculus because there is not an antiderivative that can be found in terms of familiar functions.  Using left and right Riemann sums, give an estimate of this definite integral with an error of no more than . Explain how you've done this with left and right Riemann sums. Do not evaluate the integral on your calculator to estimate the error.  Note: to evalue an exponential in a spreadsheet, use ``= EXP( ... )''.    "
+  "body": " Lab 1, Due: Monday, January 29   Instructions: The exercises here should be completed in groups of 2 or 3 students. You only need to hand in one copy per group, but please include everyone's name.  There are two aims for this lab. First, I want to introduce you to spreadsheets as a tool for understanding some ideas in calculus. At the beginning of the class, I will demonstrate for you some fundamental things: how to enter data in cells, how to refer to other cells and how to copy information from one cell to another. Second, I would like to review how definite integrals are constructed; namely, I would like for you to think of an integral as a fancy sum.      Remember that if we have a function , we can define the definite integral by looking at either left sums or right sums . To form these, we choose some value for and define and the points . The left and right Riemann sums are The definite integral is then defined as  Let's now consider the function and the definite integral First off, use the Fundamental Theorem of Calculus to evaluate this integral exactly.      Set up a Google sheet as shown below to evaluate the Riemann sums with . The first column is . The second column starts at and each subsequent entry is obtained by adding to the entry above. This generates the points . The third column is simply the function evaluated at . The fourth column will add the terms for the left sum, and the fifth column will add the terms for the right sum. To obtain the entry in one row, simply add the appropriate term to the entry directly above.  A convenient way to set this up is to enter 0.1 for in cell A2 , enter ``=A2'' in cell A3 and copy that entry into the rest of the column. That way, if you change in one place, it will change everywhere.                0.1000  0.0000  0.0000      0.1000  0.1000  0.0010  0.0000  0.0001    0.1000  0.2000  0.0080  0.0001  0.0009    0.1000  0.3000  0.0270  0.0009  0.0036    \\vdots  \\vdots  \\vdots  \\vdots     What do you find for the Riemann sums, and ? Be sure that you have actually included exactly 10 terms in your approximations. State your results with 6 digits after the decimal place.      Now repeat this using . This corresponds to . If you set up your earlier worksheet well, you should only need to change the entry for in one location. What do you find for the Riemann sums? State your result with 6 digits after the decimal place.      Repeat using . What do you find for the Riemann sums? State your result with 6 digits after the decimal place.      Shown below is the graph of the function . Sketch in the rectangles you used in building the left Riemann sum with . Then use your figure to explain why the approximations and to the definite integral you found above are either too large or too small.       Now fill in the following table:         Error    0.1 \\vphantom{\\Huge p}      0.01 \\vphantom{\\Huge p}      0.001 \\vphantom{\\Huge p}      What do you notice about the error? Try to be quantitative rather than just qualitative; that is, when the width of the intervals decreases by a factor of one tenth, by roughly what factor does the error decrease?       The definite integral cannot be evaluated using the Fundamental Theorem of Calculus because there is not an antiderivative that can be found in terms of familiar functions.  Using left and right Riemann sums, give an estimate of this definite integral with an error of no more than . Explain how you've done this with left and right Riemann sums. Do not evaluate the integral on your calculator to estimate the error.  Note: to evalue an exponential in a spreadsheet, use ``= EXP( ... )''.    "
 },
 {
   "id": "activities-12-2-1",
@@ -421,7 +403,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "   "
+  "body": "   Remember that if we have a function , we can define the definite integral by looking at either left sums or right sums . To form these, we choose some value for and define and the points . The left and right Riemann sums are The definite integral is then defined as  Let's now consider the function and the definite integral First off, use the Fundamental Theorem of Calculus to evaluate this integral exactly.      Set up a Google sheet as shown below to evaluate the Riemann sums with . The first column is . The second column starts at and each subsequent entry is obtained by adding to the entry above. This generates the points . The third column is simply the function evaluated at . The fourth column will add the terms for the left sum, and the fifth column will add the terms for the right sum. To obtain the entry in one row, simply add the appropriate term to the entry directly above.  A convenient way to set this up is to enter 0.1 for in cell A2 , enter ``=A2'' in cell A3 and copy that entry into the rest of the column. That way, if you change in one place, it will change everywhere.                0.1000  0.0000  0.0000      0.1000  0.1000  0.0010  0.0000  0.0001    0.1000  0.2000  0.0080  0.0001  0.0009    0.1000  0.3000  0.0270  0.0009  0.0036    \\vdots  \\vdots  \\vdots  \\vdots     What do you find for the Riemann sums, and ? Be sure that you have actually included exactly 10 terms in your approximations. State your results with 6 digits after the decimal place.      Now repeat this using . This corresponds to . If you set up your earlier worksheet well, you should only need to change the entry for in one location. What do you find for the Riemann sums? State your result with 6 digits after the decimal place.      Repeat using . What do you find for the Riemann sums? State your result with 6 digits after the decimal place.      Shown below is the graph of the function . Sketch in the rectangles you used in building the left Riemann sum with . Then use your figure to explain why the approximations and to the definite integral you found above are either too large or too small.       Now fill in the following table:         Error    0.1 \\vphantom{\\Huge p}      0.01 \\vphantom{\\Huge p}      0.001 \\vphantom{\\Huge p}      What do you notice about the error? Try to be quantitative rather than just qualitative; that is, when the width of the intervals decreases by a factor of one tenth, by roughly what factor does the error decrease?    "
 },
 {
   "id": "activities-12-4",
@@ -429,24 +411,6 @@ var ptx_lunr_docs = [
   "url": "activities-12.html#activities-12-4",
   "type": "Worksheet Exercise",
   "number": "2",
-  "title": "",
-  "body": "   Your first task is to create an Excel worksheet to        "
-},
-{
-  "id": "activities-12-5",
-  "level": "2",
-  "url": "activities-12.html#activities-12-5",
-  "type": "Worksheet Exercise",
-  "number": "3",
-  "title": "",
-  "body": "   Remember that if we have a function , we can define the definite integral by looking at either left sums or right sums . To form these, we choose some value for and define and the points . The left and right Riemann sums are The definite integral is then defined as  Let's now consider the function and the definite integral First off, use the Fundamental Theorem of Calculus to evaluate this integral exactly.      Set up a Google sheet as shown below to evaluate the Riemann sums with . The first column is . The second column starts at and each subsequent entry is obtained by adding to the entry above. This generates the points . The third column is simply the function evaluated at . The fourth column will add the terms for the left sum, and the fifth column will add the terms for the right sum. To obtain the entry in one row, simply add the appropriate term to the entry directly above.  A convenient way to set this up is to enter 0.1 for in cell A2 , enter ``=A2'' in cell A3 and copy that entry into the rest of the column. That way, if you change in one place, it will change everywhere.                0.1000  0.0000  0.0000      0.1000  0.1000  0.0010  0.0000  0.0001    0.1000  0.2000  0.0080  0.0001  0.0009    0.1000  0.3000  0.0270  0.0009  0.0036    \\vdots  \\vdots  \\vdots  \\vdots     What do you find for the Riemann sums, and ? Be sure that you have actually included exactly 10 terms in your approximations. State your results with 6 digits after the decimal place.      Now repeat this using . This corresponds to . If you set up your earlier worksheet well, you should only need to change the entry for in one location. What do you find for the Riemann sums? State your result with 6 digits after the decimal place.      Repeat using . What do you find for the Riemann sums? State your result with 6 digits after the decimal place.      Shown below is the graph of the function . Sketch in the rectangles you used in building the left Riemann sum with . Then use your figure to explain why the approximations and to the definite integral you found above are either too large or too small.       Now fill in the following table:         Error    0.1 \\vphantom{\\Huge p}      0.01 \\vphantom{\\Huge p}      0.001 \\vphantom{\\Huge p}      What do you notice about the error? Try to be quantitative rather than just qualitative; that is, when the width of the intervals decreases by a factor of one tenth, by roughly what factor does the error decrease?    "
-},
-{
-  "id": "activities-12-6",
-  "level": "2",
-  "url": "activities-12.html#activities-12-6",
-  "type": "Worksheet Exercise",
-  "number": "4",
   "title": "",
   "body": "  The definite integral cannot be evaluated using the Fundamental Theorem of Calculus because there is not an antiderivative that can be found in terms of familiar functions.  Using left and right Riemann sums, give an estimate of this definite integral with an error of no more than . Explain how you've done this with left and right Riemann sums. Do not evaluate the integral on your calculator to estimate the error.  Note: to evalue an exponential in a spreadsheet, use ``= EXP( ... )''.   "
 },
@@ -871,7 +835,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Some more geometry",
-  "body": " Some more geometry        Find the arc length along the curve between       Consider the curve and find the arc length along this cruve between .      Suppose that you start at and walk along this curve moving to the right for a distance of 10 units. Where do you end up?       Set up an integral that measures the arc length along the curve between . Use your calculator or Desmos to estimate the integral giving the arc length.       Find the following antiderivatives:       .      .      .      .      .      .     "
+  "body": " Some more geometry     Consider the curve and find the arc length along this cruve between .      Suppose that you start at and walk along this curve moving to the right for a distance of 10 units. Where do you end up?       Set up an integral that measures the arc length along the curve between . Use your calculator or Desmos to estimate the integral giving the arc length.       Find the following antiderivatives:       .      .      .      .      .      .     "
 },
 {
   "id": "activities-17-2",
@@ -880,7 +844,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "   "
+  "body": "   Consider the curve and find the arc length along this cruve between .      Suppose that you start at and walk along this curve moving to the right for a distance of 10 units. Where do you end up?    "
 },
 {
   "id": "activities-17-3",
@@ -889,7 +853,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  Find the arc length along the curve between   "
+  "body": "  Set up an integral that measures the arc length along the curve between . Use your calculator or Desmos to estimate the integral giving the arc length.   "
 },
 {
   "id": "activities-17-4",
@@ -897,24 +861,6 @@ var ptx_lunr_docs = [
   "url": "activities-17.html#activities-17-4",
   "type": "Worksheet Exercise",
   "number": "3",
-  "title": "",
-  "body": "   Consider the curve and find the arc length along this cruve between .      Suppose that you start at and walk along this curve moving to the right for a distance of 10 units. Where do you end up?    "
-},
-{
-  "id": "activities-17-5",
-  "level": "2",
-  "url": "activities-17.html#activities-17-5",
-  "type": "Worksheet Exercise",
-  "number": "4",
-  "title": "",
-  "body": "  Set up an integral that measures the arc length along the curve between . Use your calculator or Desmos to estimate the integral giving the arc length.   "
-},
-{
-  "id": "activities-17-6",
-  "level": "2",
-  "url": "activities-17.html#activities-17-6",
-  "type": "Worksheet Exercise",
-  "number": "5",
   "title": "",
   "body": "   Find the following antiderivatives:       .      .      .      .      .      .    "
 },
@@ -2365,7 +2311,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Applications of Taylor series",
-  "body": " Applications of Taylor series     Write out the first few terms of the Taylor series for and use it to write a series for .      Use this series to evaluate the limit       In the same way, evaluate the limit:       Our goal right now is to find the Taylor series for .  Let's begin with the geometric series:  Now find the Taylor series for by substituting .      What do you find if you differentiate ? Use this fact to find the Taylor series for .      Here is one way that Taylor series are used in the sciences: If you consider an object of mass that is a distance above the surface of the earth, then the gravitational force is where is the radius of the earth.  Use the series you found above for to write as a series in terms of .      The constant term should not be unexpected. Why?      Now approximate by the first two terms in the series. How high above the earth's surface do you need to go before the second term changes the approximation by more than 10%?     "
+  "body": " Applications of Taylor series     Write out the first few terms of the Taylor series for and use it to write a series for .      Use this series to evaluate the limit       In the same way, evaluate the limit:       Our goal right now is to find the Taylor series for .  Let's begin with the geometric series:  Now find the Taylor series for by substituting .      What do you find if you differentiate ? Use this fact to find the Taylor series for .      Here is one way that Taylor series are used in the sciences: If you consider an object of mass that is a distance above the surface of the earth, then the gravitational force is where is the radius of the earth.  Use the series you found above for to write as a series in terms of .  The constant term should not be unexpected. Why?      Now approximate by the first two terms in the series. How high above the earth's surface do you need to go before the second term changes the approximation by more than 10%?     "
 },
 {
   "id": "activities-53-2",
@@ -2392,7 +2338,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "   Our goal right now is to find the Taylor series for .  Let's begin with the geometric series:  Now find the Taylor series for by substituting .      What do you find if you differentiate ? Use this fact to find the Taylor series for .      Here is one way that Taylor series are used in the sciences: If you consider an object of mass that is a distance above the surface of the earth, then the gravitational force is where is the radius of the earth.  Use the series you found above for to write as a series in terms of .      The constant term should not be unexpected. Why?      Now approximate by the first two terms in the series. How high above the earth's surface do you need to go before the second term changes the approximation by more than 10%?    "
+  "body": "   Our goal right now is to find the Taylor series for .  Let's begin with the geometric series:  Now find the Taylor series for by substituting .      What do you find if you differentiate ? Use this fact to find the Taylor series for .      Here is one way that Taylor series are used in the sciences: If you consider an object of mass that is a distance above the surface of the earth, then the gravitational force is where is the radius of the earth.  Use the series you found above for to write as a series in terms of .  The constant term should not be unexpected. Why?      Now approximate by the first two terms in the series. How high above the earth's surface do you need to go before the second term changes the approximation by more than 10%?    "
 },
 {
   "id": "activities-54",
@@ -2428,7 +2374,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Review",
-  "body": " Review     Find the following antiderivatives:                                     Consider the shaded region below bounded by the curves and . Set up an integral that gives the shaded area and then evaluate it.       The shaded region below is bounded by the graphs and . Find the volume of the solid that results from spinning this region about the -axis.   Set up an integral to find the volume obtained by spinning about the line .       Suppose you define the function  What is the value of ?      What is the value of ?      What is the value of ? Is the graph of concave up or down at ?      Find a point where has a relative maximum. Find another where has a relative minimum.      Where does have its absolute maximum and where does it have its absolute minimum?      Use the Midpoint Rule to approximate using rectangles.     "
+  "body": " Review     Find the following antiderivatives:                                 Consider the shaded region below bounded by the curves and . Set up an integral that gives the shaded area and then evaluate it.       The shaded region below is bounded by the graphs and . Find the volume of the solid that results from spinning this region about the -axis.   Set up an integral to find the volume obtained by spinning about the line .       Suppose you define the function  What is the value of ?      What is the value of ?      What is the value of ? Is the graph of concave up or down at ?      Find a point where has a relative maximum. Find another where has a relative minimum.      Where does have its absolute maximum and where does it have its absolute minimum?      Use the Midpoint Rule to approximate using rectangles.     "
 },
 {
   "id": "activities-55-2",
@@ -2437,7 +2383,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "   Find the following antiderivatives:                                  "
+  "body": "   Find the following antiderivatives:                              "
 },
 {
   "id": "activities-55-3",
